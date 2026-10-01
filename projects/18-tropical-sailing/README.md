@@ -1,5 +1,9 @@
 # 海湾航记
 
+![海湾航记预览](preview.png)
+
+*原项目船帆修复后截图。*
+
 ## 单文件 HTML
 
 [单文件版本](standalone.html)

@@ -1,5 +1,9 @@
 # world.execute(me) 完整 MV
 
+![world.execute(me) 完整 MV预览](preview.png)
+
+*增强版成片 02:35 画面。*
+
 [原始提示词](PROMPT.md) · [后续请求](REQUEST_HISTORY.md)
 
 保留三版完整视频。源代码及 Demo 已按原请求清理，本次归档不声称包含源码。

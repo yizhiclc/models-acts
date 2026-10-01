@@ -1,5 +1,9 @@
 # 上元灯境
 
+![上元灯境预览](preview.png)
+
+*原项目运行截图。*
+
 ## 单文件 HTML
 
 [单文件版本](standalone.html)

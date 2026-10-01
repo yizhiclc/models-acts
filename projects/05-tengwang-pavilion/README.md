@@ -1,5 +1,9 @@
 # 滕王阁
 
+![滕王阁预览](preview.png)
+
+*原项目最终全景截图。*
+
 ## 单文件 HTML
 
 [单文件版本](standalone.html)

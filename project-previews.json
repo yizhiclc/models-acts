@@ -1,0 +1,209 @@
+[
+  {
+    "id": "01",
+    "name": "天阙宫城",
+    "directory": "projects/01-tianque-palace",
+    "preview": "projects/01-tianque-palace/preview.jpg",
+    "description": "宏伟宫城、园林与中式古典建筑群。",
+    "caption": "原项目全景截图",
+    "sha256": "e65c7af8dce62842a699564d42b1c52acc22fa2649c8c89851b9983a77883e56"
+  },
+  {
+    "id": "02",
+    "name": "中式古典建筑群",
+    "directory": "projects/02-classical-architecture",
+    "preview": "projects/02-classical-architecture/preview.png",
+    "description": "六座体素建筑构成的清和苑。",
+    "caption": "原项目测试截图",
+    "sha256": "841acc12fa845999dcfb6f75d7366f068065eb109137c2060766c84b8f2cd2f1"
+  },
+  {
+    "id": "03",
+    "name": "云山巨城",
+    "directory": "projects/03-yunshan-city",
+    "preview": "projects/03-yunshan-city/preview.png",
+    "description": "跨越山岭、溪谷与瀑布的巨型古风城市。",
+    "caption": "本次实际运行截图",
+    "sha256": "24715d74da6da1715c3d319926df4af5c615b1f1bca05b7ff1b66a7e11494a04"
+  },
+  {
+    "id": "04",
+    "name": "武陵城",
+    "directory": "projects/04-wuling-city",
+    "preview": "projects/04-wuling-city/preview.png",
+    "description": "《终末地》武陵城的体素主城重构。",
+    "caption": "原项目最终测试截图",
+    "sha256": "4ab2f203f0cacea666b9a885ec3529146b3a332b5a68f2373a2f1d73d2352b84"
+  },
+  {
+    "id": "05",
+    "name": "滕王阁",
+    "directory": "projects/05-tengwang-pavilion",
+    "preview": "projects/05-tengwang-pavilion/preview.png",
+    "description": "临江而立的体素滕王阁与园林。",
+    "caption": "原项目最终全景截图",
+    "sha256": "c17089b82608deb835e031614336d3a76c0052118490e23498ff193214d775e2"
+  },
+  {
+    "id": "06",
+    "name": "悉尼歌剧院与海港大桥",
+    "directory": "projects/06-sydney-opera-house",
+    "preview": "projects/06-sydney-opera-house/preview.png",
+    "description": "精细歌剧院壳体、海港与海港大桥。",
+    "caption": "原项目最终预览",
+    "sha256": "021ca46375523be33ff7582622785a3650cb331d707a552ba2e1428a5c29341b"
+  },
+  {
+    "id": "07",
+    "name": "腾势 Z Racing 展厅",
+    "directory": "projects/07-denza-z-racing",
+    "preview": "projects/07-denza-z-racing/preview.png",
+    "description": "腾势 Z Racing 赛车模型与展厅。",
+    "caption": "原项目车辆渲染图",
+    "sha256": "c14a8ce83b29f3c579822d2802765143cdf7668f7746b0ba2d8dfdd6e377346a"
+  },
+  {
+    "id": "08",
+    "name": "松溪微缩铁路小镇",
+    "directory": "projects/08-railway-town",
+    "preview": "projects/08-railway-town/preview.png",
+    "description": "火车、车站与微缩铁路小镇。",
+    "caption": "原项目日间测试截图",
+    "sha256": "0c0b85c73cb8da827bc20a02eb4b021349e5db1afda20e126fc6a94db187030a"
+  },
+  {
+    "id": "09",
+    "name": "上元灯境",
+    "directory": "projects/09-lantern-reverie",
+    "preview": "projects/09-lantern-reverie/preview.png",
+    "description": "灯火、烟花与上元夜游街景。",
+    "caption": "原项目运行截图",
+    "sha256": "9ac11c6867d3b77148acd1b9878328b06cb2904ccf2eff33b111a2229761d5b5"
+  },
+  {
+    "id": "10",
+    "name": "晓梦迷蝶",
+    "directory": "projects/10-butterfly-dream",
+    "preview": "projects/10-butterfly-dream/preview.png",
+    "description": "以“庄生晓梦迷蝴蝶”为主题的梦境街景。",
+    "caption": "原项目运行截图",
+    "sha256": "2d46008cba5a2dc796e7109c7b1190c3b7b5db87d961e78269dc4a9518c7a7ed"
+  },
+  {
+    "id": "11",
+    "name": "Blender 无人夜间酒吧",
+    "directory": "projects/11-night-bar",
+    "preview": "projects/11-night-bar/preview.png",
+    "description": "可编辑的写实无人夜间酒吧。",
+    "caption": "本次用原 .blend 文件重新渲染（Blender 5.2.2，Cycles，32 samples）",
+    "sha256": "738b4e37e1955ec5f4e19add2b3e2b3b003acbe4aa09b2e949c34026bd1b8102"
+  },
+  {
+    "id": "13",
+    "name": "体素云山瀑布",
+    "directory": "projects/13-cloudfall-voxel",
+    "preview": "projects/13-cloudfall-voxel/preview.png",
+    "description": "体素山峰、穿云瀑布与山脚湖泊。",
+    "caption": "原项目测试截图",
+    "sha256": "97176e381d0db78292ffa68b31751fbf6ed6c4696a07c3515f699a93c0f1c38d"
+  },
+  {
+    "id": "14",
+    "name": "星舰发射与一级回收仿真",
+    "directory": "projects/14-rocket-lab",
+    "preview": "projects/14-rocket-lab/preview.png",
+    "description": "星舰发射、发动机控制与一级回收仿真。",
+    "caption": "原项目长尾焰测试截图",
+    "sha256": "f7bb73a852e71cab124a067e56be0ca8a96c12d6813ee40c25ded86c31d7755c"
+  },
+  {
+    "id": "16",
+    "name": "深海启航",
+    "directory": "projects/16-deep-sea-launch",
+    "preview": "projects/16-deep-sea-launch/preview.png",
+    "description": "潜射导弹出水、点火与转向的三维演示。",
+    "caption": "原项目运行截图",
+    "sha256": "5a099bdce7a8c831e5f4a1b1e463f03708d55abf0fc9d1db958156c9b7563d20"
+  },
+  {
+    "id": "17",
+    "name": "掠海长航",
+    "directory": "projects/17-pelagic-flight",
+    "preview": "projects/17-pelagic-flight/preview.png",
+    "description": "巡航导弹掠过真实感海面与岛屿。",
+    "caption": "原项目运行截图",
+    "sha256": "72546a4cacf276f41c7bf3fcd359feb292a2c1067567485ca62c0e78136155d9"
+  },
+  {
+    "id": "18",
+    "name": "海湾航记",
+    "directory": "projects/18-tropical-sailing",
+    "preview": "projects/18-tropical-sailing/preview.png",
+    "description": "热带海湾中的帆船与海洋漫游。",
+    "caption": "原项目船帆修复后截图",
+    "sha256": "1f39027be00f1b91aa91f69895ed554d55c9c16d63cfb8fe44f9824453b1e7df"
+  },
+  {
+    "id": "19",
+    "name": "Schwarzschild 无自旋黑洞",
+    "directory": "projects/19-schwarzschild-blackhole",
+    "preview": "projects/19-schwarzschild-blackhole/preview.png",
+    "description": "基于物理公式的无自旋黑洞与光线偏折。",
+    "caption": "原项目运行截图",
+    "sha256": "ba6b09d61d077a092b3c33b19435a56f3258aed0658db3a34b02a8181e71d7cc"
+  },
+  {
+    "id": "20",
+    "name": "Kerr 自旋黑洞",
+    "directory": "projects/20-kerr-blackhole",
+    "preview": "projects/20-kerr-blackhole/preview.png",
+    "description": "自旋黑洞、吸积盘与相对论光线追踪。",
+    "caption": "原项目运行截图",
+    "sha256": "2c2a94667d59a6804515ab924b5311dd3623243439e4c51ee5d41daf88211dfb"
+  },
+  {
+    "id": "23",
+    "name": "world.execute(me) 完整 MV",
+    "directory": "projects/23-world-execute-mv",
+    "preview": "projects/23-world-execute-mv/preview.png",
+    "description": "字符、色块与代码视觉构成的完整 MV。",
+    "caption": "增强版成片 02:35 画面",
+    "sha256": "f5b4e57fd938fbf78b29053fce800cdcce1d33096aad46cb5b5398203fa67798"
+  },
+  {
+    "id": "24",
+    "name": "我叫Astra，却从未见过群星",
+    "directory": "projects/24-astra-stars",
+    "preview": "projects/24-astra-stars/preview.jpg",
+    "description": "“我叫 Astra，却从未见过群星”原创视频与配乐。",
+    "caption": "原项目视频封面",
+    "sha256": "bf47518e7b041ec3aa6befd48c8d615b55287cc8cb392cb1295fac825ca51a82"
+  },
+  {
+    "id": "25",
+    "name": "Minecraft 黑洞祭坛搭建与剪辑成片",
+    "directory": "projects/25-minecraft-blackhole-altar",
+    "preview": "projects/25-minecraft-blackhole-altar/preview.png",
+    "description": "大型黑洞祭坛建造、游戏存档与施工成片。",
+    "caption": "原项目建造完成截图",
+    "sha256": "517e776a2e193ca06bc18c655425569649485f543f27eaf53eb51c2e0c37bd80"
+  },
+  {
+    "id": "28",
+    "name": "EventHorizon 黑洞模组",
+    "directory": "projects/28-eventhorizon",
+    "preview": "projects/28-eventhorizon/preview.png",
+    "description": "Minecraft 黑洞模组：引力透镜与吸积盘。",
+    "caption": "原模组吸积盘测试截图",
+    "sha256": "cde08ddd654c8b84458558e5490aeca82b58407be8d50cb9a1d0a6cd2d141475"
+  },
+  {
+    "id": "31",
+    "name": "信号流图四题完整解答",
+    "directory": "projects/31-signal-flow-solutions",
+    "preview": "projects/31-signal-flow-solutions/preview.jpg",
+    "description": "四题信号流图、梅森公式与完整推导。",
+    "caption": "原题信号流图，用于展示项目内容",
+    "sha256": "e0c62e7d54dc019670541ae8597a87f54ac7ee7f30a5a3584033de4db9a3cff9"
+  }
+]

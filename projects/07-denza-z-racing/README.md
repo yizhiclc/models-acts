@@ -1,5 +1,9 @@
 # 腾势 Z Racing 展厅
 
+![腾势 Z Racing 展厅预览](preview.png)
+
+*原项目车辆渲染图。*
+
 ## 单文件 HTML
 
 [单文件版本](standalone.html)

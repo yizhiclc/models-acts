@@ -1,5 +1,9 @@
 # 中式古典建筑群
 
+![中式古典建筑群预览](preview.png)
+
+*原项目测试截图。*
+
 ## 单文件 HTML
 
 [单文件版本](standalone.html)

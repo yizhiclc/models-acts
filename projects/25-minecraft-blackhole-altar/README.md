@@ -1,5 +1,9 @@
 # Minecraft 黑洞祭坛搭建与剪辑成片
 
+![Minecraft 黑洞祭坛搭建与剪辑成片预览](preview.png)
+
+*原项目建造完成截图。*
+
 [原始提示词](PROMPT.md) · [后续请求](REQUEST_HISTORY.md)
 
 包含建筑工程、存档和剪辑工程。大型成片及素材单独保存；新版未剪辑录屏超过 2 GiB，已分卷上传。

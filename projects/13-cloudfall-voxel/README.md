@@ -1,5 +1,9 @@
 # 体素云山瀑布
 
+![体素云山瀑布预览](preview.png)
+
+*原项目测试截图。*
+
 ## 单文件 HTML
 
 [单文件版本](standalone.html)

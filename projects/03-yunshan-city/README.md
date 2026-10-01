@@ -1,5 +1,9 @@
 # 云山巨城
 
+![云山巨城预览](preview.png)
+
+*本次实际运行截图。*
+
 ## 单文件 HTML
 
 **未找到已有单文件版本。** 已检查原项目目录、项目 ZIP、Downloads 和 Desktop 中的 HTML。现有 `source/index.html` 依赖独立的 CSS、JavaScript 和 Three.js 模块，需按 [源码说明](source/README.md) 启动本地服务。

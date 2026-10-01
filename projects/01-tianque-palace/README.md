@@ -1,5 +1,9 @@
 # 天阙宫城
 
+![天阙宫城预览](preview.jpg)
+
+*原项目全景截图。*
+
 ## 单文件 HTML
 
 [单文件版本](standalone.html)

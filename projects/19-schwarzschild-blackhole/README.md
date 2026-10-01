@@ -1,5 +1,9 @@
 # Schwarzschild 无自旋黑洞
 
+![Schwarzschild 无自旋黑洞预览](preview.png)
+
+*原项目运行截图。*
+
 ## 单文件 HTML
 
 [版本 A](standalone.html) · [版本 B](standalone-version-b.html)
