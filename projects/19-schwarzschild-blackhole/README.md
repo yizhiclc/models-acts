@@ -1,5 +1,13 @@
 # Schwarzschild 无自旋黑洞
 
+## 单文件 HTML
+
+[版本 A](standalone.html) · [版本 B](standalone-version-b.html)
+
+下载后双击 HTML 即可运行，无需安装或本地服务器。浏览器需要支持 WebGL。
+
+文件来自原项目已交付的单文件版本，内容未修改。
+
 [原始提示词](PROMPT.md) · [后续请求](REQUEST_HISTORY.md)
 
 保留两个独立实现；版本 B 来源于另一聊天。
