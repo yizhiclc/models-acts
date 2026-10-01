@@ -1,0 +1,48 @@
+{
+  "testedAt": "2026-09-29T14:04:41.979Z",
+  "heatRefraction": {
+    "changedPixels": 23369,
+    "totalPixels": 1600000,
+    "bounds": [
+      0,
+      547,
+      480,
+      772
+    ],
+    "sameSceneAndTime": true
+  },
+  "fullResolutionRun": {
+    "seconds": 30,
+    "viewport": [
+      1600,
+      1000
+    ],
+    "quality": "high",
+    "pixelRatio": 1,
+    "weather": "overcast",
+    "timing": {
+      "frames": 5384,
+      "meanFrameMs": 5.572046805349182,
+      "p95FrameMs": 5.600000000005821
+    },
+    "initial": {
+      "calls": 245,
+      "triangles": 4039382,
+      "geometries": 108,
+      "textures": 10,
+      "programs": 21,
+      "pixelRatio": 1,
+      "fps": 171.49142542872897
+    },
+    "final": {
+      "calls": 212,
+      "triangles": 1712090,
+      "geometries": 109,
+      "textures": 10,
+      "programs": 22,
+      "pixelRatio": 1,
+      "fps": 180.00498628770904
+    }
+  },
+  "errors": []
+}

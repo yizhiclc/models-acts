@@ -1,0 +1,71 @@
+{
+  "testedAt": "2026-09-29T13:59:23.707Z",
+  "browser": "153.0.8010.12",
+  "vegetationSourceSHA256": "ea5641f476b8567539ede36cdcffb4eff2481d6ade84305aaee2b7652aa5701d",
+  "integration": {
+    "offline": true,
+    "routeLengthMeters": 25251.624648859015,
+    "maximumSpeed": 360,
+    "maximumSpeedSamples": 48,
+    "viewport": [
+      1600,
+      1000
+    ],
+    "quality": "high",
+    "pixelRatio": 1,
+    "realSeconds": 30,
+    "steppedFlightSeconds": 435.605600000099,
+    "before": {
+      "calls": 192,
+      "triangles": 294854,
+      "geometries": 113,
+      "textures": 10,
+      "programs": 22,
+      "pixelRatio": 1,
+      "fps": 18.3449848777827
+    },
+    "after": {
+      "calls": 191,
+      "triangles": 294854,
+      "geometries": 113,
+      "textures": 10,
+      "programs": 22,
+      "pixelRatio": 1,
+      "fps": 179.9910004499783
+    },
+    "timing": {
+      "frames": 5402,
+      "meanIntervalMs": 5.5555164753794894,
+      "p95IntervalMs": 5.600000000005821
+    }
+  },
+  "isolated": {
+    "stats": {
+      "trees": 15279,
+      "shrubs": 14570,
+      "grassClumps": 30934,
+      "plantTypes": 7,
+      "drawBatches": 143
+    },
+    "terrainRaycasts": 462,
+    "rootEmbedMeters": [
+      0.12991049046986802,
+      0.4501231684294673
+    ],
+    "minimumPlantRootHeight": 4.514988234645554,
+    "frozenFramesChangedPixels": 0,
+    "windChangedPixels": 6446,
+    "windTestViewport": [
+      640,
+      400
+    ],
+    "windIntervalSeconds": 0.25
+  },
+  "errors": [],
+  "externalRequests": [],
+  "limits": [
+    "30-second actual rendering, not a multi-hour endurance test.",
+    "Only local Chromium and GPU tested; no physical phone benchmark.",
+    "Frame intervals are browser scheduling times, not GPU timing queries."
+  ]
+}

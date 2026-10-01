@@ -1,0 +1,2761 @@
+{
+  "schema": "astra-flight-3.0",
+  "build": "2026-09-30-starship-flight-control",
+  "units": "SI; angles rad; heatFlux W/m²; temperature K; inertia kg·m²",
+  "integrator": {
+    "dt": 0.008333333333333333,
+    "translation": "central gravity / explicit forces / trapezoid velocity",
+    "attitude": "I omegaDot = torque - omega cross I omega; explicit midpoint / body quaternion exponential map; co-rotating mass outflow",
+    "contact": "dissipative impulse; explicit event"
+  },
+  "config": {
+    "landingIgnition": 12000,
+    "finDeployAltitude": 45000,
+    "stroke": 2.2,
+    "initialFuel": 4600000,
+    "pitchKick": 2
+  },
+  "constants": {
+    "earthRadius": 6371000,
+    "dryMass": 200000,
+    "payloadMass": 100000,
+    "upperDryMass": 120000,
+    "upperInitialFuel": 1200000,
+    "initialPropellant": 4600000,
+    "ascentReserve": 360000,
+    "length": 71,
+    "radius": 4.5,
+    "contactHeight": 55,
+    "upperMount": 38,
+    "upperCOM": 25,
+    "thrustSL": 73920000,
+    "thrustVac": 80850000,
+    "upperThrust": 14640000,
+    "upperIsp": 370,
+    "fuelEnergy": 50000000,
+    "combustionFraction": 0.12,
+    "crushForce": 16000000,
+    "structuralForce": 25000000,
+    "rcsIsp": 72,
+    "rcsLever": 32,
+    "landingX": 1600
+  },
+  "result": "CRASHED",
+  "summary": {
+    "duration": 181.2249999999995,
+    "maxAltitude": 20629.447479251772,
+    "maxSpeed": 941.701269877265,
+    "maxHeat": 95358.69652480536,
+    "propellantUsed": 4600000,
+    "upperMaxAltitude": 0,
+    "upperMaxSpeed": 0
+  },
+  "engineCommands": [
+    {
+      "id": 2,
+      "type": "engine-command",
+      "ids": [
+        "B15",
+        "B16",
+        "B17"
+      ],
+      "enabled": false,
+      "requestedAt": 55.00833333333085,
+      "requestedAltitude": 6202.72980764322,
+      "source": "manual",
+      "appliedAt": 55.016666666664186,
+      "altitude": 6202.72980764322,
+      "upperAltitude": null,
+      "phase": "ASCENT",
+      "attitude": [
+        4.621251184752665e-18,
+        -2.0602104492140198e-19,
+        -0.044240226546042115,
+        0.9990209218805955
+      ],
+      "omega": [
+        3.363202359310946e-19,
+        -2.3794867268321762e-20,
+        -0.002569388850017877
+      ],
+      "fuel": {
+        "booster": 2334612.4477971797,
+        "upper": 1200000
+      }
+    }
+  ],
+  "scheduledCommands": [],
+  "pendingCommands": [],
+  "manualThrottle": {
+    "booster": null,
+    "upper": null
+  },
+  "attitudeControl": false,
+  "engines": [
+    {
+      "id": "B1",
+      "stage": "booster",
+      "kind": "centre",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        0.95,
+        -34,
+        0
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B2",
+      "stage": "booster",
+      "kind": "centre",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -0.47499999999999976,
+        -34,
+        0.8227241335952168
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B3",
+      "stage": "booster",
+      "kind": "centre",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -0.4750000000000004,
+        -34,
+        -0.8227241335952166
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B4",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        2.35,
+        -34,
+        0
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B5",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        1.9011899367811267,
+        -34,
+        1.3812953428873118
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B6",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        0.7261899367811265,
+        -34,
+        2.2349828132936107
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B7",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -0.7261899367811263,
+        -34,
+        2.234982813293611
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B8",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -1.9011899367811262,
+        -34,
+        1.3812953428873123
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B9",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -2.35,
+        -34,
+        2.8779199779962803e-16
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B10",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -1.9011899367811267,
+        -34,
+        -1.3812953428873116
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B11",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -0.7261899367811268,
+        -34,
+        -2.2349828132936107
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B12",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        0.726189936781126,
+        -34,
+        -2.234982813293611
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B13",
+      "stage": "booster",
+      "kind": "middle",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        1.9011899367811262,
+        -34,
+        -1.3812953428873125
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        -3.5e-323,
+        3.5e-323
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        -3.5e-323,
+        1,
+        3.5e-323
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B14",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        3.85,
+        -34,
+        0
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B15",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        3.661567587736341,
+        -34,
+        1.1897154283435476
+      ],
+      "ratedThrust": 2240000,
+      "enabled": false,
+      "requestedEnabled": false,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 32347.217257174005,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.674624672057641e-196,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B16",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        3.1147154283435476,
+        -34,
+        2.2629732213260216
+      ],
+      "ratedThrust": 2240000,
+      "enabled": false,
+      "requestedEnabled": false,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 32347.217257174005,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.674624672057641e-196,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B17",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        2.2629732213260216,
+        -34,
+        3.1147154283435476
+      ],
+      "ratedThrust": 2240000,
+      "enabled": false,
+      "requestedEnabled": false,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 32347.217257174005,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.674624672057641e-196,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B18",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        1.1897154283435478,
+        -34,
+        3.661567587736341
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B19",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        2.357445088358655e-16,
+        -34,
+        3.85
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B20",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -1.1897154283435474,
+        -34,
+        3.6615675877363416
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B21",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -2.262973221326021,
+        -34,
+        3.1147154283435476
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B22",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -3.114715428343547,
+        -34,
+        2.262973221326022
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B23",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -3.661567587736341,
+        -34,
+        1.1897154283435478
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B24",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -3.85,
+        -34,
+        4.71489017671731e-16
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B25",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -3.661567587736341,
+        -34,
+        -1.1897154283435487
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B26",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -3.1147154283435476,
+        -34,
+        -2.262973221326021
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B27",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -2.262973221326022,
+        -34,
+        -3.114715428343547
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B28",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -1.189715428343548,
+        -34,
+        -3.661567587736341
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B29",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        -7.072335265075964e-16,
+        -34,
+        -3.85
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B30",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        1.189715428343547,
+        -34,
+        -3.6615675877363416
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B31",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        2.2629732213260207,
+        -34,
+        -3.114715428343548
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B32",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        3.114715428343547,
+        -34,
+        -2.2629732213260225
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "B33",
+      "stage": "booster",
+      "kind": "outer",
+      "gimbalLimit": 0,
+      "position": [
+        3.661567587736341,
+        -34,
+        -1.1897154283435483
+      ],
+      "ratedThrust": 2240000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 95169.75889350736,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 2.663688673424792e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      },
+      "phaseActive": true
+    },
+    {
+      "id": "S1",
+      "stage": "upper",
+      "kind": "sea-level",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        1.25,
+        -24,
+        0
+      ],
+      "ratedThrust": 2300000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 0,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      }
+    },
+    {
+      "id": "S2",
+      "stage": "upper",
+      "kind": "sea-level",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -0.6249999999999998,
+        -24,
+        1.0825317547305484
+      ],
+      "ratedThrust": 2300000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 0,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      }
+    },
+    {
+      "id": "S3",
+      "stage": "upper",
+      "kind": "sea-level",
+      "gimbalLimit": 0.13962634015954636,
+      "position": [
+        -0.6250000000000006,
+        -24,
+        -1.0825317547305482
+      ],
+      "ratedThrust": 2300000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 0,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 11600,
+        "pressureRatio": 0.11671664225201564,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 1.7748239349298847
+      }
+    },
+    {
+      "id": "S4",
+      "stage": "upper",
+      "kind": "vacuum",
+      "gimbalLimit": 0,
+      "position": [
+        1.5750000000000004,
+        -24,
+        2.7279800219209815
+      ],
+      "ratedThrust": 2580000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 0,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 440,
+        "pressureRatio": 0.004427182981973007,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 2.8397182958878155
+      }
+    },
+    {
+      "id": "S5",
+      "stage": "upper",
+      "kind": "vacuum",
+      "gimbalLimit": 0,
+      "position": [
+        -3.15,
+        -24,
+        3.8576374173141627e-16
+      ],
+      "ratedThrust": 2580000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 0,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 440,
+        "pressureRatio": 0.004427182981973007,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 2.8397182958878155
+      }
+    },
+    {
+      "id": "S6",
+      "stage": "upper",
+      "kind": "vacuum",
+      "gimbalLimit": 0,
+      "position": [
+        1.574999999999998,
+        -24,
+        -2.727980021920983
+      ],
+      "ratedThrust": 2580000,
+      "enabled": true,
+      "requestedEnabled": true,
+      "valve": 0,
+      "thrust": 0,
+      "fuelUsed": 0,
+      "gimbal": [
+        0,
+        0
+      ],
+      "gimbalTarget": [
+        0,
+        0
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "torque": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0,
+      "exhaust": {
+        "exitPressure": 440,
+        "pressureRatio": 0.004427182981973007,
+        "halfAngle": 0.03490658503988659,
+        "expansion": 1.4190492339009728,
+        "machContrast": 0,
+        "machSpacing": 2.8397182958878155
+      }
+    }
+  ],
+  "rigidModel": {
+    "bodyAxes": "Y nose/roll, Z primary pitch, X crossrange pitch/yaw; quaternions xyzw body-to-world",
+    "inertia": "diagonal tensor with 1.2% transverse asymmetry; fixed effective mass distribution",
+    "engineTorque": "each engine position cross exact gimballed force",
+    "aero": "drag at direction-dependent pressure centre plus rotational damping; passive aerodynamic torque survives fuel exhaustion",
+    "contact": "tower capture window or orientation-dependent hull first intersection"
+  },
+  "fuelLedger": {
+    "remaining": {
+      "booster": 0,
+      "upper": 0
+    },
+    "spent": {
+      "main": 2952134.418576759,
+      "rcs": 499.6824329308544,
+      "fins": 0,
+      "gimbal": 0.0010472904538391282,
+      "upperMain": 0,
+      "upperRCS": 0,
+      "upperGimbal": 0,
+      "explosion": 197683.90775316363,
+      "dispersed": 1449681.9901898666
+    },
+    "initial": 4600000,
+    "residual": -1.0244548320770264e-8
+  },
+  "upper": null,
+  "touchdown": {
+    "t": 159.03333333335303,
+    "success": false,
+    "reasons": [
+      "缓冲行程耗尽",
+      "支撑载荷超限",
+      "触地倾角超限",
+      "未进入塔架捕获窗口",
+      "偏离着陆区",
+      "侧向剪切超限"
+    ],
+    "mass": 2067365.8979430303,
+    "vx": 656.9421778652643,
+    "vy": -534.8869967635287,
+    "vz": -102.79988184769871,
+    "omega": -0.021014768992522366,
+    "theta": -1.6386994817539817,
+    "x": 51256.40070552712,
+    "z": 1994.8823440386234,
+    "attitude": [
+      -0.02547669897015434,
+      -0.013733864003326506,
+      -0.7302552667357028,
+      0.6825610333104942
+    ],
+    "angularVelocity": [
+      0.12634618623617666,
+      0.2784532698941471,
+      -0.021014768992522366
+    ],
+    "inertiaTensor": [
+      6174677414.318206,
+      20932079.71667318,
+      6101459895.571349
+    ],
+    "legsDeployed": false,
+    "landingX": 1600,
+    "landingError": 49696.45547314649,
+    "tilt": 1.6386921131043075,
+    "propellant": 1647365.8979430303,
+    "inertia": 6101459895.571349,
+    "stroke": 2.2,
+    "kineticEnergy": 752825820285.7919,
+    "chemicalEnergy": 9884195387658.182,
+    "explosionEnergy": 10637021207943.973,
+    "capacity": 0,
+    "strokeRequired": null,
+    "netImpulse": 1105807136.3620832,
+    "stoppingTime": null,
+    "groundImpulse": null,
+    "crushForce": 16000000,
+    "peakLoadG": 0.7891907002954952,
+    "blastScale": 47.38126757159675,
+    "blastRadius": 959.6253514319351,
+    "blastDuration": 13.053648215942511,
+    "debrisRange": 2062.3945055786603,
+    "attachedAtImpact": true
+  },
+  "fields": {
+    "plume": {
+      "intensity": 2.421535157658913e-35,
+      "triggerAt": 5.008333333333372,
+      "activations": [
+        5.008333333333372
+      ],
+      "emission": 0
+    },
+    "upperPlume": {
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0
+    },
+    "steam": {
+      "intensity": 5.2675579126116584e-27,
+      "triggerAt": 0.5000000000000007,
+      "activations": [
+        0.5000000000000007
+      ],
+      "emission": 0
+    },
+    "reentry": {
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0
+    },
+    "explosion": {
+      "intensity": 0.169787535273818,
+      "triggerAt": 159.03333333335303,
+      "activations": [
+        159.03333333335303
+      ],
+      "emission": 0.16389023418084772
+    },
+    "upperExplosion": {
+      "intensity": 0,
+      "triggerAt": null,
+      "activations": [],
+      "emission": 0
+    },
+    "dust": {
+      "intensity": 0.000022095204535839865,
+      "triggerAt": 5.000000000000038,
+      "activations": [
+        5.000000000000038,
+        158.45833333335355
+      ],
+      "emission": 0
+    }
+  },
+  "events": [
+    {
+      "t": 0,
+      "type": "phase",
+      "phase": "DELUGE"
+    },
+    {
+      "t": 0.5000000000000007,
+      "type": "field-trigger",
+      "field": "steam"
+    },
+    {
+      "t": 5.000000000000038,
+      "type": "phase",
+      "phase": "IGNITION"
+    },
+    {
+      "t": 5.000000000000038,
+      "type": "field-trigger",
+      "field": "dust"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B1"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B2"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B3"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B4"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B5"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B6"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B7"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B8"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B9"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B10"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B11"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B12"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B13"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B14"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B15"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B16"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B17"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B18"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B19"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B20"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B21"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B22"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B23"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B24"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B25"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B26"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B27"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B28"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B29"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B30"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B31"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B32"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "engine-plume-trigger",
+      "engine": "B33"
+    },
+    {
+      "t": 5.008333333333372,
+      "type": "field-trigger",
+      "field": "plume"
+    },
+    {
+      "t": 6.000000000000088,
+      "type": "phase",
+      "phase": "BUILDUP"
+    },
+    {
+      "t": 8.000000000000187,
+      "type": "phase",
+      "phase": "ASCENT"
+    },
+    {
+      "t": 18.44166666666626,
+      "type": "pitch-kick",
+      "altitude": 250.34139022417367,
+      "targetDegrees": -2
+    },
+    {
+      "t": 30.449999999998912,
+      "type": "gravity-turn",
+      "altitude": 1235.5305751441047
+    },
+    {
+      "t": 55.016666666664186,
+      "type": "attitude-control",
+      "id": 1,
+      "enabled": false,
+      "requestedAt": 55.00833333333085,
+      "appliedAt": 55.016666666664186
+    },
+    {
+      "t": 55.016666666664186,
+      "type": "engine-command",
+      "id": 2,
+      "ids": [
+        "B15",
+        "B16",
+        "B17"
+      ],
+      "enabled": false,
+      "requestedAt": 55.00833333333085,
+      "requestedAltitude": 6202.72980764322,
+      "source": "manual",
+      "appliedAt": 55.016666666664186,
+      "altitude": 6202.72980764322,
+      "upperAltitude": null,
+      "phase": "ASCENT",
+      "attitude": [
+        4.621251184752665e-18,
+        -2.0602104492140198e-19,
+        -0.044240226546042115,
+        0.9990209218805955
+      ],
+      "omega": [
+        3.363202359310946e-19,
+        -2.3794867268321762e-20,
+        -0.002569388850017877
+      ],
+      "fuel": {
+        "booster": 2334612.4477971797,
+        "upper": 1200000
+      }
+    },
+    {
+      "t": 158.45833333335355,
+      "type": "field-trigger",
+      "field": "dust"
+    },
+    {
+      "t": 159.03333333335303,
+      "type": "phase",
+      "phase": "CONTACT"
+    },
+    {
+      "t": 159.03333333335303,
+      "type": "touchdown",
+      "success": false,
+      "reasons": [
+        "缓冲行程耗尽",
+        "支撑载荷超限",
+        "触地倾角超限",
+        "未进入塔架捕获窗口",
+        "偏离着陆区",
+        "侧向剪切超限"
+      ],
+      "mass": 2067365.8979430303,
+      "vx": 656.9421778652643,
+      "vy": -534.8869967635287,
+      "vz": -102.79988184769871,
+      "omega": -0.021014768992522366,
+      "theta": -1.6386994817539817,
+      "x": 51256.40070552712,
+      "z": 1994.8823440386234,
+      "attitude": [
+        -0.02547669897015434,
+        -0.013733864003326506,
+        -0.7302552667357028,
+        0.6825610333104942
+      ],
+      "angularVelocity": [
+        0.12634618623617666,
+        0.2784532698941471,
+        -0.021014768992522366
+      ],
+      "inertiaTensor": [
+        6174677414.318206,
+        20932079.71667318,
+        6101459895.571349
+      ],
+      "legsDeployed": false,
+      "landingX": 1600,
+      "landingError": 49696.45547314649,
+      "tilt": 1.6386921131043075,
+      "propellant": 1647365.8979430303,
+      "inertia": 6101459895.571349,
+      "stroke": 2.2,
+      "kineticEnergy": 752825820285.7919,
+      "chemicalEnergy": 9884195387658.182,
+      "explosionEnergy": 10637021207943.973,
+      "capacity": 0,
+      "strokeRequired": null,
+      "netImpulse": 1105807136.3620832,
+      "stoppingTime": null,
+      "groundImpulse": null,
+      "crushForce": 16000000,
+      "peakLoadG": 0.7891907002954952,
+      "blastScale": 47.38126757159675,
+      "blastRadius": 959.6253514319351,
+      "blastDuration": 13.053648215942511,
+      "debrisRange": 2062.3945055786603,
+      "attachedAtImpact": true
+    },
+    {
+      "t": 159.03333333335303,
+      "type": "phase",
+      "phase": "CRASHED"
+    },
+    {
+      "t": 159.03333333335303,
+      "type": "tank-rupture",
+      "stage": "booster",
+      "propellantBeforeRupture": 447365.8979430303,
+      "burned": 53683.907753163636,
+      "dispersed": 393681.9901898666,
+      "chemicalEnergyReleased": 2684195387658.1816
+    },
+    {
+      "t": 159.03333333335303,
+      "type": "tank-rupture",
+      "stage": "upper",
+      "propellantBeforeRupture": 1200000,
+      "burned": 144000,
+      "dispersed": 1056000,
+      "chemicalEnergyReleased": 7200000000000
+    },
+    {
+      "t": 159.03333333335303,
+      "type": "contact-impulse",
+      "deltaVx": -656.9421778652643,
+      "deltaVy": 534.8869967635287,
+      "deltaVz": 102.79988184769871,
+      "deltaOmega": [
+        -0.12634618623617666,
+        -0.2784532698941471,
+        0.021014768992522366
+      ]
+    },
+    {
+      "t": 159.03333333335303,
+      "type": "field-trigger",
+      "field": "explosion"
+    }
+  ],
+  "gpuEvidence": {
+    "backend": "not-attached",
+    "dispatches": {},
+    "note": "CPU records inputs; actual GPU execution is separately read back in browser tests."
+  },
+  "telemetry": {
+    "bodyHz": 30,
+    "engineHz": 10,
+    "eventSamples": true,
+    "physicsHz": 120
+  },
+  "timeseries": "engine-out-tumble-crash.csv",
+  "sampleCount": 5442,
+  "engineTimeline": {
+    "columns": [
+      "t",
+      "engine",
+      "enabled",
+      "requestedEnabled",
+      "valve",
+      "thrust",
+      "gimbalX",
+      "gimbalZ",
+      "fuelUsed",
+      "intensity",
+      "forceX",
+      "forceY",
+      "forceZ",
+      "torqueX",
+      "torqueY",
+      "torqueZ",
+      "emission",
+      "triggerAt"
+    ],
+    "timeseries": "engine-out-tumble-crash-engines.csv",
+    "rows": 70941
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "export": "C:\\Users\\Administrator\\Documents\\Codex\\2026-09-11\\html-blackhole-1-three-js-2\\outputs\\altar-film\\edit\\BlackHoleAltar_1080p60.mp4",
+  "bytes": 1543060722,
+  "durationSeconds": 507.65,
+  "resolution": "1920x1080",
+  "fps": 60,
+  "audioCodec": "aac",
+  "inspectedFrameTimes": [
+    3,
+    98,
+    347,
+    501
+  ],
+  "scope": "Metadata and four decoded frames only; not a full playback audit."
+}

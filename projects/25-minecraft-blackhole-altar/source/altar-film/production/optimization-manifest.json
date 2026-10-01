@@ -1,0 +1,29 @@
+[
+  {
+    "project": "sodium",
+    "status": "disabled",
+    "reason": "Sodium 0.8.14+mc1.21.11 crashed on NeoForge 21.11.45 validation textures during the first client launch.",
+    "crash": "ClassCastException ValidationGpuTexture -> GlTexture in SodiumWorldRenderer"
+  },
+  {
+    "project": "sodium",
+    "version": "mc1.21.11-0.8.14-neoforge",
+    "source": "https://cdn.modrinth.com/data/AANobbMI/versions/sC6wj32u/sodium-neoforge-0.8.14%2Bmc1.21.11.jar",
+    "sha512": "1699874a8df3da8475fb372306a948690bb76e95221a617c73f6e81d7b70b6fb43ed7b9e8fefc75c5a1607eba33acca56eed374f8a8b753a8397670b43598e35",
+    "dependencies": []
+  },
+  {
+    "project": "lithium",
+    "version": "mc1.21.11-0.21.4-neoforge",
+    "source": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/M93zf1Gr/lithium-neoforge-0.21.4%2Bmc1.21.11.jar",
+    "sha512": "df72f98f0a678aaa1bc6967105b00ac0533f078ec3a85098385d5a4a36ee5f8e101109ca19ae2170ba6e6b55c15c4a7654976d7c457f09ec44cda3fff4a7f270",
+    "dependencies": []
+  },
+  {
+    "project": "ferrite-core",
+    "version": "8.2.0-neoforge",
+    "source": "https://cdn.modrinth.com/data/uXXizFIs/versions/mLI5k2Gi/ferritecore-8.2.0-neoforge.jar",
+    "sha512": "83f402ab8c5cd4aa28ad922af0c8ecd82daecc9e7faf7475ebfa999f3cf76005aab2170a64cb616ae4e6e36a82b1265cb0167454e0211c8724e02fd3bc23721b",
+    "dependencies": []
+  }
+]

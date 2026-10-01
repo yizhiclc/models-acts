@@ -1,0 +1,281 @@
+{
+  "testedAt": "2026-09-29T13:55:57.240Z",
+  "browser": "153.0.8010.12",
+  "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Ti SUPER (0x00002705) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "viewport": [
+    1600,
+    1000
+  ],
+  "singleFileOffline": true,
+  "checks": [
+    {
+      "name": "offline file renders without negative first-frame time",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "flight and daylight pause independently",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "daylight continues while flight is paused",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "24-hour wrap and manual time preserve flight position",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "sun, moon and daylight track clock",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "weather transitions smoothly in both directions",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "continuous following across three full route laps",
+      "result": "pass",
+      "data": {
+        "samples": 108,
+        "maxScreenX": 0.14759954285211058,
+        "maxScreenY": 0.13890062569078543
+      }
+    },
+    {
+      "name": "fixed sea camera permits fly-by and returns to follow",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "drag orbit and wheel zoom",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "restart clears elapsed flight and returns to designed view",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "playback multiplier follows simulated movement",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "extended route exceeds 25 km and speed control spans 80–360 m/s",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "actual airspeed accelerates smoothly to the new 360 m/s maximum",
+      "result": "pass",
+      "data": {
+        "actual": 359.9998486353742
+      }
+    },
+    {
+      "name": "360 m/s following stays stable over two full extended-route laps",
+      "result": "pass",
+      "data": {
+        "samples": 72,
+        "maxScreenX": 0.028427029602739958,
+        "maxScreenY": 0.10118241358474674
+      }
+    },
+    {
+      "name": "actual airspeed decelerates smoothly to the new 80 m/s minimum",
+      "result": "pass",
+      "data": {
+        "actual": 80.00073539478502
+      }
+    },
+    {
+      "name": "engine shutdown fades thrust and jet, coasts and cools; pause freezes cooling",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "engine restart restores thrust, heat and requested speed",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "keyboard pause and resume",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "sound reuses one audio context; repeated toggles do not stack graphs",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "director advances shots and yields to pointer input",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "accelerated clock stepping retains bounded GPU resources",
+      "result": "pass",
+      "data": {
+        "simulatedSeconds": 1081.8084000004428,
+        "before": {
+          "calls": 192,
+          "triangles": 294854,
+          "geometries": 115,
+          "textures": 10,
+          "programs": 22,
+          "pixelRatio": 0.7,
+          "fps": 19.73240927904511
+        },
+        "after": {
+          "calls": 221,
+          "triangles": 3758228,
+          "geometries": 115,
+          "textures": 10,
+          "programs": 22,
+          "pixelRatio": 0.7,
+          "fps": 35.2025385492586
+        },
+        "wallSeconds": 32.10383229999999
+      }
+    },
+    {
+      "name": "real continuous rendering without resource growth",
+      "result": "pass",
+      "data": {
+        "actualSeconds": 120.015,
+        "timing": {
+          "frames": 21575,
+          "meanFrameMs": 5.563261333086123,
+          "p95FrameMs": 5.699999999982538,
+          "firstQuarterMeanMs": 5.555553495271649,
+          "lastQuarterMeanMs": 5.576117188948637
+        },
+        "before": {
+          "calls": 221,
+          "triangles": 3758228,
+          "geometries": 115,
+          "textures": 10,
+          "programs": 22,
+          "pixelRatio": 0.7,
+          "fps": 35.2025385492586
+        },
+        "after": {
+          "calls": 254,
+          "triangles": 4855406,
+          "geometries": 115,
+          "textures": 10,
+          "programs": 22,
+          "pixelRatio": 0.7,
+          "fps": 170.4999999999998
+        }
+      }
+    },
+    {
+      "name": "narrow-screen layout keeps controls and target within viewport",
+      "result": "pass",
+      "data": true
+    },
+    {
+      "name": "zero JavaScript/GLSL errors and zero online resource requests",
+      "result": "pass",
+      "data": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "finalSnapshot": {
+    "version": "1.2.0",
+    "running": true,
+    "rate": 1.5,
+    "speed": 105.99999999999996,
+    "targetSpeed": 106,
+    "nominalSpeed": 106,
+    "engineOn": true,
+    "thrust": 0.600000000000001,
+    "temperature": 0.7119999999999991,
+    "acceleration": 1.9184653865522713e-14,
+    "time": 2004.4600554077545,
+    "distance": 277127.4597170574,
+    "progress": 0.9746388032731713,
+    "hour": 10.892769999992732,
+    "autoTime": true,
+    "weather": 0.9999999999999987,
+    "weatherTarget": 1,
+    "mode": "follow",
+    "director": false,
+    "position": [
+      -17.483083408321967,
+      17.300632587940385,
+      2140.037036866477
+    ],
+    "forward": [
+      -0.03404561606320551,
+      -0.002680457200181889,
+      -0.9994166854601113
+    ],
+    "quaternion": [
+      -0.004449323556297994,
+      0.016488201534307172,
+      -0.18392142777452872,
+      0.9827925778797042
+    ],
+    "bank": -0.3700491443933447,
+    "clearance": 15.979391447437063,
+    "camera": [
+      -4.433945802501409,
+      20.854899914566694,
+      2157.5605535127233
+    ],
+    "targetNDC": [
+      -0.060773068526713256,
+      -0.12457627086928613,
+      0.9836985404438311
+    ],
+    "sun": [
+      0.18578854478186452,
+      0.9582765161451396,
+      0.21722968312956467
+    ],
+    "moon": [
+      -0.1882048105954942,
+      -0.9707393447263326,
+      -0.149144473142669
+    ],
+    "daylight": 1,
+    "vegetation": {
+      "trees": 15279,
+      "shrubs": 14570,
+      "grassClumps": 30934,
+      "plantTypes": 7,
+      "drawBatches": 143
+    },
+    "render": {
+      "calls": 254,
+      "triangles": 4855406,
+      "geometries": 115,
+      "textures": 10,
+      "programs": 22,
+      "pixelRatio": 0.7,
+      "fps": 170.4999999999998
+    },
+    "audio": {
+      "contexts": 1,
+      "sound": false,
+      "state": "running"
+    },
+    "routeLength": 25251.624648859015
+  },
+  "limits": [
+    "Audio graph behavior was checked, not subjective sound quality.",
+    "No multi-hour endurance test.",
+    "Only installed Chromium and the local GPU were exercised; mobile was viewport emulation."
+  ]
+}

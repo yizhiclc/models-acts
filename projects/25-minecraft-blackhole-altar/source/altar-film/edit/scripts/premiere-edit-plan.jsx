@@ -1,0 +1,143 @@
+var ALTAR_EDIT_PLAN = {
+  "status": "baseline_prepared",
+  "sequenceName": "BlackHole Altar - Construction Baseline - 1080p60",
+  "source": "C:\\Users\\Administrator\\Documents\\Codex\\2026-09-11\\html-blackhole-1-three-js-2\\outputs\\altar-film\\recording\\2026-09-12 10-42-01.mp4",
+  "sourceDurationSeconds": 623.55,
+  "sourceInSeconds": 29.75,
+  "sourceOutSeconds": 537.4,
+  "durationSeconds": 507.65,
+  "frameRate": 60,
+  "width": 1920,
+  "height": 1080,
+  "retimed": false,
+  "syncMethod": "Game stage log minus OBS recording-start timestamp, rounded to the nearest 60 fps frame.",
+  "syncToleranceNote": "Log-aligned, not image-content frame-perfect. Verify locally before final overlays.",
+  "stages": [
+    {
+      "index": 1,
+      "title": "\u573a\u5730\u8f74\u7ebf\u4e0e\u5165\u53e3\u8fb9\u754c",
+      "english": "Site axis and entrance",
+      "sourceInFrame": 1785,
+      "sourceOutFrame": 2688,
+      "startFrame": 0,
+      "endFrame": 903,
+      "startSeconds": 0.0,
+      "endSeconds": 15.05,
+      "speed": 1.0
+    },
+    {
+      "index": 2,
+      "title": "\u5e7f\u573a\u4e0e\u57fa\u7840\u627f\u91cd",
+      "english": "Plaza and structural footing",
+      "sourceInFrame": 2688,
+      "sourceOutFrame": 7341,
+      "startFrame": 903,
+      "endFrame": 5556,
+      "startSeconds": 15.05,
+      "endSeconds": 92.6,
+      "speed": 1.0
+    },
+    {
+      "index": 3,
+      "title": "\u4e0b\u5c42\u53f0\u5730",
+      "english": "Lower monumental terraces",
+      "sourceInFrame": 7341,
+      "sourceOutFrame": 11841,
+      "startFrame": 5556,
+      "endFrame": 10056,
+      "startSeconds": 92.6,
+      "endSeconds": 167.6,
+      "speed": 1.0
+    },
+    {
+      "index": 4,
+      "title": "\u4e0a\u5c42\u5e73\u53f0\u4e0e\u5723\u575b\u53f0\u9762",
+      "english": "Upper terraces and sanctuary deck",
+      "sourceInFrame": 11841,
+      "sourceOutFrame": 15444,
+      "startFrame": 10056,
+      "endFrame": 13659,
+      "startSeconds": 167.6,
+      "endSeconds": 227.65,
+      "speed": 1.0
+    },
+    {
+      "index": 5,
+      "title": "\u56db\u5411\u697c\u68af\u4e0e\u680f\u6746",
+      "english": "Stairways and balustrades",
+      "sourceInFrame": 15444,
+      "sourceOutFrame": 18144,
+      "startFrame": 13659,
+      "endFrame": 16359,
+      "startSeconds": 227.65,
+      "endSeconds": 272.65,
+      "speed": 1.0
+    },
+    {
+      "index": 6,
+      "title": "\u65b9\u5c16\u5854\u4e0e\u51a0\u73af\u627f\u91cd",
+      "english": "Obelisks and crown foundations",
+      "sourceInFrame": 18144,
+      "sourceOutFrame": 22344,
+      "startFrame": 16359,
+      "endFrame": 20559,
+      "startSeconds": 272.65,
+      "endSeconds": 342.65,
+      "speed": 1.0
+    },
+    {
+      "index": 7,
+      "title": "\u51a0\u73af\u62f1\u9876\u4e0e\u9876\u90e8\u6954\u77f3",
+      "english": "Crown arch and keystone",
+      "sourceInFrame": 22344,
+      "sourceOutFrame": 26244,
+      "startFrame": 20559,
+      "endFrame": 24459,
+      "startSeconds": 342.65,
+      "endSeconds": 407.65,
+      "speed": 1.0
+    },
+    {
+      "index": 8,
+      "title": "\u91d1\u8272\u7eb9\u6837\u4e0e\u7167\u660e",
+      "english": "Gilded relief and ceremonial lights",
+      "sourceInFrame": 26244,
+      "sourceOutFrame": 28944,
+      "startFrame": 24459,
+      "endFrame": 27159,
+      "startSeconds": 407.65,
+      "endSeconds": 452.65,
+      "speed": 1.0
+    },
+    {
+      "index": 9,
+      "title": "\u4e2d\u592e\u796d\u575b\u4e0e\u6838\u5fc3",
+      "english": "Central altar and ceremonial core",
+      "sourceInFrame": 28944,
+      "sourceOutFrame": 30744,
+      "startFrame": 27159,
+      "endFrame": 28959,
+      "startSeconds": 452.65,
+      "endSeconds": 482.65,
+      "speed": 1.0
+    },
+    {
+      "index": 10,
+      "title": "\u9ed1\u6d1e\u4e0e\u5438\u79ef\u76d8\u63ed\u793a",
+      "english": "Black hole and accretion disk reveal",
+      "sourceInFrame": 30744,
+      "sourceOutFrame": 32244,
+      "startFrame": 28959,
+      "endFrame": 30459,
+      "startSeconds": 482.65,
+      "endSeconds": 507.65,
+      "speed": 1.0
+    }
+  ],
+  "pending": [
+    "Chinese component overlays",
+    "Progress bar",
+    "Music",
+    "Final export"
+  ]
+};

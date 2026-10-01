@@ -1,0 +1,1363 @@
+{
+  "raw": true,
+  "edited": false,
+  "world": "AltarFilm-V2-Take02-20260925",
+  "outputPath": "C:/Users/Administrator/Documents/Codex/2026-09-11/html-blackhole-1-three-js-2/outputs/altar-film-v2/recording/2026-09-25 11-15-02.mp4",
+  "timelineSeconds": 440,
+  "actualRecordSeconds": 445.666,
+  "resolution": "1920x1080",
+  "fps": 60,
+  "blocks": 227817,
+  "approvedBlueprintMatch": true,
+  "completeGeometryMismatches": 0,
+  "started": "2026-09-25T03:15:02.831Z",
+  "completed": "2026-09-25T03:22:28.851Z",
+  "initialStats": {
+    "activeFps": 60.0000024000001,
+    "availableDiskSpace": 124352.76171875,
+    "averageFrameRenderTime": 0.232816,
+    "cpuUsage": 0.492327879217212,
+    "memoryUsage": 163.65234375,
+    "outputSkippedFrames": 0,
+    "outputTotalFrames": 238,
+    "renderSkippedFrames": 11,
+    "renderTotalFrames": 89417,
+    "webSocketSessionIncomingMessages": 4,
+    "webSocketSessionOutgoingMessages": 4
+  },
+  "finalStats": {
+    "activeFps": 60.0000024000001,
+    "availableDiskSpace": 120152.87890625,
+    "averageFrameRenderTime": 0.327672,
+    "cpuUsage": 1.0562258117072452,
+    "memoryUsage": 388.8046875,
+    "outputSkippedFrames": 0,
+    "outputTotalFrames": 26755,
+    "renderSkippedFrames": 11,
+    "renderTotalFrames": 116178,
+    "webSocketSessionIncomingMessages": 232,
+    "webSocketSessionOutgoingMessages": 232
+  },
+  "samples": [
+    {
+      "wallSeconds": 4.535,
+      "playhead": 0.9988247000000001,
+      "placed": 1515,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 6.547,
+      "playhead": 2.9998182999999994,
+      "placed": 4963,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 8.559,
+      "playhead": 4.9995358,
+      "placed": 8409,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 10.567,
+      "playhead": 6.999989900000002,
+      "placed": 11857,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 12.581,
+      "playhead": 8.9999764,
+      "placed": 15304,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 14.594,
+      "playhead": 11.999032399999995,
+      "placed": 20472,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 16.601,
+      "playhead": 14.000080799999992,
+      "placed": 23921,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 18.617,
+      "playhead": 16.00026779999999,
+      "placed": 29779,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 20.623,
+      "playhead": 17.998433499999983,
+      "placed": 39635,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 22.634,
+      "playhead": 19.998572499999977,
+      "placed": 49501,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 24.646,
+      "playhead": 21.998392899999967,
+      "placed": 59365,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 26.658,
+      "playhead": 23.998522399999963,
+      "placed": 69231,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 28.666,
+      "playhead": 25.998548899999964,
+      "placed": 79096,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 30.672,
+      "playhead": 27.998737899999973,
+      "placed": 88962,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 32.685,
+      "playhead": 29.998544699999982,
+      "placed": 98826,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 34.689,
+      "playhead": 31.999158199999982,
+      "placed": 108695,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 36.697,
+      "playhead": 33.99837769999997,
+      "placed": 118556,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 38.705,
+      "playhead": 36.00064219999998,
+      "placed": 128432,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 40.714,
+      "playhead": 37.99886449999999,
+      "placed": 138289,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 42.728,
+      "playhead": 39.9984394,
+      "placed": 148152,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 44.737,
+      "playhead": 41.99917039999999,
+      "placed": 153149,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 46.743,
+      "playhead": 43.998924399999986,
+      "placed": 154626,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 48.746,
+      "playhead": 45.99910069999999,
+      "placed": 156103,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 50.75,
+      "playhead": 47.99862259999999,
+      "placed": 157580,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 52.761,
+      "playhead": 49.9983983,
+      "placed": 159056,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 54.775,
+      "playhead": 52.00009159999998,
+      "placed": 160535,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 56.788,
+      "playhead": 53.999913399999976,
+      "placed": 162011,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 58.799,
+      "playhead": 55.99907279999996,
+      "placed": 163488,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 60.807,
+      "playhead": 57.99836209999995,
+      "placed": 164964,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 62.809,
+      "playhead": 59.99835439999996,
+      "placed": 166441,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 64.822,
+      "playhead": 61.99898809999996,
+      "placed": 167918,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 66.83,
+      "playhead": 63.998641499999955,
+      "placed": 169132,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 68.831,
+      "playhead": 65.99834659999998,
+      "placed": 170415,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 70.842,
+      "playhead": 67.99843939999997,
+      "placed": 171697,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 72.855,
+      "playhead": 69.99924849999998,
+      "placed": 172980,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 74.865,
+      "playhead": 71.99847919999996,
+      "placed": 174263,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 76.876,
+      "playhead": 73.99905290000001,
+      "placed": 175545,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 78.877,
+      "playhead": 75.99915270000001,
+      "placed": 176828,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 80.888,
+      "playhead": 77.99838969999995,
+      "placed": 178110,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 82.9,
+      "playhead": 79.9995375,
+      "placed": 179393,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 84.911,
+      "playhead": 81.9983458,
+      "placed": 180406,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 86.916,
+      "playhead": 83.99895609999994,
+      "placed": 181425,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 88.928,
+      "playhead": 85.99883169999997,
+      "placed": 182445,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 90.939,
+      "playhead": 87.99908379999997,
+      "placed": 183464,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 92.953,
+      "playhead": 89.99889809999998,
+      "placed": 184483,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 94.962,
+      "playhead": 91.99845559999996,
+      "placed": 185502,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 96.963,
+      "playhead": 93.99894639999991,
+      "placed": 186522,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 98.969,
+      "playhead": 95.99913309999991,
+      "placed": 187292,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 100.977,
+      "playhead": 97.9987825999999,
+      "placed": 188021,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 102.99,
+      "playhead": 99.99909399999989,
+      "placed": 188751,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 105.001,
+      "playhead": 101.99934219999987,
+      "placed": 189480,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 107.016,
+      "playhead": 103.99880829999984,
+      "placed": 190210,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 109.026,
+      "playhead": 105.99858619999985,
+      "placed": 190663,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 111.037,
+      "playhead": 108.0000446999999,
+      "placed": 190962,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 113.048,
+      "playhead": 109.9984264999999,
+      "placed": 191261,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 115.057,
+      "playhead": 111.9999715999999,
+      "placed": 191561,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 117.066,
+      "playhead": 113.99840699999992,
+      "placed": 191860,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 119.078,
+      "playhead": 116.00009049999991,
+      "placed": 192160,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 121.089,
+      "playhead": 117.99825339999992,
+      "placed": 192459,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 123.105,
+      "playhead": 119.99917739999994,
+      "placed": 192759,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 125.112,
+      "playhead": 121.99918739999993,
+      "placed": 193058,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 127.122,
+      "playhead": 123.99839489999995,
+      "placed": 193358,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 129.129,
+      "playhead": 125.99825789999993,
+      "placed": 193657,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 131.142,
+      "playhead": 127.99961009999994,
+      "placed": 193939,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 133.158,
+      "playhead": 129.9993803,
+      "placed": 194248,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 135.167,
+      "playhead": 131.99855120000007,
+      "placed": 194577,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 137.174,
+      "playhead": 133.99967350000017,
+      "placed": 194906,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 139.182,
+      "playhead": 135.99847340000008,
+      "placed": 195234,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 141.188,
+      "playhead": 137.99874040000014,
+      "placed": 195477,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 143.204,
+      "playhead": 139.9985113000002,
+      "placed": 195700,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 145.219,
+      "playhead": 141.99866240000014,
+      "placed": 195923,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 147.227,
+      "playhead": 143.9983636000001,
+      "placed": 196145,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 149.232,
+      "playhead": 145.9988949000001,
+      "placed": 196368,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 151.247,
+      "playhead": 147.99911200000005,
+      "placed": 196591,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 153.253,
+      "playhead": 149.99872340000007,
+      "placed": 196814,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 155.258,
+      "playhead": 151.99885000000003,
+      "placed": 197037,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 157.263,
+      "playhead": 153.99996150000013,
+      "placed": 197260,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 159.266,
+      "playhead": 156.0001105000001,
+      "placed": 197482,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 161.268,
+      "playhead": 158.00010960000012,
+      "placed": 197705,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 163.274,
+      "playhead": 160.00001860000012,
+      "placed": 197928,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 165.283,
+      "playhead": 161.9982836000002,
+      "placed": 198151,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 167.288,
+      "playhead": 163.99823100000032,
+      "placed": 198373,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 169.295,
+      "playhead": 165.9991942000002,
+      "placed": 198596,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 171.301,
+      "playhead": 168.0001429000002,
+      "placed": 198819,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 173.311,
+      "playhead": 169.9989415000003,
+      "placed": 199042,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 175.32,
+      "playhead": 171.9996556000002,
+      "placed": 199265,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 177.335,
+      "playhead": 173.99965350000022,
+      "placed": 199624,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 179.338,
+      "playhead": 175.99893510000015,
+      "placed": 200218,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 181.342,
+      "playhead": 177.9994488000001,
+      "placed": 200812,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 183.349,
+      "playhead": 179.99868930000008,
+      "placed": 201406,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 185.357,
+      "playhead": 181.99962100000013,
+      "placed": 202000,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 187.366,
+      "playhead": 183.9999770000001,
+      "placed": 202594,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 189.376,
+      "playhead": 185.9987199000001,
+      "placed": 203188,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 191.386,
+      "playhead": 187.99853940000008,
+      "placed": 203782,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 193.4,
+      "playhead": 189.99857230000003,
+      "placed": 204376,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 195.412,
+      "playhead": 191.99992759999992,
+      "placed": 204970,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 197.42,
+      "playhead": 194.00005589999984,
+      "placed": 205565,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 199.435,
+      "playhead": 195.99923899999982,
+      "placed": 206158,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 201.44,
+      "playhead": 197.99906959999979,
+      "placed": 206752,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 203.443,
+      "playhead": 199.99843449999977,
+      "placed": 207346,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 205.456,
+      "playhead": 201.99892869999977,
+      "placed": 207940,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 207.459,
+      "playhead": 203.9997659999998,
+      "placed": 208535,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 209.471,
+      "playhead": 206.00003239999978,
+      "placed": 209129,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 211.477,
+      "playhead": 207.99896289999978,
+      "placed": 209687,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 213.492,
+      "playhead": 209.9985503999997,
+      "placed": 209983,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 215.498,
+      "playhead": 211.99914669999967,
+      "placed": 210298,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 217.507,
+      "playhead": 213.99914149999972,
+      "placed": 210614,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 219.512,
+      "playhead": 215.99838769999965,
+      "placed": 210929,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 221.524,
+      "playhead": 217.99843009999972,
+      "placed": 211244,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 223.532,
+      "playhead": 219.99848799999972,
+      "placed": 211515,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 225.538,
+      "playhead": 221.99852639999972,
+      "placed": 211817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 227.54,
+      "playhead": 223.9983347999997,
+      "placed": 212118,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 229.549,
+      "playhead": 225.99904549999968,
+      "placed": 212420,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 231.554,
+      "playhead": 227.99922419999967,
+      "placed": 212703,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 233.558,
+      "playhead": 229.99846049999968,
+      "placed": 212948,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 235.562,
+      "playhead": 231.99854209999953,
+      "placed": 213208,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 237.573,
+      "playhead": 233.99869359999948,
+      "placed": 213468,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 239.579,
+      "playhead": 235.99839699999944,
+      "placed": 213650,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 241.587,
+      "playhead": 237.99935459999944,
+      "placed": 213803,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 243.599,
+      "playhead": 240.99865249999942,
+      "placed": 214023,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 245.606,
+      "playhead": 242.99862259999938,
+      "placed": 214126,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 247.614,
+      "playhead": 244.97413899999933,
+      "placed": 214234,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 249.623,
+      "playhead": 246.97385009999928,
+      "placed": 214343,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 251.625,
+      "playhead": 248.97422999999924,
+      "placed": 214447,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 253.629,
+      "playhead": 250.97412289999923,
+      "placed": 214656,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 255.63,
+      "playhead": 252.97334709999924,
+      "placed": 214882,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 257.64,
+      "playhead": 254.97383279999926,
+      "placed": 215108,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 259.655,
+      "playhead": 256.9735717999993,
+      "placed": 215334,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 261.662,
+      "playhead": 258.9733455999994,
+      "placed": 215560,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 263.668,
+      "playhead": 260.9736205999993,
+      "placed": 215786,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 265.677,
+      "playhead": 262.97377189999935,
+      "placed": 216012,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 267.68,
+      "playhead": 264.9734608999994,
+      "placed": 216238,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 269.689,
+      "playhead": 266.97342189999944,
+      "placed": 216463,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 271.692,
+      "playhead": 268.9733868999993,
+      "placed": 216689,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 273.702,
+      "playhead": 270.97378529999935,
+      "placed": 216915,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 275.711,
+      "playhead": 272.9733356999995,
+      "placed": 217141,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 277.715,
+      "playhead": 274.97354179999934,
+      "placed": 217367,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 279.726,
+      "playhead": 276.9734779999996,
+      "placed": 217593,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 281.731,
+      "playhead": 278.97419179999974,
+      "placed": 217819,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 283.738,
+      "playhead": 280.9736056999996,
+      "placed": 218045,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 285.742,
+      "playhead": 282.97384109999956,
+      "placed": 218271,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 287.758,
+      "playhead": 284.97384659999966,
+      "placed": 218497,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 289.767,
+      "playhead": 286.97341559999967,
+      "placed": 218722,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 291.774,
+      "playhead": 288.9737787999998,
+      "placed": 218948,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 293.783,
+      "playhead": 290.9738452999998,
+      "placed": 219174,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 295.79,
+      "playhead": 292.9738292,
+      "placed": 219400,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 297.798,
+      "playhead": 294.97369140000006,
+      "placed": 219626,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 299.806,
+      "playhead": 296.97369690000016,
+      "placed": 219852,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 301.817,
+      "playhead": 298.97368960000017,
+      "placed": 220078,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 303.823,
+      "playhead": 300.9738811000001,
+      "placed": 220304,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 305.827,
+      "playhead": 302.9742082,
+      "placed": 220530,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 307.843,
+      "playhead": 304.9757806999999,
+      "placed": 220756,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 309.85,
+      "playhead": 306.9738919999999,
+      "placed": 220981,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 311.853,
+      "playhead": 308.97451679999995,
+      "placed": 221207,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 313.863,
+      "playhead": 310.9743430999999,
+      "placed": 221433,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 315.876,
+      "playhead": 312.97436219999975,
+      "placed": 221659,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 317.889,
+      "playhead": 314.9736500999999,
+      "placed": 221885,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 319.899,
+      "playhead": 316.9735168,
+      "placed": 222111,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 321.912,
+      "playhead": 318.97457870000005,
+      "placed": 222337,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 323.927,
+      "playhead": 320.97437670000005,
+      "placed": 222563,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 325.927,
+      "playhead": 322.97461430000016,
+      "placed": 222789,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 327.939,
+      "playhead": 324.97347730000007,
+      "placed": 223014,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 329.949,
+      "playhead": 326.97448009999994,
+      "placed": 223240,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 331.965,
+      "playhead": 328.97347179999997,
+      "placed": 223466,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 333.981,
+      "playhead": 330.9735035000001,
+      "placed": 223692,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 335.99,
+      "playhead": 332.9746489,
+      "placed": 223918,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 338.002,
+      "playhead": 334.9735101,
+      "placed": 224144,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 340.01,
+      "playhead": 336.97451940000025,
+      "placed": 224370,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 342.013,
+      "playhead": 338.9735162000003,
+      "placed": 224585,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 344.023,
+      "playhead": 340.9735532000003,
+      "placed": 224671,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 346.027,
+      "playhead": 342.97552890000037,
+      "placed": 224764,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 348.032,
+      "playhead": 344.97366370000043,
+      "placed": 224857,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 350.039,
+      "playhead": 346.9750114000005,
+      "placed": 224946,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 352.044,
+      "playhead": 348.97361500000045,
+      "placed": 225246,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 354.06,
+      "playhead": 350.97389290000064,
+      "placed": 225569,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 356.069,
+      "playhead": 352.9740761000007,
+      "placed": 225892,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 358.075,
+      "playhead": 354.9748409000007,
+      "placed": 226216,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 360.082,
+      "playhead": 356.97345750000073,
+      "placed": 226539,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 362.09,
+      "playhead": 358.97416670000064,
+      "placed": 226862,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 364.099,
+      "playhead": 360.9733403000005,
+      "placed": 227185,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 366.111,
+      "playhead": 362.97349170000047,
+      "placed": 227509,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 368.12,
+      "playhead": 364.97438760000045,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 370.135,
+      "playhead": 366.9752433000004,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 372.144,
+      "playhead": 368.97341900000015,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 374.157,
+      "playhead": 370.9739859000001,
+      "placed": 227817,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 376.171,
+      "playhead": 372.9736281000002,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 378.185,
+      "playhead": 374.97465720000025,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 380.19,
+      "playhead": 376.9757170000002,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 382.197,
+      "playhead": 378.9755213000002,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 384.203,
+      "playhead": 380.97555610000006,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 386.216,
+      "playhead": 382.9746696,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 388.221,
+      "playhead": 384.9735955,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 390.236,
+      "playhead": 386.9739126,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 392.25,
+      "playhead": 388.97398279999993,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 394.263,
+      "playhead": 390.97494609999984,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 396.274,
+      "playhead": 392.9750326999999,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 398.286,
+      "playhead": 394.9746944,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 400.302,
+      "playhead": 396.9736001,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 402.31,
+      "playhead": 398.97496840000014,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 404.316,
+      "playhead": 400.9751574000001,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 406.326,
+      "playhead": 402.97394720000017,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 408.33,
+      "playhead": 404.97395210000013,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 410.34,
+      "playhead": 406.9738962000001,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 412.343,
+      "playhead": 408.97336010000004,
+      "placed": 227817,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 414.359,
+      "playhead": 410.97512950000004,
+      "placed": 227817,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 416.362,
+      "playhead": 412.97335650000014,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 418.366,
+      "playhead": 414.97428260000027,
+      "placed": 227817,
+      "fps": 90
+    },
+    {
+      "wallSeconds": 420.375,
+      "playhead": 416.97397800000005,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 422.387,
+      "playhead": 418.9738179,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 424.4,
+      "playhead": 420.9747721999998,
+      "placed": 227817,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 426.408,
+      "playhead": 422.9737673999997,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 428.412,
+      "playhead": 424.9749439999999,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 430.422,
+      "playhead": 426.97403279999986,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 432.431,
+      "playhead": 428.9740156,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 434.442,
+      "playhead": 430.9738133999999,
+      "placed": 227817,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 436.455,
+      "playhead": 432.9739261,
+      "placed": 227817,
+      "fps": 88
+    },
+    {
+      "wallSeconds": 438.469,
+      "playhead": 434.97398679999986,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 440.48,
+      "playhead": 436.9751374999999,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 442.49,
+      "playhead": 438.97520219999996,
+      "placed": 227817,
+      "fps": 89
+    },
+    {
+      "wallSeconds": 444.504,
+      "playhead": 440,
+      "placed": 227817,
+      "fps": 86
+    }
+  ]
+}

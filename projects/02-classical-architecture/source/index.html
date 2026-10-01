@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#dbe6df">
+    <title>清和苑 | 体素山水</title>
+  </head>
+  <body>
+    <main id="app">
+      <div id="viewport" aria-label="可旋转观看的清和苑三维体素建筑群"></div>
+      <header class="masthead">
+        <div class="brand-mark">清</div>
+        <div><p class="eyebrow">山水之间 · 方寸成境</p><h1>清和苑</h1><p class="subtitle">QINGHE GARDEN</p></div>
+      </header>
+      <section class="light-control" aria-label="光照时段">
+        <button class="light-button active" data-light="day" aria-label="日间" aria-pressed="true" title="日间"><i data-lucide="sun"></i></button>
+        <button class="light-button" data-light="sunset" aria-label="日暮" aria-pressed="false" title="日暮"><i data-lucide="sunset"></i></button>
+        <button class="light-button" data-light="night" aria-label="月夜" aria-pressed="false" title="月夜"><i data-lucide="moon"></i></button>
+      </section>
+      <aside class="scene-caption">
+        <span class="caption-rule"></span>
+        <p id="view-caption">一庭山水，六座殿宇</p>
+        <div class="scene-meta"><span>中轴对称</span><span class="dot"></span><span id="voxel-count">构筑中</span></div>
+      </aside>
+      <nav class="view-control" aria-label="场景视角">
+        <button data-view="overview" class="active" aria-pressed="true">全景</button>
+        <button data-view="axis" aria-pressed="false">中轴</button>
+        <button data-view="hall" aria-pressed="false">主殿</button>
+        <button data-view="top" aria-pressed="false">俯瞰</button>
+      </nav>
+      <div class="tools" aria-label="场景工具">
+        <button id="rotate" aria-label="自动环游" aria-pressed="false" title="自动环游"><i data-lucide="rotate-cw"></i></button>
+        <button id="reset" aria-label="恢复全景" title="恢复全景"><i data-lucide="house"></i></button>
+        <button id="capture" aria-label="保存画面" title="保存画面"><i data-lucide="camera"></i></button>
+        <button id="fullscreen" aria-label="全屏" title="全屏"><i data-lucide="maximize"></i></button>
+      </div>
+      <div id="loading" role="status"><span class="loading-block"></span><p>正在构筑清和苑</p></div>
+      <div id="notice" role="status" hidden></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+{
+  "status": "exported_and_sample_checked",
+  "sequenceName": "BlackHole Altar - Construction Baseline - 1080p60",
+  "source": "C:\\Users\\Administrator\\Documents\\Codex\\2026-09-11\\html-blackhole-1-three-js-2\\outputs\\altar-film\\recording\\2026-09-12 10-42-01.mp4",
+  "sourceDurationSeconds": 623.55,
+  "sourceInSeconds": 29.75,
+  "sourceOutSeconds": 537.4,
+  "durationSeconds": 507.65,
+  "frameRate": 60,
+  "width": 1920,
+  "height": 1080,
+  "retimed": false,
+  "syncMethod": "Game stage log minus OBS recording-start timestamp, rounded to the nearest 60 fps frame.",
+  "syncToleranceNote": "Log-aligned, not image-content frame-perfect. Verify locally before final overlays.",
+  "stages": [
+    {
+      "index": 1,
+      "title": "场地轴线与入口边界",
+      "english": "Site axis and entrance",
+      "sourceInFrame": 1785,
+      "sourceOutFrame": 2688,
+      "startFrame": 0,
+      "endFrame": 903,
+      "startSeconds": 0.0,
+      "endSeconds": 15.05,
+      "speed": 1.0
+    },
+    {
+      "index": 2,
+      "title": "广场与基础承重",
+      "english": "Plaza and structural footing",
+      "sourceInFrame": 2688,
+      "sourceOutFrame": 7341,
+      "startFrame": 903,
+      "endFrame": 5556,
+      "startSeconds": 15.05,
+      "endSeconds": 92.6,
+      "speed": 1.0
+    },
+    {
+      "index": 3,
+      "title": "下层台地",
+      "english": "Lower monumental terraces",
+      "sourceInFrame": 7341,
+      "sourceOutFrame": 11841,
+      "startFrame": 5556,
+      "endFrame": 10056,
+      "startSeconds": 92.6,
+      "endSeconds": 167.6,
+      "speed": 1.0
+    },
+    {
+      "index": 4,
+      "title": "上层平台与圣坛台面",
+      "english": "Upper terraces and sanctuary deck",
+      "sourceInFrame": 11841,
+      "sourceOutFrame": 15444,
+      "startFrame": 10056,
+      "endFrame": 13659,
+      "startSeconds": 167.6,
+      "endSeconds": 227.65,
+      "speed": 1.0
+    },
+    {
+      "index": 5,
+      "title": "四向楼梯与栏杆",
+      "english": "Stairways and balustrades",
+      "sourceInFrame": 15444,
+      "sourceOutFrame": 18144,
+      "startFrame": 13659,
+      "endFrame": 16359,
+      "startSeconds": 227.65,
+      "endSeconds": 272.65,
+      "speed": 1.0
+    },
+    {
+      "index": 6,
+      "title": "方尖塔与冠环承重",
+      "english": "Obelisks and crown foundations",
+      "sourceInFrame": 18144,
+      "sourceOutFrame": 22344,
+      "startFrame": 16359,
+      "endFrame": 20559,
+      "startSeconds": 272.65,
+      "endSeconds": 342.65,
+      "speed": 1.0
+    },
+    {
+      "index": 7,
+      "title": "冠环拱顶与顶部楔石",
+      "english": "Crown arch and keystone",
+      "sourceInFrame": 22344,
+      "sourceOutFrame": 26244,
+      "startFrame": 20559,
+      "endFrame": 24459,
+      "startSeconds": 342.65,
+      "endSeconds": 407.65,
+      "speed": 1.0
+    },
+    {
+      "index": 8,
+      "title": "金色纹样与照明",
+      "english": "Gilded relief and ceremonial lights",
+      "sourceInFrame": 26244,
+      "sourceOutFrame": 28944,
+      "startFrame": 24459,
+      "endFrame": 27159,
+      "startSeconds": 407.65,
+      "endSeconds": 452.65,
+      "speed": 1.0
+    },
+    {
+      "index": 9,
+      "title": "中央祭坛与核心",
+      "english": "Central altar and ceremonial core",
+      "sourceInFrame": 28944,
+      "sourceOutFrame": 30744,
+      "startFrame": 27159,
+      "endFrame": 28959,
+      "startSeconds": 452.65,
+      "endSeconds": 482.65,
+      "speed": 1.0
+    },
+    {
+      "index": 10,
+      "title": "黑洞与吸积盘揭示",
+      "english": "Black hole and accretion disk reveal",
+      "sourceInFrame": 30744,
+      "sourceOutFrame": 32244,
+      "startFrame": 28959,
+      "endFrame": 30459,
+      "startSeconds": 482.65,
+      "endSeconds": 507.65,
+      "speed": 1.0
+    }
+  ],
+  "pending": [
+    "Chinese component overlays",
+    "Progress bar",
+    "Music",
+    "Final export"
+  ]
+}

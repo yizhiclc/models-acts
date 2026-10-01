@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="theme-color" content="#172c2b"><meta name="description" content="云山巨城：一卷可以走入的体素山水。九城跨岭，万家灯火，日月流转。">
+ <title>云山巨城 · 山河可入画</title>
+ <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c3936'/%3E%3Cpath d='M8 46L23 22l12 14 9-20 14 30z' fill='%23c8b581'/%3E%3C/svg%3E">
+ <link rel="stylesheet" href="./styles.css">
+ <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+ <main id="app">
+  <canvas id="scene" aria-label="云山巨城三维互动场景，拖动查看，滚轮缩放" tabindex="0"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div id="loading" role="status"><div class="load-seal">山</div><p class="eyebrow">A WORLD BETWEEN MOUNTAINS</p><h1>云山巨城</h1><p class="load-poem">群山作骨，烟火为城。</p><div class="load-track"><i id="loadBar"></i></div><p id="loadText">展卷入山</p></div>
+  <div id="error" hidden><h2>暂时无法展开这幅山河</h2><p id="errorText"></p><button onclick="location.reload()">重新加载</button></div>
+  <div id="ui" class="ui">
+   <header class="identity"><div class="title-row"><span class="seal">云<br>山</span><div><p class="eyebrow">THE CITY ABOVE THE CLOUDS</p><h1>云山巨城<span>山河可入画</span></h1></div></div><p class="intro">九城跨岭 · 一水连天 · 万家灯火</p></header>
+   <nav class="view-nav" aria-label="观看模式"><button id="homeBtn" class="active" title="返回全景 · 0"><span>◈</span> 览山</button><button id="walkBtn" title="沿石阶游览"><span>⌁</span> 入城</button><button id="flyBtn" title="自由飞行 · WASD / Q E"><span>◇</span> 自由</button></nav>
+   <aside id="journey" class="journey"><div class="panel-heading"><div><p class="eyebrow">A PATH THROUGH THE CITY</p><h2>循山行记</h2></div><button id="collapseRoute" class="icon-btn" title="收起行记" aria-label="收起行记">−</button></div><p class="route-intro">自水埠拾级，至云巅揽月。</p><ol id="stopList"></ol><button id="startBtn" class="primary-btn">循山入城 <span>↗</span></button><p class="route-note">沿路游览 · 随时停驻与环顾</p></aside>
+   <button id="expandRoute" class="floating-chip" hidden>行记 ☷</button>
+   <div id="landmarkLabels" aria-hidden="true"></div>
+   <section class="lower-left"><button id="mapToggle" class="map-title" aria-expanded="true"><span>山河舆图</span><span id="mapArrow">−</span></button><div id="mapWrap"><canvas id="map" width="360" height="300" aria-label="城区、水系及游览路线的俯视地图"></canvas><div class="map-caption"><span><i class="map-dot"></i> 所在</span><span><i class="map-line"></i> 登临之路</span><span>北 ↑</span></div></div><div class="scale-note">0.2 m / voxel <span>·</span> 山水皆可抵达</div></section>
+   <section id="walkPanel" class="walk-panel" hidden><div class="walk-top"><div><span id="stopTag">01 / 漱玉水埠</span><p id="stopPoem">舟楫过水巷，千家入画中。</p></div><div class="walk-actions"><button id="walkPlay" aria-label="暂停行走">Ⅱ</button><button id="resetLook" title="视线归正">◎</button><label class="speed"><select id="walkSpeed" aria-label="行走速度"><option value="1">1× 步行</option><option value="4" selected>4× 游览</option><option value="12">12× 疾行</option></select></label></div></div><input type="range" id="walkProgress" min="0" max="1000" value="0" aria-label="游览路线进度"><div class="walk-caption"><span>水埠</span><span id="walkMeters">0 m / 0 m</span><span>揽月亭</span></div></section>
+   <footer class="bottom-bar"><div class="time-block"><span id="timeIcon" class="time-symbol">☀</span><div><span id="timeText" class="time-number">09:20</span><span id="phaseText" class="phase">晨光</span></div></div><button id="timePlay" class="icon-btn time-play" title="暂停昼夜循环" aria-label="暂停昼夜循环">Ⅱ</button><div class="timeline"><div class="time-ticks"><button data-hour="0">子夜</button><button data-hour="6">日出</button><button data-hour="12">正午</button><button data-hour="18">日落</button><button data-hour="23.99">子夜</button></div><input type="range" id="timeRange" min="0" max="24" step="0.01" value="9.3" aria-label="一天中的任意时刻"><div class="timeline-rule"></div></div><label class="cycle-speed"><select id="cycleSpeed" aria-label="昼夜循环速度"><option value="1200" selected>24时 / 20分</option><option value="300">24时 / 5分</option><option value="3600">24时 / 60分</option></select></label><div class="tools"><button id="cloudBtn" class="icon-btn on" title="切换流云" aria-label="切换流云" aria-pressed="true">☁</button><button id="photoBtn" class="icon-btn" title="保存当前画面" aria-label="保存当前画面">▣</button><button id="fullscreenBtn" class="icon-btn" title="全屏 · F" aria-label="全屏">⛶</button><button id="helpBtn" class="icon-btn" title="操作说明" aria-label="操作说明">?</button></div></footer>
+   <div id="hint" class="hint">拖动环顾 <i>·</i> 滚轮远近 <i>·</i> 右键平移 <span>H 隐藏界面</span></div>
+   <div class="top-status"><span class="live-dot"></span><span id="weatherText">山晴 · 云缓行</span><span class="tiny-divider"></span><span id="altitudeText">海拔 553 m</span></div>
+  </div>
+  <button id="showUI" hidden>显示界面 · H</button>
+  <div id="toast" role="status"></div>
+  <dialog id="helpDialog"><button id="closeHelp" class="close-help" aria-label="关闭说明">×</button><p class="eyebrow">ENTER THE LANDSCAPE</p><h2>山河游览指南</h2><p>一卷可以走入的体素山水。沿路而行，或自由寻访。</p><dl><dt>览山</dt><dd>拖动旋转 · 滚轮缩放 · 右键拖动平移<br>触屏：单指旋转，双指缩放 / 平移</dd><dt>入城</dt><dd>沿真实道路、桥梁和石阶自动游览。拖动环顾，W / S 前后移动，A / D 转头。点击行记可抵达六处驿点。</dd><dt>自由</dt><dd>拖动转向 · W A S D 飞行 · Q / E 升降 · Shift 加速</dd><dt>日月</dt><dd>拖动时间轴可选择任意时刻，Ⅱ 暂停循环。完整一昼夜默认用时 20 分钟。</dd><dt>快捷键</dt><dd>0 返回全景 · 1—6 抵达驿点 · 空格暂停行走或时间<br>H 隐藏界面 · F 全屏 · Esc 返回览山</dd></dl><p class="help-foot">建筑构件以 0.2 m 为基本单位；远山与山体合并为较大体素面。路线提供贴地导览，自由模式不模拟角色碰撞。</p><p id="sceneStats" class="scene-stats"></p></dialog>
+ </main>
+ <script type="module" src="./src/main.js"></script>
+</body>
+</html>

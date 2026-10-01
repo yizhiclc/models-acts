@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#13292e">
+  <meta name="description" content="掠海长航 / Pelagic — 一段可交互的海上飞行研究。全部资源离线内嵌。">
+  <title>掠海长航 · PELAGIC</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <svg class="symbols" aria-hidden="true"><defs>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-11v1"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M6 18h12a4 4 0 0 0 0-8 6 6 0 0 0-11-2 5 5 0 0 0-1 10Z"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4Zm13-1a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4Zm13 0 5 6m0-6-5 6"/></symbol>
+    <symbol id="i-follow" viewBox="0 0 24 24"><path d="m3 17 18-12-6 16-4-7-8 3Zm8-3 10-9"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4M8 12h8m-4-4v8"/></symbol>
+    <symbol id="i-low" viewBox="0 0 24 24"><path d="M3 18c3-4 6 4 9 0s6 4 9 0M5 9l14-3-6 7-3-4-5 0Z"/></symbol>
+    <symbol id="i-high" viewBox="0 0 24 24"><path d="m3 12 9-8 9 8-9 8-9-8Zm3 4-3 3 9 4 9-4-3-3"/></symbol>
+    <symbol id="i-auto" viewBox="0 0 24 24"><path d="m5 4 14 8-14 8Z"/><path d="M21 5v14"/></symbol>
+    <symbol id="i-tune" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-power" viewBox="0 0 24 24"><path d="M12 3v9M7 5a9 9 0 1 0 10 0"/></symbol>
+  </defs></svg>
+  <main id="stage" aria-label="掠海长航三维场景">
+    <canvas id="view" tabindex="0" aria-label="三维海上飞行。拖动旋转，滚轮缩放。空格暂停，数字一至四切换视角。"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <div id="loading"><div class="loading-mark">P<span>—</span></div><p>正在构建海天之间的世界</p><span>PELAGIC / FLIGHT STUDY 07</span></div>
+    <div id="error" role="alert" hidden></div>
+    <div class="hud">
+      <header class="masthead">
+        <div class="identity"><div class="brand-icon" aria-hidden="true"><i></i><i></i><i></i></div><div><p class="eyebrow">PELAGIC <span>/</span> FLIGHT STUDY 07</p><h1>掠海长航</h1><p class="subtitle">海天之间，向前不止。</p></div></div>
+        <div class="top-actions"><span class="live-label"><i></i> 实时三维 <span class="separator">/</span> 离线作品</span><button id="helpButton" class="icon-button" title="操作说明（?）" aria-label="操作说明"><svg><use href="#i-info"/></svg></button><button id="cinemaButton" class="icon-button" title="隐藏界面（H）" aria-label="隐藏界面"><svg><use href="#i-eye"/></svg></button><button id="fullscreenButton" class="icon-button" title="全屏（F）" aria-label="全屏"><svg><use href="#i-expand"/></svg></button></div>
+      </header>
+      <aside class="environment panel" id="environment" aria-label="环境设置">
+        <div class="panel-heading"><span>光与大气</span><span class="micro">ATMOSPHERE</span><button id="environmentClose" aria-label="收起环境设置" class="plain-button"><svg><use href="#i-x"/></svg></button></div>
+        <div class="time-display"><div><span id="phaseLabel">午后</span><strong id="clockLabel">16:35</strong></div><svg class="sun-diagram" viewBox="0 0 96 48" aria-hidden="true"><path d="M8 40a40 40 0 0 1 80 0"/><path d="M3 40h90"/><circle id="sunMarker" cx="73" cy="11" r="4"/></svg></div>
+        <label for="timeOfDay" class="sr-only">时刻，零至二十四小时</label><input id="timeOfDay" type="range" min="0" max="1439" step="1" value="995" aria-valuetext="16:35">
+        <div class="time-ticks" aria-hidden="true"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+        <button class="time-toggle" id="timeAuto" aria-pressed="true"><span><span class="toggle"><i></i></span>昼夜自动推进</span><span class="micro">24 MIN / DAY</span></button>
+        <div class="weather-switch" role="group" aria-label="天气"><button class="active" data-weather="0" aria-pressed="true"><svg><use href="#i-sun"/></svg>晴朗</button><button data-weather="1" aria-pressed="false"><svg><use href="#i-cloud"/></svg>多云</button></div>
+        <div class="environment-footer"><span id="weatherNote">通透天空 · 长浪微风</span><select id="quality" aria-label="画面质量"><option value="auto">自适应画质</option><option value="high">精细画质</option><option value="low">轻量画质</option></select></div>
+        <div class="propulsion"><div class="propulsion-heading"><span>飞行动力</span><button id="engineButton" aria-pressed="true"><i></i><span>发动机 开</span></button></div><div class="speed-heading"><label for="flightSpeed">设定航速</label><span><strong id="targetSpeedLabel">106</strong> m/s</span></div><div class="speed-adjust"><button id="slowerButton" aria-label="降低设定航速">−</button><input id="flightSpeed" type="range" min="80" max="360" step="1" value="106" aria-label="实际飞行目标速度，米每秒"><button id="fasterButton" aria-label="提高设定航速">+</button></div><div class="speed-limits"><span>最低 80 m/s</span><span>最高 360 m/s</span></div><p id="engineNote">推力稳定 · 低空高速巡航</p></div>
+      </aside>
+      <aside class="journey" aria-label="航行状态">
+        <p class="chapter"><span id="chapterNumber">01</span><span class="chapter-line"></span><span id="chapterName">长浪水道</span></p>
+        <h2>无定 <span>M—07</span></h2><p class="airframe-caption">虚构巡航飞行器 <span>·</span> 海上航行研究</p>
+        <div class="telemetry"><div><span>相对海面</span><p><strong id="heightLabel">22.0</strong><small>m</small></p></div><div><span>航行速度</span><p><strong id="speedLabel">84</strong><small>m/s</small></p></div><div><span>本圈航程</span><p><strong id="distanceLabel">0.00</strong><small>km</small></p></div></div>
+        <p class="flight-status"><i id="flightDot"></i><span id="flightStatus">平稳巡航</span><span id="loopLabel">第 01 圈</span></p>
+      </aside>
+      <aside class="route-card" aria-label="实际航线缩略图"><div class="route-top"><span>航线概览</span><span class="micro">N ↑</span></div><canvas id="routeMap" width="440" height="232" aria-label="闭合海上航线及当前位置"></canvas><div class="route-bottom"><span><i></i><span id="viewLabel">侧后方跟随</span></span><span id="headingLabel">000°</span></div></aside>
+      <div id="airframeMarker" hidden aria-hidden="true"><i></i><span>M—07</span></div>
+      <div class="return-wrap"><button id="returnFollow" hidden><svg><use href="#i-follow"/></svg>返回跟随 <kbd>1</kbd></button><p id="fixedNote" hidden>固定海面机位 · 飞行器将自然掠过视野</p></div>
+      <footer class="control-area">
+        <div class="timeline-row"><span id="elapsedLabel">00:00</span><div class="progress-track" role="progressbar" aria-label="本圈航行进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressFill"></div><span class="progress-mark m1"></span><span class="progress-mark m2"></span><span class="progress-mark m3"></span></div><span id="durationLabel">02:30</span><span class="loop-tag">连续环航</span></div>
+        <div class="control-dock">
+          <div class="playback"><button id="playButton" class="primary-button" title="暂停飞行（空格）" aria-label="暂停飞行"><svg><use href="#i-pause"/></svg></button><button id="restartButton" class="icon-button" title="重新开始（R）" aria-label="重新开始"><svg><use href="#i-reset"/></svg></button><button id="engineQuick" class="icon-button active" title="关闭发动机（E）" aria-label="关闭发动机" aria-pressed="true"><svg><use href="#i-power"/></svg></button><button id="speedButton" class="speed-button" title="播放倍速；实际航速在右侧单独调节" aria-label="演示速度一倍">1.0<span>×</span></button></div>
+          <div class="dock-divider"></div>
+          <div class="camera-tabs" role="group" aria-label="观察视角">
+            <button data-camera="follow" class="active" aria-pressed="true" title="侧后方跟随（1）"><svg><use href="#i-follow"/></svg><span>跟随</span><kbd>1</kbd></button>
+            <button data-camera="close" aria-pressed="false" title="近景伴飞（2）"><svg><use href="#i-close"/></svg><span>伴飞</span><kbd>2</kbd></button>
+            <button data-camera="low" aria-pressed="false" title="海面低机位（3）"><svg><use href="#i-low"/></svg><span>掠海</span><kbd>3</kbd></button>
+            <button data-camera="high" aria-pressed="false" title="高处全景（4）"><svg><use href="#i-high"/></svg><span>全景</span><kbd>4</kbd></button>
+          </div>
+          <div class="dock-divider"></div>
+          <div class="extra-controls"><button id="directorButton" class="director-button" aria-pressed="false" title="自动镜头巡演"><svg><use href="#i-auto"/></svg><span>巡演</span></button><button id="environmentButton" class="icon-button active" aria-pressed="true" title="光照、天气与昼夜" aria-label="环境设置"><svg><use href="#i-tune"/></svg></button><div class="audio-control"><button id="audioButton" class="icon-button" title="开启声音（M）" aria-label="开启声音" aria-pressed="false"><svg><use href="#i-mute"/></svg></button><input id="volume" type="range" min="0" max="100" value="35" aria-label="音量"></div></div>
+        </div>
+        <div class="footer-caption"><span>拖动旋转 <b>·</b> 滚轮缩放 <b>·</b> 空格暂停</span><span>一段关于距离、光与海的飞行练习 <i> / </i> PELAGIC © 2026</span></div>
+      </footer>
+    </div>
+    <button id="restoreUI" hidden>显示界面 <kbd>H</kbd></button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="helpDialog"><div class="help-head"><p class="eyebrow">WELCOME ABOARD</p><button id="closeHelp" class="icon-button" aria-label="关闭操作说明"><svg><use href="#i-x"/></svg></button></div><h2>向海天深处。</h2><p>沿一条约 <span id="routeLengthHelp">12</span> 公里的闭合航线，游览岛间水道与开阔外海。这里没有目标或攻击，只有持续向前的飞行。</p><div class="help-grid"><div><kbd>拖动</kbd><span>绕飞行器自由观察</span></div><div><kbd>滚轮 / 双指</kbd><span>拉近、拉远</span></div><div><kbd>Space</kbd><span>暂停 / 继续飞行</span></div><div><kbd>1 — 4</kbd><span>切换四种机位</span></div><div><kbd>R</kbd><span>重新开始航行</span></div><div><kbd>E</kbd><span>开启 / 关闭发动机</span></div><div><kbd>+ / −</kbd><span>提高 / 降低实际航速</span></div><div><kbd>H / F / M</kbd><span>隐藏界面 / 全屏 / 声音</span></div></div><div class="help-note"><strong>航速与播放倍速</strong><p>右侧飞行动力调节实际航速，平滑加减速；底栏 × 按钮只调节演示倍速。关闭发动机后会减速滑行，射流衰减、余热冷却；重新开启后恢复推力。停机演示保持安全航线高度。</p><strong>两套独立的时钟</strong><p>飞行暂停控制航行、海浪与尾迹；右侧昼夜开关只控制太阳和月亮。拖动时刻滑杆会暂停自动昼夜，不改变航行位置。</p><strong>亲自接管镜头</strong><p>拖动、缩放或选择机位会退出自动巡演。海面机位固定在航线前方，允许飞行器离开画面；按 1 随时返回跟随。</p></div><p class="help-bottom">所有模型、云、水面与声音均在本地生成。音频默认关闭。<br>推荐桌面浏览器及支持 WebGL 的显卡；触屏也可旋转和缩放。</p><button id="beginButton" class="begin-button">继续航行 <span>↗</span></button></dialog>
+  </main>
+  <!-- OFFLINE_SCRIPTS_START -->
+  <script src="vendor/three.min.js"></script>
+  <script src="src/world.js"></script>
+  <script src="src/spectrum.js"></script>
+  <script src="src/aircraft.js"></script>
+  <script src="src/vegetation.js"></script>
+  <script src="src/environment.js"></script>
+  <script src="src/optics.js"></script>
+  <script src="src/app.js"></script>
+  <!-- OFFLINE_SCRIPTS_END -->
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "orbitDrag": true,
+  "wheelZoom": true,
+  "planCamera": [
+    -15,
+    305,
+    19.999999999999837
+  ],
+  "fullscreen": true,
+  "touchEmulatedEntry": true,
+  "onScreenFlightMovement": true,
+  "externalRequests": [],
+  "consoleErrors": [],
+  "browser": "153.0.4234.48"
+}

@@ -1,0 +1,132 @@
+{
+  "initial": {
+    "ready": true,
+    "view": 0,
+    "flying": false,
+    "touring": false,
+    "clean": false,
+    "map": false,
+    "time": "day",
+    "quality": 0,
+    "errors": [],
+    "mode": "orbit",
+    "solidRuns": 28695,
+    "voxelSize": 0.2,
+    "fps": 180,
+    "camera": [
+      155,
+      119.99999999999996,
+      170
+    ],
+    "target": [
+      -14.999999999999998,
+      20,
+      -2
+    ],
+    "drawCalls": 234,
+    "triangles": 341092,
+    "renderedFrames": 341,
+    "worldBounds": [
+      -168,
+      -3,
+      -187,
+      175,
+      112.2,
+      85
+    ],
+    "soundOn": false
+  },
+  "views": [
+    {
+      "index": 0,
+      "camera": [
+        155,
+        119.99999999999996,
+        170
+      ]
+    },
+    {
+      "index": 1,
+      "camera": [
+        -22,
+        39,
+        56.00000000000001
+      ]
+    },
+    {
+      "index": 2,
+      "camera": [
+        25.000000000000007,
+        8.399999999999993,
+        6.000000000000001
+      ]
+    },
+    {
+      "index": 3,
+      "camera": [
+        -4.000000000000018,
+        23.999999999999986,
+        62.999999999999986
+      ]
+    },
+    {
+      "index": 4,
+      "camera": [
+        64.90987361852324,
+        19.5317232441384,
+        101.9086390105578
+      ]
+    }
+  ],
+  "flight": {
+    "before": [
+      17,
+      6.2,
+      5
+    ],
+    "after": [
+      11.001462396777743,
+      6.345419093411426,
+      5
+    ]
+  },
+  "final": {
+    "ready": true,
+    "view": 0,
+    "flying": false,
+    "touring": false,
+    "clean": false,
+    "map": false,
+    "time": "day",
+    "quality": 0,
+    "errors": [],
+    "mode": "orbit",
+    "solidRuns": 28695,
+    "voxelSize": 0.2,
+    "fps": 177,
+    "camera": [
+      16.95801116346642,
+      8.375645583317453,
+      4.999999999999999
+    ],
+    "target": [
+      -7.99265704724037,
+      6.805882595084615,
+      4.999999999999992
+    ],
+    "drawCalls": 46,
+    "triangles": 85984,
+    "renderedFrames": 7173,
+    "worldBounds": [
+      -168,
+      -3,
+      -187,
+      175,
+      112.2,
+      85
+    ],
+    "soundOn": false
+  },
+  "errors": [],
+  "failedRequests": []
+}

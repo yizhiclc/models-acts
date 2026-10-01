@@ -1,0 +1,27 @@
+{
+  "profileName": "Altar Film 1080p60",
+  "sceneName": "Altar Film - Minecraft",
+  "inputName": "Minecraft - Altar Film",
+  "windowName": "Altar Film | Minecraft 1.21.11:javaw.exe",
+  "output": "C:\\Users\\Administrator\\Documents\\Codex\\2026-09-11\\html-blackhole-1-three-js-2\\outputs\\altar-film\\recording",
+  "profiles": [
+    "Altar Film 1080p60",
+    "未命名"
+  ],
+  "scene": "Altar Film - Minecraft",
+  "video": {
+    "baseHeight": 1080,
+    "baseWidth": 1920,
+    "fpsDenominator": 1,
+    "fpsNumerator": 60,
+    "outputHeight": 1080,
+    "outputWidth": 1920
+  },
+  "recordStatus": {
+    "outputActive": false,
+    "outputBytes": 0,
+    "outputDuration": 0,
+    "outputPaused": false,
+    "outputTimecode": "00:00:00.000"
+  }
+}

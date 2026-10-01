@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "build": "2026-09-30-starship-flight-control",
+  "browser": "144.0.7559.86",
+  "customBrowserFlags": [],
+  "url": "file:///C:/Users/Administrator/Documents/Codex/2026-09-29/three-js-webgpu-meco-1-2/outputs/GPT6Astra%20max%20%E7%81%AB%E7%AE%AD%E6%A8%A1%E6%8B%9F.html",
+  "checks": [
+    {
+      "name": "Visible first frame, ignition and resize at 2559 x 1232, DPR 1",
+      "passed": true,
+      "health": {
+        "build": "2026-09-30-starship-flight-control",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36 QuarkPC/7.3.5.1009",
+        "localFile": true,
+        "pixelRatio": 1,
+        "webgpu": true,
+        "ready": true,
+        "renderHealth": {
+          "validated": true,
+          "method": "GPU canvas pixel readback",
+          "samples": 48,
+          "width": 1997,
+          "height": 1076,
+          "luminanceRange": 196,
+          "luminanceVariance": 3408.122685185183
+        },
+        "gpuErrors": [],
+        "error": null
+      }
+    },
+    {
+      "name": "Visible first frame, ignition and resize at 1536 x 960, DPR 1.25",
+      "passed": true,
+      "health": {
+        "build": "2026-09-30-starship-flight-control",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36 QuarkPC/7.3.5.1009",
+        "localFile": true,
+        "pixelRatio": 1.25,
+        "webgpu": true,
+        "ready": true,
+        "renderHealth": {
+          "validated": true,
+          "method": "GPU canvas pixel readback",
+          "samples": 48,
+          "width": 1270,
+          "height": 1005,
+          "luminanceRange": 199,
+          "luminanceVariance": 3243.828510802469
+        },
+        "gpuErrors": [],
+        "error": null
+      }
+    },
+    {
+      "name": "Visible first frame, ignition and resize at 1280 x 800, DPR 2",
+      "passed": true,
+      "health": {
+        "build": "2026-09-30-starship-flight-control",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36 QuarkPC/7.3.5.1009",
+        "localFile": true,
+        "pixelRatio": 2,
+        "webgpu": true,
+        "ready": true,
+        "renderHealth": {
+          "validated": true,
+          "method": "GPU canvas pixel readback",
+          "samples": 48,
+          "width": 1520,
+          "height": 1288,
+          "luminanceRange": 195.66666666666669,
+          "luminanceVariance": 3461.5786554783954
+        },
+        "gpuErrors": [],
+        "error": null
+      }
+    },
+    {
+      "name": "A silent blank canvas cannot be advertised as ONLINE; controls are disabled and diagnosis can be downloaded",
+      "passed": true
+    },
+    {
+      "name": "A runtime GPU validation failure freezes the simulation and leaves a persistent visible error",
+      "passed": true
+    }
+  ],
+  "normalRunErrors": [],
+  "faultInjection": "The last two tests intentionally suppress queue submission / create an invalid GPU buffer."
+}

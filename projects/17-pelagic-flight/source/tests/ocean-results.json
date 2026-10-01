@@ -1,0 +1,16 @@
+{
+  "testedAt": "2026-09-29T14:00:47.739Z",
+  "simulationSeconds": 8,
+  "samplingHz": 120,
+  "worldPoints": 24,
+  "highestPathSpeed": 360,
+  "maximumFixedPointHeightStepMeters": 0.02142918351044576,
+  "rmsFixedPointHeightStepMeters": 0.006035027321682912,
+  "maximumFastPathHeightStepMeters": 0.8689898127136502,
+  "fftBoundariesChecked": 120,
+  "maximumHeightJumpAcrossTwoTenthsMicrosecond": 3.6102527171955057e-7,
+  "pauseBuffersUnchanged": true,
+  "skippedFrameMatchesAnalyticPhase": true,
+  "restartReproducesInitialTextures": true,
+  "mipmappedMinification": true
+}

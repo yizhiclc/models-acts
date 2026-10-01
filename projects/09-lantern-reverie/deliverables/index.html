@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090e1b">
+  <meta name="description" content="循着一盏灯，走入辛弃疾笔下的上元夜。可自由漫游的 Three.js 古风街景。">
+  <title>东风夜放花千树 · 上元灯境</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="experience" aria-label="上元灯境，可移动视角的三维元宵夜街景">
+    <div id="scene" role="img" aria-label="古城长街、悬挂花灯、飞檐楼阁与满天烟花。拖动环视，W A S D 移动，Q E 升降。"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="masthead">
+      <a class="brand" href="#" aria-label="上元灯境，返回初始视角" id="brand-home">
+        <span class="seal" aria-hidden="true">上<br>元</span>
+        <span class="brand-name">灯火人间<small>THE LANTERN REVERIE</small></span>
+      </a>
+      <div class="header-right">
+        <span class="festival-date"><i></i> 上元佳节 · 正月十五</span>
+        <span class="header-divider"></span>
+        <button class="icon-button" id="sound" aria-label="开启环境音" aria-pressed="false" title="环境音">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-on" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="sound-off" d="m16 9 6 6m0-6-6 6"/></svg>
+        </button>
+        <button class="icon-button" id="fullscreen" aria-label="全屏赏灯" title="全屏赏灯">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg>
+        </button>
+        <button class="icon-button" id="help-toggle" aria-label="查看操作说明" aria-expanded="false" title="操作说明"><span class="help-mark">?</span></button>
+      </div>
+    </header>
+
+    <div class="poetry" id="poetry">
+      <div class="eyebrow"><span></span> 一夜鱼龙舞 <span class="poem-index">VOL. 001</span></div>
+      <h1>东风夜放<br><span>花千树</span><b class="poem-seal">元夕</b></h1>
+      <p class="poem-line">更吹落、星如雨。</p>
+      <p class="poem-source">辛弃疾 <span>—</span>《青玉案 · 元夕》</p>
+      <div class="poetry-rule"></div>
+      <p class="invitation">循着一盏灯，走进人间好时节。</p>
+    </div>
+
+    <aside class="waypoints" aria-label="选择观景位置">
+      <span class="waypoints-title">寻 光</span>
+      <button class="waypoint active" data-view="street" aria-label="长街灯市" aria-pressed="true"><span class="waypoint-dot"></span><span class="waypoint-label">长街灯市</span><span class="waypoint-number">01</span></button>
+      <span class="waypoint-line" aria-hidden="true"></span>
+      <button class="waypoint" data-view="tree" aria-label="花树流光" aria-pressed="false"><span class="waypoint-dot"></span><span class="waypoint-label">花树流光</span><span class="waypoint-number">02</span></button>
+      <span class="waypoint-line" aria-hidden="true"></span>
+      <button class="waypoint" data-view="sky" aria-label="凌空望月" aria-pressed="false"><span class="waypoint-dot"></span><span class="waypoint-label">凌空望月</span><span class="waypoint-number">03</span></button>
+    </aside>
+
+    <div class="help-panel" id="help-panel" hidden>
+      <div class="help-heading">自在游灯市<button id="help-close" aria-label="关闭操作说明">×</button></div>
+      <p><span>环视</span><span>按住画面拖动</span></p>
+      <p><span>移动</span><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / 方向键</span></p>
+      <p><span>升降 / 加速</span><span><kbd>Q</kbd><kbd>E</kbd> / <kbd>Shift</kbd></span></p>
+      <p><span>远近</span><span>滚动鼠标滚轮</span></p>
+      <p><span>触屏</span><span>拖动环视 · 左下方向键移动</span></p>
+      <p><span>烟花</span><span>双击天空 / <kbd>F</kbd></span></p>
+      <p><span>回到初见</span><span><kbd>R</kbd></span></p>
+      <label class="motion-option"><span>场景动画</span><input type="checkbox" id="motion" checked aria-label="场景动画"></label>
+    </div>
+
+    <footer class="bottom-bar">
+      <div class="scene-caption"><span class="live-dot"></span><span id="scene-caption">长街灯市</span><span class="caption-divider">/</span><span>上元夜游</span></div>
+      <div class="experience-controls" aria-label="漫游控制">
+        <button id="wander" class="mode-button selected" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="m15 9-2 4-4 2 2-4 4-2Z"/></svg><span>自在漫游</span></button>
+        <button id="tour" class="mode-button" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 10 7-10 7V5Z"/></svg><span>循光巡游</span></button>
+        <span class="controls-divider"></span>
+        <button id="firework" class="firework-button"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v5m0 10v5M2 12h5m10 0h5M5 5l3 3m8 8 3 3M5 19l3-3M16 8l3-3"/><circle cx="12" cy="12" r="2"/></svg><span>放一场烟花</span></button>
+      </div>
+      <div class="movement-hint"><span class="key-cluster"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span><span>移动视角<small>拖拽环视 · 滚轮远近</small></span></div>
+    </footer>
+
+    <div class="touch-controls" aria-label="触屏移动控制"><button data-key="KeyW" aria-label="向前移动">↑</button><button data-key="KeyA" aria-label="向左移动">←</button><button data-key="KeyS" aria-label="向后移动">↓</button><button data-key="KeyD" aria-label="向右移动">→</button></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="loading" id="loading"><span class="loading-lantern" aria-hidden="true">灯</span><span id="loading-text">点亮一城灯火</span><span class="loading-sub">请稍候，今夜的故事即将开始</span></div>
+    <noscript>请开启 JavaScript 以进入三维灯境。</noscript>
+  </main>
+  <script src="scene.bundle.js"></script>
+</body>
+</html>

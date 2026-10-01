@@ -1,0 +1,23 @@
+{
+  "name": "astra-reusable-rocket-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/package-html.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "verify": "node --max-old-space-size=8192 scripts/verify-flight.mjs",
+    "verify:browser": "node scripts/verify-starship-browser.cjs",
+    "verify:engines": "node scripts/verify-engines-browser.cjs",
+    "verify:standalone": "node scripts/verify-standalone.cjs",
+    "verify:rendering": "node scripts/verify-rendering.cjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "6.3.6",
+    "vite-plugin-singlefile": "2.3.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-30",
+  "file": "松溪小镇-单文件.html",
+  "offline": true,
+  "openedVia": "file://",
+  "checks": [
+    "Offline file:// opens with full scene and running three-car train",
+    "Pause freezes movement",
+    "Speed slider",
+    "Night lighting and emissive windows",
+    "Zoom and orbit controls",
+    "Deterministic reset",
+    "Station arrival and frozen dwell countdown",
+    "Departure after station stop",
+    "Mobile layout",
+    "No external network requests or JavaScript errors"
+  ],
+  "externalRequests": [],
+  "javascriptErrors": [],
+  "bytes": 605033
+}

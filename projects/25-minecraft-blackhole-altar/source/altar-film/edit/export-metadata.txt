@@ -1,0 +1,43 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\Users\Administrator\Documents\Codex\2026-09-11\html-blackhole-1-three-js-2\outputs\altar-film\edit\BlackHoleAltar_1080p60.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    creation_time   : 2026-09-12T04:06:10.000000Z
+  Duration: 00:08:27.65, start: 0.000000, bitrate: 24316 kb/s
+  Stream #0:0[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 317 kb/s (default)
+      Metadata:
+        creation_time   : 2026-09-12T04:06:11.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x1](eng): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 23992 kb/s, 60 fps, 60 tbr, 60k tbn (default)
+      Metadata:
+        creation_time   : 2026-09-12T04:06:11.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : AVC Coding
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:0 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0(eng): Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 1920x1080, q=2-31, 200 kb/s, 60 fps, 60 tbn (default)
+      Metadata:
+        creation_time   : 2026-09-12T04:06:11.000000Z
+        handler_name    : ?Mainconcept Video Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 wrapped_avframe
+  Stream #0:1(eng): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+      Metadata:
+        creation_time   : 2026-09-12T04:06:11.000000Z
+        handler_name    : #Mainconcept MP4 Sound Media Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/null @ 00000122cc421d40] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+[out#0/null @ 00000122cc421d40] Output file is empty, nothing was encoded(check -ss / -t / -frames parameters if used)
+frame=    0 fps=0.0 q=0.0 Lsize=N/A time=N/A bitrate=N/A speed=N/A    

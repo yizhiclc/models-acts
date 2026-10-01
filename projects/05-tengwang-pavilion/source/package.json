@@ -1,0 +1,22 @@
+{
+  "name": "tengwang-pavilion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "滕王阁 · 一阁一院，临江而立 — An interactive Three.js voxel landscape",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "build:single": "node scripts/build-single.mjs",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

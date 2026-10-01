@@ -1,0 +1,27 @@
+const {short,advanceTo}=require('./browser-flight.cjs');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const fs=require('node:fs'),assert=require('node:assert/strict'),{pathToFileURL}=require('node:url');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..').replaceAll('\\','/')+'/';
+const html=process.env.STANDALONE_HTML || root+'dist/index.html';
+fs.mkdirSync(root+'work/standalone-qa',{recursive:true});
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE || undefined});
+ const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[],warnings=[],external=[];
+ page.on('pageerror',e=>errors.push(e.stack));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());if(m.type()==='warning')warnings.push(m.text());});page.on('request',r=>{if(/^https?:/.test(r.url()))external.push(r.url());});
+ await page.goto(pathToFileURL(html).href);await page.waitForFunction(()=>window.astra?.ready,{},{timeout:30000});
+ assert.equal(await page.evaluate(()=>astra.scene.renderer.backend.isWebGPUBackend),true);console.log('PASS standalone file:// without WebGPU override flags');
+ await page.locator('#preset').selectOption('short');await advanceTo(page,short.touchdown.t+.35);
+ const result=await page.evaluate(()=>({phase:astra.simulation.phase,td:astra.simulation.touchdown}));assert.equal(result.phase,'CRASHED');assert(Math.abs(result.td.vy-short.touchdown.vy)<1e-8);assert(result.td.strokeRequired>.08);console.log('PASS standalone short-stroke crash and identical-speed buffer behavior');
+ const evidence=await page.evaluate(()=>astra.gpuEvidence());assert(evidence.fields.explosion.active>1000);
+ await page.evaluate(()=>{const w=astra.scene,s=astra.simulation;w.autoCamera=false;astra.setCamera('landing');w.camera.position.set(s.x+600,180,s.z+760);w.controls.target.set(s.x,60,s.z);astra.render();});await page.screenshot({path:root+'data/preview-crash.png'});
+ const pending=new Promise((resolve,reject)=>{const files=[],timer=setTimeout(()=>reject(Error('Expected body CSV, engine CSV and metadata JSON')),120000);const collect=d=>{files.push(d);if(files.length===3){clearTimeout(timer);page.off('download',collect);resolve(files);}};page.on('download',collect);});await page.locator('#export-csv').click();const downloads=await pending;assert.equal(downloads.length,3);
+ for(const d of downloads)await d.saveAs(root+'work/standalone-qa/'+d.suggestedFilename());
+ const csv=fs.readFileSync(root+'work/standalone-qa/'+downloads.find(d=>d.suggestedFilename().endsWith('.csv')&&!d.suggestedFilename().endsWith('-engines.csv')).suggestedFilename(),'utf8');
+ const engineCSV=fs.readFileSync(root+'work/standalone-qa/'+downloads.find(d=>d.suggestedFilename().endsWith('-engines.csv')).suggestedFilename(),'utf8');for(const header of ['engine','thrust','valve','gimbalX','gimbalZ','torqueX','fuelUsed'])assert(engineCSV.split('\n')[0].includes(header));
+ for(const header of ['configStroke','impactKineticEnergy','impactRemainingPropellant','blastRadius','fuelExplosion','fuelDispersed'])assert(csv.split('\n')[0].includes(header));
+ const metadata=JSON.parse(fs.readFileSync(root+'work/standalone-qa/'+downloads.find(d=>d.suggestedFilename().endsWith('.json')).suggestedFilename(),'utf8'));assert.equal(metadata.gpuEvidence.backend,'WebGPU');console.log('PASS CSV and metadata exports from standalone file');
+ assert.equal(external.length,0);assert.equal(errors.length,0);assert.equal(warnings.length,0,warnings.join('\n'));console.log('PASS zero external requests and zero script/shader errors or GPU warnings');
+ fs.writeFileSync(root+'data/'+(process.env.BROWSER_TEST_ID?process.env.BROWSER_TEST_ID+'-':'')+'standalone-validation.json',JSON.stringify({status:'PASS',build:await page.evaluate(()=>astra.diagnostics().build),browser:await browser.version(),userAgent:await page.evaluate(()=>navigator.userAgent),origin:'file://',testedFile:path.basename(html),customBrowserFlags:[],externalRequests:external,errors,warnings,checks:['Single-file WebGPU init without override flags','Full short-stroke flight crashes at the same nominal touchdown speed','Explosion field executed on GPU','Body CSV, individual-engine CSV and metadata JSON downloads','All critical impact and configuration columns present','No HTTP or HTTPS requests'],result,evidence},null,2));
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1);});

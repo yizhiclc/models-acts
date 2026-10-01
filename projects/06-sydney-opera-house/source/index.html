@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e7e7df" />
+  <meta name="description" content="在悉尼港，环游一座由球面孕育的建筑。可离线运行的悉尼歌剧院交互三维建筑档案。" />
+  <title>悉尼歌剧院 · BENNELONG / 建筑漫游</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c3437'/%3E%3Cpath d='M9 47Q12 27 26 16L31 47M28 47Q34 15 49 9L53 47' fill='%23ebe7d7'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <main id="experience">
+    <canvas id="scene" aria-label="悉尼歌剧院交互式三维场景；拖动旋转，滚轮缩放，右键拖动平移。使用下方按钮切换观察机位。" tabindex="0"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#" id="brand-home" aria-label="恢复默认视角">
+        <svg viewBox="0 0 40 32" aria-hidden="true"><path d="M2 27Q4 15 14 8L19 27M15 27Q20 8 31 2L36 27M1 30H39"/></svg>
+        <span>BENNELONG<span class="brand-sub">建筑 · 在场</span></span>
+      </a>
+      <span class="archive">THE ARCHITECTURE ATLAS<span>001 / SYDNEY</span></span>
+      <button class="text-button" id="about-open" aria-haspopup="dialog">关于建筑 <span>↗</span></button>
+    </header>
+
+    <section class="intro" aria-label="建筑介绍">
+      <div class="eyebrow"><span class="tiny-line"></span> AUSTRALIA · 1973</div>
+      <h1>Sydney<br><em>Opera House.</em></h1>
+      <p class="chinese-title">悉尼歌剧院</p>
+      <p class="intro-caption">海港之上，凝固的风帆。</p>
+      <div class="architect"><span>建筑师</span> JØRN UTZON</div>
+    </section>
+
+    <div class="location"><span class="location-dot"></span> BENNELONG POINT<br><span class="coordinates">33°51′24.5″ S &nbsp; 151°12′54.3″ E</span></div>
+
+    <aside class="environment" aria-label="场景控制">
+      <div class="panel-heading"><span>光与时间</span><span class="live-dot"></span></div>
+      <div class="light-presets" role="group" aria-label="光照预设">
+        <button data-light="day" title="晴日" aria-pressed="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span>晴日</span></button>
+        <button data-light="golden" class="active" title="金色时刻" aria-pressed="true"><svg viewBox="0 0 24 24"><path d="M3 17h18M5 21h14M7 17a5 5 0 0 1 10 0M12 3v3M3 9l2 2m16-2-2 2"/></svg><span>日暮</span></button>
+        <button data-light="blue" title="蓝调时刻" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M20 15A8 8 0 0 1 9 4a8 8 0 1 0 11 11Z"/><path d="M17 3v4m-2-2h4"/></svg><span>蓝调</span></button>
+      </div>
+      <div class="panel-divider"></div>
+      <button class="toggle-row" id="auto-rotate" aria-pressed="false"><span>环绕漫游</span><span class="switch"><i></i></span></button>
+      <button class="toggle-row" id="labels-toggle" aria-pressed="false"><span>建筑标注</span><span class="switch"><i></i></span></button>
+      <button class="toggle-row" id="motion-toggle" aria-pressed="true"><span>海港动态</span><span class="switch"><i></i></span></button>
+      <div class="panel-divider"></div>
+      <div class="utility-row"><button id="reset" title="恢复默认视角（R）"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></svg>复位</button><button id="capture" title="保存当前画面"><svg viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v13H3Z"/><circle cx="12" cy="13" r="4"/></svg>留影</button></div>
+    </aside>
+
+    <div id="labels" aria-hidden="true"></div>
+
+    <footer class="bottom-bar">
+      <div class="observation"><span class="eyebrow">PERSPECTIVES</span><span id="view-description">从海港，读懂建筑。</span></div>
+      <nav class="views" aria-label="预设观察机位">
+        <button class="active" data-view="harbour" aria-pressed="true"><span>01</span> 海港全景</button>
+        <button data-view="steps" aria-pressed="false"><span>02</span> 前庭台阶</button>
+        <button data-view="water" aria-pressed="false"><span>03</span> 临水侧影</button>
+        <button data-view="aerial" aria-pressed="false"><span>04</span> 鸟瞰壳体</button>
+      </nav>
+      <button id="focus-mode" class="focus-button" aria-pressed="false" title="隐藏界面，专注观察（H）"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg><span>纯净视野</span></button>
+    </footer>
+    <div class="gesture-hint"><span>拖动旋转</span><i>·</i><span>滚轮缩放</span><i>·</i><span>右键平移</span></div>
+    <button id="exit-focus" aria-label="退出纯净视野">返回界面 <span>ESC</span></button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <div id="loader"><svg viewBox="0 0 100 70"><path d="M10 58Q15 30 35 15L47 58M39 58Q54 15 78 5L89 58M8 65H93"/></svg><span>风帆，即将入港</span><small>BUILDING THE HARBOUR</small></div>
+    <div id="error" hidden><h2>暂时无法呈现场景</h2><p id="error-message">浏览器未能启动 WebGL。请启用硬件加速，或尝试使用近期版本的 Chrome / Edge。</p><button id="reload">重新加载</button></div>
+  </main>
+
+  <dialog id="about-dialog">
+    <button id="about-close" aria-label="关闭建筑介绍">×</button>
+    <div class="eyebrow">ARCHITECTURE NOTE / 001</div>
+    <h2>一座建筑，<br><em>一整个海港。</em></h2>
+    <p>坐落于悉尼港贝尼朗角的悉尼歌剧院，由丹麦建筑师约恩·乌松设计，于 1973 年开幕，2007 年列入联合国教科文组织《世界遗产名录》。</p>
+    <p>看似自由的白色屋顶，源自严谨的球面几何。两组尺度不同的壳体覆盖音乐厅与歌剧厅，与低矮的贝尼朗餐厅共同组成海港中熟悉的剪影。</p>
+    <dl><div><dt>设计竞赛获胜</dt><dd>1957</dd></div><div><dt>正式开幕</dt><dd>1973</dd></div><div><dt>世界文化遗产</dt><dd>2007</dd></div></dl>
+    <p class="model-note">本作是以程序化球面壳体构建的建筑形态研究。主体、港湾与材质均由代码生成；局部尺度及远景作了适度艺术化处理，不作为测绘或工程模型。</p>
+    <a class="source-link" href="https://www.sydneyoperahouse.com/our-story" target="_blank" rel="noreferrer">阅读歌剧院的故事 <span>↗</span></a>
+    <div class="keyboard-note">快捷键：R 复位 · H 纯净视野 · 空格 环绕 · 1–4 机位</div>
+  </dialog>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

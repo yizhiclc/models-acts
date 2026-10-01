@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-12",
+  "world": "AltarFilm-Final-20260912",
+  "timelineSeconds": 480,
+  "recordingFile": "recording/2026-09-12 10-42-01.mp4",
+  "recordingDurationApproxSeconds": 567,
+  "resolution": "1920x1080",
+  "fps": 60,
+  "placedBlocks": 54448,
+  "uniqueBlocks": 53564,
+  "blackHoleCommand": "blackhole disk at 0 126 0 1.5 0.94",
+  "rehearsal": "AltarFilm-Rehearsal-20260912",
+  "optimization": ["lithium-neoforge-0.21.4+mc1.21.11.jar", "ferritecore-8.2.0-neoforge.jar"],
+  "sodium": "disabled after first-launch ClassCastException on NeoForge validation textures"
+}

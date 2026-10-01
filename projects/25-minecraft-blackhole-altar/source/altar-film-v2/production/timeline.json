@@ -1,0 +1,167 @@
+{
+  "format": 2,
+  "duration": 440,
+  "revealTime": 375,
+  "seed": 20260925,
+  "groundY": 63,
+  "bounds": [
+    -80,
+    63,
+    -80,
+    80,
+    172,
+    80
+  ],
+  "blackHoleCommand": "blackhole disk at 0 130 0 1.5 0.94",
+  "palette": [
+    "minecraft:polished_blackstone",
+    "minecraft:gold_block",
+    "minecraft:quartz_bricks",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:deepslate_bricks",
+    "minecraft:deepslate_tiles",
+    "minecraft:chiseled_polished_blackstone",
+    "minecraft:polished_blackstone_brick_slab[type=bottom]",
+    "minecraft:chiseled_quartz_block",
+    "minecraft:sea_lantern",
+    "minecraft:polished_blackstone_brick_stairs[facing=south,half=bottom,shape=straight]",
+    "minecraft:polished_blackstone_brick_stairs[facing=east,half=bottom,shape=straight]",
+    "minecraft:polished_blackstone_brick_stairs[facing=west,half=bottom,shape=straight]",
+    "minecraft:polished_blackstone_brick_stairs[facing=north,half=bottom,shape=straight]",
+    "minecraft:obsidian"
+  ],
+  "stages": [
+    {
+      "name": "01 Plaza paving",
+      "start": 0,
+      "end": 15,
+      "count": 25437
+    },
+    {
+      "name": "02 Foundations and continuous supports",
+      "start": 15,
+      "end": 41,
+      "count": 127063
+    },
+    {
+      "name": "03.1 Terrace 1",
+      "start": 41,
+      "end": 63,
+      "count": 16069
+    },
+    {
+      "name": "03.2 Terrace 2",
+      "start": 63,
+      "end": 81,
+      "count": 11389
+    },
+    {
+      "name": "03.3 Terrace 3",
+      "start": 81,
+      "end": 95,
+      "count": 7013
+    },
+    {
+      "name": "03.4 Terrace 4",
+      "start": 95,
+      "end": 105,
+      "count": 3560
+    },
+    {
+      "name": "04 Four entrance gateways",
+      "start": 105,
+      "end": 128,
+      "count": 3408
+    },
+    {
+      "name": "05 Corner beacons",
+      "start": 128,
+      "end": 137,
+      "count": 1440
+    },
+    {
+      "name": "06 Four ascending stairs and landings",
+      "start": 137,
+      "end": 173,
+      "count": 3984
+    },
+    {
+      "name": "07 Matched tapering obelisks",
+      "start": 173,
+      "end": 208,
+      "count": 10324
+    },
+    {
+      "name": "08.1 Facade arcades 1",
+      "start": 208,
+      "end": 219,
+      "count": 1696
+    },
+    {
+      "name": "08.2 Facade arcades 2",
+      "start": 219,
+      "end": 228,
+      "count": 1320
+    },
+    {
+      "name": "08.3 Facade arcades 3",
+      "start": 228,
+      "end": 235,
+      "count": 880
+    },
+    {
+      "name": "08.4 Facade arcades 4",
+      "start": 235,
+      "end": 241,
+      "count": 440
+    },
+    {
+      "name": "09 Applied pier tracery",
+      "start": 241,
+      "end": 249,
+      "count": 424
+    },
+    {
+      "name": "10 Twin crown rings and crests",
+      "start": 249,
+      "end": 339,
+      "count": 10138
+    },
+    {
+      "name": "11 Sanctuary floor inlay",
+      "start": 339,
+      "end": 347,
+      "count": 361
+    },
+    {
+      "name": "12 Pedestal, guardians and ceremonial lights",
+      "start": 347,
+      "end": 365,
+      "count": 2871
+    },
+    {
+      "name": "13 Completed architecture",
+      "start": 365,
+      "end": 375,
+      "count": 0
+    },
+    {
+      "name": "14 Black hole reveal and front orbit",
+      "start": 375,
+      "end": 393,
+      "count": 0
+    },
+    {
+      "name": "15 Front-to-side completed orbit",
+      "start": 393,
+      "end": 414,
+      "count": 0
+    },
+    {
+      "name": "16 Side and rear high-angle finale",
+      "start": 414,
+      "end": 440,
+      "count": 0
+    }
+  ]
+}

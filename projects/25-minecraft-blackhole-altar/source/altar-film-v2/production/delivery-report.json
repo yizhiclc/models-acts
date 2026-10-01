@@ -1,0 +1,20 @@
+{
+  "video": "C:/Users/Administrator/Documents/Codex/2026-09-11/html-blackhole-1-three-js-2/outputs/altar-film-v2/recording/2026-09-25 11-15-02.mp4",
+  "bytes": 3038284306,
+  "durationSeconds": 445.666,
+  "rawUnedited": true,
+  "approvedBlueprintUnchanged": true,
+  "originalAndReviewWorldsUnchanged": true,
+  "changedProtectedFiles": [],
+  "protectedFilesChecked": 136,
+  "completedWorld": "E:\\pcl2\\.minecraft\\versions\\1.21.11-NeoForge_21.11.45-AltarFilmV2\\saves\\AltarFilm-V2-Take02-20260925",
+  "subtitlesAdded": false,
+  "musicAdded": false,
+  "encodedMedia": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "durationSeconds": 445.933,
+    "videoBitrate": 54484096
+  }
+}

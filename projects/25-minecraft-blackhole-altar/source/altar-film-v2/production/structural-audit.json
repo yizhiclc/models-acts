@@ -1,0 +1,33 @@
+{
+  "reviewOnly": true,
+  "recordingStarted": false,
+  "bounds": [
+    -80,
+    63,
+    -80,
+    80,
+    172,
+    80
+  ],
+  "blocks": 227817,
+  "mirrorXandZ": true,
+  "mirrorErrors": [],
+  "connectedComponents": [
+    {
+      "count": 227817,
+      "first": [
+        -80,
+        63,
+        -80
+      ],
+      "grounded": true
+    }
+  ],
+  "stairHeadroomClear": true,
+  "headroomErrors": [],
+  "fourPiersContinuousToGround": true,
+  "pierErrors": [],
+  "blackHoleClearRadius12": true,
+  "coreErrors": [],
+  "note": "Connectivity uses face-adjacent voxel cells. Symmetry includes stair directions. This does not certify engineering loads."
+}

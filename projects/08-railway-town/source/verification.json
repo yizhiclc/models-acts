@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-30",
+  "browser": "Microsoft Edge / Playwright, software WebGL",
+  "desktopViewport": "1440 × 960",
+  "mobileViewport": "390 × 844",
+  "checks": [
+    {
+      "label": "Initial running train, full scene and 2.25× sandtable area",
+      "passed": true
+    },
+    {
+      "label": "Train moves on animation frames",
+      "passed": true,
+      "fps": 6,
+      "drawCalls": 106
+    },
+    {
+      "label": "Pause freezes movement and dwell timer",
+      "passed": true
+    },
+    {
+      "label": "Speed slider updates the simulation",
+      "passed": true
+    },
+    {
+      "label": "Night switches lighting, emissive windows and controls",
+      "passed": true
+    },
+    {
+      "label": "Zoom and keyboard orbit",
+      "passed": true
+    },
+    {
+      "label": "Reset restores deterministic camera, train and speed",
+      "passed": true
+    },
+    {
+      "label": "Actual station arrival and paused countdown",
+      "passed": true
+    },
+    {
+      "label": "Departure after the dwell interval",
+      "passed": true
+    },
+    {
+      "label": "390px responsive layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "label": "No browser JavaScript or WebGL errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "webmcpNativeValidation": "unavailable: browser does not expose document.modelContext",
+  "enlargement": {
+    "width": 1.5,
+    "depth": 1.5,
+    "area": 2.25
+  },
+  "productionSmoke": {
+    "passed": true,
+    "route": "/",
+    "missingAssets": [],
+    "javascriptErrors": [],
+    "renderer": {
+      "calls": 106,
+      "triangles": 117692,
+      "fps": 9,
+      "pixelRatio": 0.7,
+      "nightLights": 0,
+      "boardWidth": 53.25,
+      "boardDepth": 36,
+      "boardAreaMultiplier": 2.25
+    }
+  }
+}

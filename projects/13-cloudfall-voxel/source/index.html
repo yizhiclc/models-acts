@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#dce8e6">
+    <meta name="description" content="云岚：穿云山峰与阶叠瀑布组成的交互式三维体素自然景观。">
+    <title>云岚 CLOUD FALL · 体素自然景观</title>
+  </head>
+  <body>
+    <main id="app">
+      <div id="viewport" aria-label="云岚三维体素山脉，瀑布沿山体阶叠而下，流入林间湖泊"></div>
+      <header>
+        <span class="seal">山</span>
+        <div>
+          <p class="eyebrow">VOXEL LANDSCAPES / 002</p>
+          <h1>云岚</h1>
+          <p class="english-title">CLOUD FALL</p>
+        </div>
+      </header>
+      <section class="lighting" aria-label="光照时段">
+        <button class="active" data-light="morning" title="清晨" aria-label="清晨" aria-pressed="true"><i data-lucide="sunrise"></i></button>
+        <button data-light="day" title="日间" aria-label="日间" aria-pressed="false"><i data-lucide="sun"></i></button>
+        <button data-light="dusk" title="薄暮" aria-label="薄暮" aria-pressed="false"><i data-lucide="sunset"></i></button>
+      </section>
+      <aside class="caption">
+        <span class="line"></span>
+        <p id="caption">山出云间，水落林深</p>
+        <div><span class="status-dot"></span><span id="scene-count">山谷正在苏醒</span></div>
+      </aside>
+      <nav class="views" aria-label="场景视角">
+        <button data-view="overview" class="active" aria-pressed="true">全景</button>
+        <button data-view="fall" aria-pressed="false">观瀑</button>
+        <button data-view="peaks" aria-pressed="false">云顶</button>
+        <button data-view="top" aria-pressed="false">俯瞰</button>
+      </nav>
+      <section class="tools" aria-label="场景设置">
+        <button id="motion" title="暂停水流与云雾" aria-label="暂停水流与云雾" aria-pressed="false"><i data-lucide="pause"></i></button>
+        <button id="clouds" title="显示云雾" aria-label="显示云雾" aria-pressed="true"><i data-lucide="cloud"></i></button>
+        <button id="rotate" title="自动环游" aria-label="自动环游" aria-pressed="false"><i data-lucide="rotate-cw"></i></button>
+        <button id="capture" title="保存画面" aria-label="保存画面"><i data-lucide="camera"></i></button>
+        <button id="reset" title="恢复全景" aria-label="恢复全景"><i data-lucide="scan"></i></button>
+      </section>
+      <div id="loading" role="status"><div class="loading-mountain"><b></b><b></b><b></b></div><p>正在生成山谷</p></div>
+      <div id="notice" role="status" hidden></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

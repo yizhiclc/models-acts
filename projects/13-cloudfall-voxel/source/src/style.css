@@ -1,0 +1,69 @@
+:root { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; color: #25473f; background: #dce8e6; font-synthesis: none; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button { cursor: pointer; font: inherit; -webkit-tap-highlight-color: transparent; }
+button:focus-visible { outline: 2px solid #487d74; outline-offset: 4px; }
+#app { position: relative; width: 100%; height: 100svh; min-height: 360px; overflow: hidden; }
+#viewport, #viewport canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+header { position: absolute; left: 38px; top: 33px; display: flex; gap: 17px; align-items: flex-start; pointer-events: none; }
+.seal { display: grid; place-items: center; margin-top: 3px; width: 32px; height: 36px; background: #aa6550; border: 3px double #e9c7ae; font: 21px "SimSun", serif; color: #fff6df; }
+.eyebrow { margin: 0 0 11px; color: #6b8b80; font-size: 9px; }
+h1 { font: 400 44px/1.25 "Noto Serif SC", "SimSun", serif; margin: 0; letter-spacing: 0; }
+.english-title { margin: 9px 0 0; font-size: 10px; color: #5e8077; }
+.lighting, .tools, .views { position: absolute; display: flex; gap: 4px; padding: 5px; border: 1px solid #ffffffb8; border-radius: 7px; background: #f5faf7ce; backdrop-filter: blur(14px); }
+.lighting { top: 33px; right: 34px; }
+.lighting button, .tools button { width: 36px; height: 35px; padding: 8px; display: grid; place-items: center; border: 0; border-radius: 4px; color: #608078; background: transparent; }
+button svg { width: 18px; height: 18px; stroke-width: 1.6; pointer-events: none; }
+.lighting button.active, .tools button[aria-pressed="true"] { color: #f5faf2; background: #426d60; }
+.tools button:hover, .lighting button:hover:not(.active) { color: #284e44; background: #d7e5db; }
+.caption { position: absolute; left: 38px; bottom: 37px; pointer-events: none; }
+.line { display: block; height: 2px; width: 26px; background: #ad6c54; margin-bottom: 14px; }
+.caption p { margin: 0 0 11px; font: 15px "Noto Serif SC", "SimSun", serif; }
+.caption div { display: flex; gap: 7px; align-items: center; font-size: 10px; color: #69877b; }
+.status-dot { width: 4px; height: 4px; border-radius: 50%; background: #689980; }
+.views { left: 50%; transform: translateX(-50%); bottom: 32px; box-shadow: 0 4px 20px #405b5010; }
+.views button { border: 0; border-radius: 4px; padding: 11px 17px; min-width: 66px; white-space: nowrap; font-size: 12px; color: #617c71; background: transparent; }
+.views button.active { background: #426d60; color: #f8fcf5; }
+.views button:hover:not(.active) { background: #dce8de; }
+.tools { right: 34px; bottom: 32px; }
+#loading { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; background: #dce8e6; transition: opacity .4s; gap: 22px; }
+#loading p { font: 14px "SimSun", serif; }
+.loading-mountain { display: flex; align-items: flex-end; gap: 4px; height: 40px; }
+.loading-mountain b { width: 14px; background: #77977a; height: 23px; animation: grow 1.4s ease-in-out infinite; }
+.loading-mountain b:nth-child(2) { height: 40px; background: #49765f; animation-delay: .15s; }
+.loading-mountain b:nth-child(3) { height: 30px; background: #a2b38a; animation-delay: .3s; }
+@keyframes grow { 50% { transform: scaleY(.6); transform-origin: bottom; } }
+#notice { position: absolute; top: 25px; left: 50%; transform: translateX(-50%); background: #315648; color: #f1f6ee; padding: 12px 18px; border-radius: 5px; font-size: 12px; max-width: 80%; }
+@media(max-width: 1000px) {
+  .caption { left: 25px; bottom: 100px; }
+  .tools { right: 25px; bottom: 97px; }
+  header { left: 25px; top: 26px; }
+  .lighting { top: 26px; right: 25px; }
+}
+@media(max-width: 500px) {
+  header { left: 20px; top: 25px; gap: 11px; }
+  .seal { width: 27px; height: 32px; font-size: 18px; }
+  h1 { font-size: 34px; }
+  .eyebrow { font-size: 8px; margin-bottom: 9px; }
+  .english-title { font-size: 9px; }
+  .lighting { top: 25px; right: 17px; gap: 0; padding: 3px; }
+  .lighting button { width: 29px; height: 31px; padding: 6px; }
+  .caption { bottom: 155px; left: 22px; }
+  .caption p { font-size: 13px; }
+  .caption div { font-size: 9px; }
+  .tools { bottom: 90px; right: 50%; transform: translateX(50%); gap: 7px; padding: 4px; }
+  .tools button { height: 30px; width: 33px; padding: 6px; }
+  .views { bottom: 26px; }
+  .views button { min-width: 61px; padding: 11px 14px; }
+}
+@media(max-height: 560px) and (min-width: 501px) {
+  header { top: 17px; left: 20px; }
+  .eyebrow, .english-title, .caption { display: none; }
+  h1 { font-size: 28px; }
+  .lighting { top: 17px; right: 20px; }
+  .tools { right: 20px; bottom: 18px; }
+  .views { bottom: 18px; left: 20px; transform: none; }
+}
+@media(prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

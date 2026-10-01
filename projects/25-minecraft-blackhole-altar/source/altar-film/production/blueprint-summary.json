@@ -1,0 +1,70 @@
+{
+  "duration": 480,
+  "placements": 54448,
+  "uniqueBlocks": 53564,
+  "peakBlocksPerTick": 20,
+  "stages": [
+    {
+      "name": "01 / Site axis",
+      "start": 0,
+      "end": 15,
+      "count": 208
+    },
+    {
+      "name": "02 / Plaza and structural footing",
+      "start": 15,
+      "end": 65,
+      "count": 18623
+    },
+    {
+      "name": "03 / Lower monumental terraces",
+      "start": 65,
+      "end": 140,
+      "count": 7580
+    },
+    {
+      "name": "04 / Upper terraces and sanctuary deck",
+      "start": 140,
+      "end": 200,
+      "count": 7017
+    },
+    {
+      "name": "05 / Processional stairways and balustrades",
+      "start": 200,
+      "end": 245,
+      "count": 4424
+    },
+    {
+      "name": "06 / Obelisks and crown foundations",
+      "start": 245,
+      "end": 315,
+      "count": 10484
+    },
+    {
+      "name": "07 / Crown arch voussoirs and keystone",
+      "start": 315,
+      "end": 380,
+      "count": 3959
+    },
+    {
+      "name": "08 / Gilded relief and sanctuary motifs",
+      "start": 380,
+      "end": 425,
+      "count": 933
+    },
+    {
+      "name": "09 / Central altar and ceremonial core",
+      "start": 425,
+      "end": 455,
+      "count": 1220
+    },
+    {
+      "name": "10 / Accretion disk reveal",
+      "start": 455,
+      "end": 480,
+      "count": 0
+    }
+  ],
+  "palette": 16,
+  "cameraKeys": 1921
+}

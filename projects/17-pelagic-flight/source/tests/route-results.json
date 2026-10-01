@@ -1,0 +1,16 @@
+{
+  "samples": 12001,
+  "routeLengthMeters": 25251.624648859015,
+  "lapSeconds": 238.22287404583977,
+  "minimumSwellOnlyClearance": 10.64258116780424,
+  "minimumGuaranteedWaveEnvelopeClearance": 7.457900824962749,
+  "shoreMarginLowerBound": 77.12559282508549,
+  "minimumAirframeTerrainClearance": 29.30790082496275,
+  "maximumBankDegrees": 25.21014284915244,
+  "maximumPoseStepDegrees": 0.6019737725273336,
+  "speedRange": [
+    105.88322295678677,
+    106.10244428315161
+  ],
+  "closedRoute": true
+}

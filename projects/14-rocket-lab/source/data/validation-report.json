@@ -1,0 +1,1567 @@
+{
+  "status": "PASS",
+  "build": "2026-09-30-starship-flight-control",
+  "checks": 20,
+  "scope": "120 Hz actual CPU integration with 30 Hz body and 10 Hz engine exports; event samples retained. GPU evidence is separate.",
+  "tests": [
+    {
+      "name": "A complete live-integrated Super Heavy launch and tower recovery succeeds",
+      "passed": true,
+      "duration": 611.1249999996086,
+      "apogee": 268565.8104561595,
+      "touchdown": {
+        "t": 610.6166666662757,
+        "success": true,
+        "reasons": [],
+        "mass": 263393.8451595066,
+        "vx": 1.024770277574972,
+        "vy": -6.1880938439527196,
+        "vz": 5.703286637087188e-13,
+        "omega": 0.013726731500365054,
+        "theta": -0.019806998848660353,
+        "x": 1599.0461318464068,
+        "z": -3.764920465698568e-13,
+        "attitude": [
+          7.795770114200706e-15,
+          -1.0774706988162945e-16,
+          -0.009903337537074154,
+          0.9999509607503894
+        ],
+        "angularVelocity": [
+          -1.0214604512950894e-14,
+          1.3342950642482193e-16,
+          0.013726731500365054
+        ],
+        "inertiaTensor": [
+          98184086.51761663,
+          2666862.682240004,
+          97019848.33756584
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.9538681535932483,
+        "tilt": 0.019806998848661564,
+        "propellant": 63393.8451595066,
+        "inertia": 97019848.33756584,
+        "stroke": 2.2,
+        "kineticEnergy": 5190447.581055198,
+        "chemicalEnergy": 380363070957.0396,
+        "explosionEnergy": 0,
+        "capacity": 29517375.246406358,
+        "strokeRequired": 0.3868563713066479,
+        "netImpulse": 1629905.8317665786,
+        "stoppingTime": 0.12148074820179112,
+        "groundImpulse": 1943691.971228658,
+        "crushForce": 16000000,
+        "peakLoadG": 6.194320675096452,
+        "blastScale": 0,
+        "blastRadius": 0,
+        "blastDuration": 0,
+        "debrisRange": 0,
+        "attachedAtImpact": false
+      }
+    },
+    {
+      "name": "33 booster engines in 3+10+20 rings; three sea-level plus three vacuum ship engines",
+      "passed": true,
+      "fixedOuter": 20,
+      "gimballedBooster": 13,
+      "shipGimballed": 3
+    },
+    {
+      "name": "Every airborne step satisfies Newton translation, Euler rotation and quaternion integration",
+      "passed": true,
+      "quaternion": 4.3062308005461375e-16,
+      "force": 0,
+      "velocity": 1.1368683772161603e-13,
+      "position": 2.9099167520030278e-11,
+      "euler": 7.450580596923828e-9,
+      "torqueSource": 0,
+      "ledger": 1.5273690223693848e-7,
+      "engineTorque": 0,
+      "peakRates": [
+        1.0134884479087224e-14,
+        2.1448447429802844e-16,
+        0.30133816621843174
+      ]
+    },
+    {
+      "name": "All diagonal inertias decrease with mass; per-engine fuel sums equal the single ledger",
+      "passed": true,
+      "paidFinSteps": 1337,
+      "fuelLedger": {
+        "remaining": {
+          "booster": 63393.8451595066,
+          "upper": 24715.56112348832
+        },
+        "spent": {
+          "main": 3325870.276978139,
+          "rcs": 10735.856922223695,
+          "fins": 0.017922111591982787,
+          "gimbal": 0.003018063429290899,
+          "upperMain": 1175254.240496359,
+          "upperRCS": 30.198361329418102,
+          "upperGimbal": 0.000018928029987207896,
+          "explosion": 0,
+          "dispersed": 0
+        },
+        "initial": 4600000,
+        "residual": -1.4994293451309204e-7
+      }
+    },
+    {
+      "name": "Gravity turn, high staging, spring impulse and powered upper stage",
+      "passed": true,
+      "separation": {
+        "t": 146.88333333336408,
+        "type": "separation",
+        "x": 20095.19330767884,
+        "y": 91351.40518114071,
+        "z": 2.474706191755175e-12,
+        "vx": 510.4023636357304,
+        "vy": 1748.5458364150318,
+        "vz": 6.469582700880263e-14,
+        "theta": -0.27869692755739706,
+        "omega": -0.001381593406665474,
+        "attitude": [
+          9.267405160905712e-18,
+          -1.2888580655824835e-18,
+          -0.13889792348345048,
+          0.9903067034267644
+        ],
+        "angularVelocity": [
+          -5.968661166965716e-18,
+          -2.230546828873439e-20,
+          -0.001381593406665474
+        ],
+        "altitude": 91327.64890285954,
+        "detachedMass": 1420000,
+        "boosterMass": 557380.9491437009,
+        "axisX": 0.2751030894354376,
+        "axisY": 0.9614147337039711,
+        "axisZ": 1.8713186326382045e-17,
+        "impulse": 5680000,
+        "boosterDeltaV": -10.190516932317351,
+        "upperX": 20112.524802313274,
+        "upperY": 91411.97430936406,
+        "upperZ": 2.475885122493737e-12,
+        "upperVx": 511.50277599347214,
+        "upperVy": 1752.3914953498477,
+        "upperVz": 6.477067975410816e-14,
+        "momentumResidualX": -3.4924596548080444e-8,
+        "momentumResidualY": -1.955777406692505e-8,
+        "momentumResidualZ": -4.355622912974536e-24,
+        "springEnergy": 40301068.08778128,
+        "upperFuel": 1200000
+      },
+      "meco": {
+        "t": 143.87500000003348,
+        "type": "meco",
+        "altitude": 86020.05785909947,
+        "speed": 1844.5629251708522,
+        "downrange": 18559.698143528516,
+        "boosterFuel": 359963.88903907605
+      },
+      "upperIgnition": {
+        "t": 150.89166666669377,
+        "type": "upper-ignition",
+        "altitude": 98342.58919637278,
+        "propellant": 1199985.0176198392
+      },
+      "upperCutoff": {
+        "t": 449.51666666642217,
+        "type": "upper-cutoff",
+        "altitude": 848700.740165472,
+        "speed": 5900.235415689694,
+        "propellant": 24999.800907731205
+      }
+    },
+    {
+      "name": "Independent steam, plume, upper-plume and reentry triggers; shutdown leaves a decaying tail",
+      "passed": true,
+      "fadeTime": 144.13333333336658,
+      "fadeIntensity": 0.6316681912936416,
+      "fields": {
+        "plume": {
+          "intensity": 1.1457880127751454e-14,
+          "triggerAt": 5.008333333333372,
+          "activations": [
+            5.008333333333372,
+            157.96666666668733,
+            566.1749999996495,
+            587.2249999996303
+          ],
+          "emission": 0
+        },
+        "upperPlume": {
+          "intensity": 1.669390172955442e-164,
+          "triggerAt": 150.89166666669377,
+          "activations": [
+            150.89166666669377
+          ],
+          "emission": 0
+        },
+        "steam": {
+          "intensity": 6.306115338445206e-95,
+          "triggerAt": 0.5000000000000007,
+          "activations": [
+            0.5000000000000007
+          ],
+          "emission": 0
+        },
+        "reentry": {
+          "intensity": 1.6553567802204282e-12,
+          "triggerAt": 525.7249999996862,
+          "activations": [
+            525.7249999996862
+          ],
+          "emission": 0
+        },
+        "explosion": {
+          "intensity": 0,
+          "triggerAt": null,
+          "activations": [],
+          "emission": 0
+        },
+        "upperExplosion": {
+          "intensity": 0,
+          "triggerAt": null,
+          "activations": [],
+          "emission": 0
+        },
+        "dust": {
+          "intensity": 0.04595849111432737,
+          "triggerAt": 5.000000000000038,
+          "activations": [
+            5.000000000000038,
+            607.2833333329454
+          ],
+          "emission": 0
+        }
+      }
+    },
+    {
+      "name": "Identical impact state succeeds or fails solely through absorber stroke",
+      "passed": true,
+      "velocity": -6.1880938439527196,
+      "requiredStroke": 0.3868563713066479,
+      "shortStroke": 0.08,
+      "longStroke": 2.2,
+      "impulseResidual": -2.3283064365386963e-10
+    },
+    {
+      "name": "Late ignition produces a physically larger impact and explosion",
+      "passed": true,
+      "late": {
+        "t": 600.9833333329511,
+        "success": false,
+        "reasons": [
+          "缓冲行程耗尽",
+          "未进入塔架捕获窗口",
+          "偏离着陆区",
+          "侧向剪切超限"
+        ],
+        "mass": 345016.54558098316,
+        "vx": 12.778954785739323,
+        "vy": -687.4930614479653,
+        "vz": 8.928976968840555e-14,
+        "omega": 0.034763589942691395,
+        "theta": 0.022158103462341285,
+        "x": 1688.1791924784939,
+        "z": 2.918413041077201e-11,
+        "attitude": [
+          -6.696318950140081e-16,
+          -7.831260306665306e-17,
+          0.01107882508214578,
+          0.9999386279341345
+        ],
+        "angularVelocity": [
+          -1.7718615034919457e-14,
+          -1.9247067421477494e-15,
+          0.034763589942691395
+        ],
+        "inertiaTensor": [
+          113807943.33203548,
+          3493292.5240074545,
+          112458442.02770305
+        ],
+        "legsDeployed": false,
+        "landingX": 1600,
+        "landingError": 88.17919247849386,
+        "tilt": 0.022158103462340033,
+        "propellant": 145016.5455809832,
+        "inertia": 112458442.02770305,
+        "stroke": 2.2,
+        "kineticEnergy": 81563706347.8111,
+        "chemicalEnergy": 870099273485.899,
+        "explosionEnergy": 951662979833.7102,
+        "capacity": 27756395.685212158,
+        "strokeRequired": 6464.821873856814,
+        "netImpulse": 237196481.17167157,
+        "stoppingTime": 18.800433042381485,
+        "groundImpulse": 300806928.67810374,
+        "crushForce": 16000000,
+        "peakLoadG": 4.728891879713417,
+        "blastScale": 21.19146876856277,
+        "blastRadius": 435.8293753712554,
+        "blastDuration": 10.957057616587136,
+        "debrisRange": 936.2331570481991,
+        "attachedAtImpact": false
+      },
+      "shortStroke": {
+        "t": 610.6166666662757,
+        "success": false,
+        "reasons": [
+          "缓冲行程耗尽"
+        ],
+        "mass": 263393.8451595066,
+        "vx": 1.024770277574972,
+        "vy": -6.1880938439527196,
+        "vz": 5.703286637087188e-13,
+        "omega": 0.013726731500365054,
+        "theta": -0.019806998848660353,
+        "x": 1599.0461318464068,
+        "z": -3.764920465698568e-13,
+        "attitude": [
+          7.795770114200706e-15,
+          -1.0774706988162945e-16,
+          -0.009903337537074154,
+          0.9999509607503894
+        ],
+        "angularVelocity": [
+          -1.0214604512950894e-14,
+          1.3342950642482193e-16,
+          0.013726731500365054
+        ],
+        "inertiaTensor": [
+          98184086.51761663,
+          2666862.682240004,
+          97019848.33756584
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.9538681535932483,
+        "tilt": 0.019806998848661564,
+        "propellant": 63393.8451595066,
+        "inertia": 97019848.33756584,
+        "stroke": 0.08,
+        "kineticEnergy": 5190447.581055198,
+        "chemicalEnergy": 380363070957.0396,
+        "explosionEnergy": 380368261404.62067,
+        "capacity": 1073359.099869322,
+        "strokeRequired": 0.3868563713066479,
+        "netImpulse": 1629905.8317665786,
+        "stoppingTime": 0.12148074820179112,
+        "groundImpulse": 1943691.971228658,
+        "crushForce": 16000000,
+        "peakLoadG": 6.194320675096452,
+        "blastScale": 15.609946831437032,
+        "blastRadius": 324.1989366287406,
+        "blastDuration": 10.16063686769678,
+        "debrisRange": 696.2277137517924,
+        "attachedAtImpact": false
+      }
+    },
+    {
+      "name": "An asymmetric three-engine cut produces coupled roll, pitch and yaw without pose animation",
+      "passed": true,
+      "metrics": {
+        "quaternion": 5.06751181579202e-16,
+        "force": 0,
+        "velocity": 5.680178549738457e-14,
+        "position": 3.6362024502523127e-12,
+        "euler": 1.4901161193847656e-8,
+        "torqueSource": 0,
+        "ledger": 1.909211277961731e-8,
+        "engineTorque": 0,
+        "peakRates": [
+          0.1263336419920809,
+          0.2784162273973816,
+          0.06894363095978559
+        ]
+      },
+      "commands": [
+        {
+          "id": 2,
+          "type": "engine-command",
+          "ids": [
+            "B15",
+            "B16",
+            "B17"
+          ],
+          "enabled": false,
+          "requestedAt": 55.00833333333085,
+          "requestedAltitude": 6202.72980764322,
+          "source": "manual",
+          "appliedAt": 55.016666666664186,
+          "altitude": 6202.72980764322,
+          "upperAltitude": null,
+          "phase": "ASCENT",
+          "attitude": [
+            4.621251184752665e-18,
+            -2.0602104492140198e-19,
+            -0.044240226546042115,
+            0.9990209218805955
+          ],
+          "omega": [
+            3.363202359310946e-19,
+            -2.3794867268321762e-20,
+            -0.002569388850017877
+          ],
+          "fuel": {
+            "booster": 2334612.4477971797,
+            "upper": 1200000
+          }
+        }
+      ],
+      "touchdown": {
+        "t": 159.03333333335303,
+        "success": false,
+        "reasons": [
+          "缓冲行程耗尽",
+          "支撑载荷超限",
+          "触地倾角超限",
+          "未进入塔架捕获窗口",
+          "偏离着陆区",
+          "侧向剪切超限"
+        ],
+        "mass": 2067365.8979430303,
+        "vx": 656.9421778652643,
+        "vy": -534.8869967635287,
+        "vz": -102.79988184769871,
+        "omega": -0.021014768992522366,
+        "theta": -1.6386994817539817,
+        "x": 51256.40070552712,
+        "z": 1994.8823440386234,
+        "attitude": [
+          -0.02547669897015434,
+          -0.013733864003326506,
+          -0.7302552667357028,
+          0.6825610333104942
+        ],
+        "angularVelocity": [
+          0.12634618623617666,
+          0.2784532698941471,
+          -0.021014768992522366
+        ],
+        "inertiaTensor": [
+          6174677414.318206,
+          20932079.71667318,
+          6101459895.571349
+        ],
+        "legsDeployed": false,
+        "landingX": 1600,
+        "landingError": 49696.45547314649,
+        "tilt": 1.6386921131043075,
+        "propellant": 1647365.8979430303,
+        "inertia": 6101459895.571349,
+        "stroke": 2.2,
+        "kineticEnergy": 752825820285.7919,
+        "chemicalEnergy": 9884195387658.182,
+        "explosionEnergy": 10637021207943.973,
+        "capacity": 0,
+        "strokeRequired": null,
+        "netImpulse": 1105807136.3620832,
+        "stoppingTime": null,
+        "groundImpulse": null,
+        "crushForce": 16000000,
+        "peakLoadG": 0.7891907002954952,
+        "blastScale": 47.38126757159675,
+        "blastRadius": 959.6253514319351,
+        "blastDuration": 13.053648215942511,
+        "debrisRange": 2062.3945055786603,
+        "attachedAtImpact": true
+      }
+    },
+    {
+      "name": "Attitude control compensates engine loss only through physical remaining actuators",
+      "passed": true,
+      "controlledRates": [
+        0.0003370192634228186,
+        -0.000011717615870546142,
+        -0.0032028659611963587
+      ],
+      "uncontrolledRates": [
+        0.036085506724610285,
+        0.01754639368404409,
+        -0.047553307164218094
+      ],
+      "controlledFuel": {
+        "main": 1367639.324579429,
+        "rcs": 688.1528245960217,
+        "fins": 0,
+        "gimbal": 0.004539665208094354,
+        "upperMain": 0,
+        "upperRCS": 0,
+        "upperGimbal": 0,
+        "explosion": 0,
+        "dispersed": 0
+      },
+      "uncontrolledFuel": {
+        "main": 1367639.1505094052,
+        "rcs": 499.6824329308544,
+        "fins": 0,
+        "gimbal": 0.0010472904538391282,
+        "upperMain": 0,
+        "upperRCS": 0,
+        "upperGimbal": 0,
+        "explosion": 0,
+        "dispersed": 0
+      }
+    },
+    {
+      "name": "Manual 30/60/90 percent throttle directly changes thrust and force-derived acceleration",
+      "passed": true,
+      "probes": [
+        {
+          "command": 0.3,
+          "t": 32.00833333333216,
+          "thrust": 22502271.752138466,
+          "mass": 4491586.914089851,
+          "ax": 0.1506198275255198,
+          "ay": -4.819925184764369,
+          "az": -4.003603650020022e-18,
+          "verticalThrust": 22491440.20369483,
+          "verticalDrag": -113201.58368540007,
+          "gravityY": -9.802149797333076,
+          "integrationMass": 4491615.766088832,
+          "altitude": 1408.1966751087457,
+          "fuelUsed": 528413.0859101489
+        },
+        {
+          "command": 0.6,
+          "t": 32.00833333333216,
+          "thrust": 44999779.48664622,
+          "mass": 4479242.294089247,
+          "ax": 0.33288603900896924,
+          "ay": 0.2088096173426326,
+          "az": 9.68746629767182e-18,
+          "verticalThrust": 44974676.67964345,
+          "verticalDrag": -132696.5666885671,
+          "gravityY": -9.802125183406034,
+          "integrationMass": 4479299.986011434,
+          "altitude": 1416.2718051765114,
+          "fuelUsed": 540757.705910753
+        },
+        {
+          "command": 0.9,
+          "t": 32.00833333333216,
+          "thrust": 67500639.09705625,
+          "mass": 4466894.887723381,
+          "ax": 0.5153789505999995,
+          "ay": 5.265625417991137,
+          "az": 8.654674293450916e-18,
+          "verticalThrust": 67461036.8753966,
+          "verticalDrag": -153785.0807911159,
+          "gravityY": -9.802100524865702,
+          "integrationMass": 4466981.417757591,
+          "altitude": 1424.3616730179638,
+          "fuelUsed": 553105.1122766198
+        }
+      ]
+    },
+    {
+      "name": "Arbitrary multi-selection shutdown and restore work; paused commands wait for a physics step",
+      "passed": true,
+      "commands": [
+        {
+          "id": 1,
+          "type": "engine-command",
+          "ids": [
+            "B1",
+            "B4",
+            "B33"
+          ],
+          "enabled": false,
+          "requestedAt": 40.008333333331706,
+          "requestedAltitude": 2646.8865648629144,
+          "source": "manual",
+          "appliedAt": 40.01666666666504,
+          "altitude": 2646.8865648629144,
+          "upperAltitude": null,
+          "phase": "ASCENT",
+          "attitude": [
+            2.1847154091060434e-18,
+            -5.741407587518039e-20,
+            -0.02568239779772111,
+            0.9996701528220997
+          ],
+          "omega": [
+            3.2026247815910423e-19,
+            -1.003455890697079e-20,
+            -0.00232118054448581
+          ],
+          "fuel": {
+            "booster": 2667190.849040455,
+            "upper": 1200000
+          }
+        },
+        {
+          "id": 3,
+          "type": "engine-command",
+          "ids": [
+            "B1",
+            "B4"
+          ],
+          "enabled": true,
+          "requestedAt": 40.68333333333167,
+          "requestedAltitude": 2768.1053320094943,
+          "source": "manual",
+          "appliedAt": 40.691666666665,
+          "altitude": 2768.1053320094943,
+          "upperAltitude": null,
+          "phase": "ASCENT",
+          "attitude": [
+            -6.325974147543673e-8,
+            1.9472302427974768e-9,
+            -0.02647154299837857,
+            0.9996495673041035
+          ],
+          "omega": [
+            -7.1861980776639e-7,
+            3.350454319151623e-9,
+            -0.002366796355365454
+          ],
+          "fuel": {
+            "booster": 2660802.0429800255,
+            "upper": 1200000
+          }
+        }
+      ],
+      "manualThrottle": {
+        "booster": 0.2,
+        "upper": null
+      }
+    },
+    {
+      "name": "Altitude-triggered engine cuts log actual crossing time and altitude",
+      "passed": true,
+      "commands": [
+        {
+          "id": 2,
+          "type": "engine-command",
+          "ids": [
+            "B3"
+          ],
+          "enabled": false,
+          "requestedAt": 65.92499999999853,
+          "requestedAltitude": 10000.70498923026,
+          "source": "altitude",
+          "scheduleId": 1,
+          "appliedAt": 65.92499999999853,
+          "altitude": 10000.70498923026,
+          "upperAltitude": null,
+          "phase": "ASCENT",
+          "attitude": [
+            6.4722942800361316e-18,
+            -3.7945437851031977e-19,
+            -0.05831069943794729,
+            0.998298483586476
+          ],
+          "omega": [
+            3.3456634466235177e-19,
+            -3.3396129519495304e-20,
+            -0.0025771053424060663
+          ],
+          "fuel": {
+            "booster": 2092511.3348323964,
+            "upper": 1200000
+          }
+        },
+        {
+          "id": 3,
+          "type": "engine-command",
+          "ids": [
+            "B14"
+          ],
+          "enabled": false,
+          "requestedAt": 65.92499999999853,
+          "requestedAltitude": 10000.70498923026,
+          "source": "altitude",
+          "scheduleId": 1,
+          "appliedAt": 65.92499999999853,
+          "altitude": 10000.70498923026,
+          "upperAltitude": null,
+          "phase": "ASCENT",
+          "attitude": [
+            6.4722942800361316e-18,
+            -3.7945437851031977e-19,
+            -0.05831069943794729,
+            0.998298483586476
+          ],
+          "omega": [
+            3.3456634466235177e-19,
+            -3.3396129519495304e-20,
+            -0.0025771053424060663
+          ],
+          "fuel": {
+            "booster": 2092511.3348323964,
+            "upper": 1200000
+          }
+        }
+      ]
+    },
+    {
+      "name": "Empty tanks gate every propulsive control source, while passive air torque remains",
+      "passed": true,
+      "maximumPassiveTorque": 882871.7368841902,
+      "ledger": {
+        "remaining": {
+          "booster": 0,
+          "upper": 0
+        },
+        "spent": {
+          "main": 1155898.623838732,
+          "rcs": 499.4065802519798,
+          "fins": 0,
+          "gimbal": 0.0010454467075545204,
+          "upperMain": 0,
+          "upperRCS": 0,
+          "upperGimbal": 0,
+          "explosion": 0,
+          "dispersed": 3443601.9685355714
+        },
+        "initial": 4600000,
+        "residual": -1.862645149230957e-9
+      }
+    },
+    {
+      "name": "All six ship engines can fail independently; the ship collides and debits its own tanks",
+      "passed": true,
+      "upperTouchdown": {
+        "t": 627.5916666662603,
+        "success": false,
+        "reasons": [
+          "缓冲行程耗尽",
+          "触地倾角超限",
+          "未进入塔架捕获窗口",
+          "偏离着陆区",
+          "侧向剪切超限"
+        ],
+        "mass": 1314023.957312265,
+        "vx": 404.11904060241653,
+        "vy": -2032.7772415062939,
+        "vz": 5.1739566561096307e-14,
+        "omega": 0.16211298799449186,
+        "theta": -2.7173528943886964,
+        "x": 283068.1078934397,
+        "z": 3.610278021978644e-11,
+        "attitude": [
+          1.2479202332145417e-17,
+          -2.1412503330033616e-18,
+          -0.977586807585298,
+          0.21053273768035563
+        ],
+        "angularVelocity": [
+          -3.16718712394831e-20,
+          -1.3739579128534788e-19,
+          0.16211298799449186
+        ],
+        "inertiaTensor": [
+          147592398.1289011,
+          13304492.567786682,
+          145842290.64120662
+        ],
+        "legsDeployed": false,
+        "landingX": 1600,
+        "landingError": 281468.1078934397,
+        "tilt": 2.7173528943886964,
+        "propellant": 1094023.957312265,
+        "inertia": 145842290.64120662,
+        "stroke": 0,
+        "kineticEnergy": 2822193922430.762,
+        "chemicalEnergy": 6564143743873.59,
+        "explosionEnergy": 9386337666304.352,
+        "capacity": 0,
+        "strokeRequired": 906342.5680262096,
+        "netImpulse": 2671117995.21841,
+        "stoppingTime": 857.8248022028572,
+        "groundImpulse": 13725196835.245716,
+        "crushForce": 16000000,
+        "peakLoadG": 1.2416409394101817,
+        "blastScale": 45.44632024970322,
+        "blastRadius": 920.9264049940643,
+        "blastDuration": 12.94500160084595,
+        "debrisRange": 1979.1917707372384,
+        "impactY": -6294.636172854376
+      },
+      "commands": [
+        {
+          "id": 1,
+          "type": "engine-command",
+          "ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "enabled": false,
+          "requestedAt": 175.00000000000517,
+          "requestedAltitude": 137442.41947463434,
+          "source": "manual",
+          "appliedAt": 175.0083333333385,
+          "altitude": 137442.41947463434,
+          "upperAltitude": 139815.88906763867,
+          "phase": "COAST",
+          "attitude": [
+            -3.775128370386072e-23,
+            -8.128509534503266e-24,
+            0.2032832952651665,
+            0.9791199629596644
+          ],
+          "omega": [
+            3.269945656824752e-23,
+            3.946199092173074e-24,
+            -0.1581649431760769
+          ],
+          "fuel": {
+            "booster": 267458.48311221035,
+            "upper": 1104466.0972968405
+          }
+        }
+      ],
+      "ledger": {
+        "remaining": {
+          "booster": 63393.8451595066,
+          "upper": 0
+        },
+        "spent": {
+          "main": 3325870.276978139,
+          "rcs": 10735.856922223695,
+          "fins": 0.017922111591982787,
+          "gimbal": 0.003018063429290899,
+          "upperMain": 96161.92817044393,
+          "upperRCS": 9814.114500058791,
+          "upperGimbal": 0.00001724278012863217,
+          "explosion": 131282.8748774718,
+          "dispersed": 962741.0824347931
+        },
+        "initial": 4600000,
+        "residual": -5.494803190231323e-8
+      }
+    },
+    {
+      "name": "Density-dependent drag, transonic Cd peak and density-speed heat flux",
+      "passed": true,
+      "cdMach05": 0.30068979435284043,
+      "cdMach1": 0.7143043506426541,
+      "cdMach2": 0.41970328522157685,
+      "doubleSpeedHeatRatio": 8,
+      "quadrupleDensityHeatRatio": 2
+    },
+    {
+      "name": "Nozzle pressure mismatch controls expansion and shock-cell contrast",
+      "passed": true,
+      "probes": [
+        {
+          "altitude": 0,
+          "exitPressure": 139200,
+          "pressureRatio": 1.3737971872686898,
+          "halfAngle": 0.07315092889394975,
+          "expansion": 1.8793802449169466,
+          "machContrast": 0.768,
+          "machSpacing": 3.5162728400137278
+        },
+        {
+          "altitude": 10000,
+          "exitPressure": 139200,
+          "pressureRatio": 4.517933801919135,
+          "halfAngle": 0.15108833874018457,
+          "expansion": 2.826983200587123,
+          "machContrast": 0.42349920543744307,
+          "machSpacing": 6.376629534265905
+        },
+        {
+          "altitude": 30000,
+          "exitPressure": 139200,
+          "pressureRatio": 48.86234929340112,
+          "halfAngle": 0.30696315843265415,
+          "expansion": 4.803787575477221,
+          "machContrast": 0.12877612704138017,
+          "machSpacing": 20.970482675432393
+        },
+        {
+          "altitude": 60000,
+          "exitPressure": 139200,
+          "pressureRatio": 1737.9051293714574,
+          "halfAngle": 0.47123889803846897,
+          "expansion": 7.1143053939331455,
+          "machContrast": 0.02304,
+          "machSpacing": 125.06456798127564
+        }
+      ]
+    },
+    {
+      "name": "Explosion size, duration and debris range increase with impact kinetic and fuel energy",
+      "passed": true,
+      "probes": [
+        {
+          "speed": 20,
+          "propellant": 0,
+          "kineticEnergy": 40000000,
+          "chemicalEnergy": 0,
+          "energy": 40000000,
+          "blastRadius": 26.736125994561547,
+          "blastDuration": 3.292256071356476,
+          "debrisRange": 56.68267088830733
+        },
+        {
+          "speed": 100,
+          "propellant": 0,
+          "kineticEnergy": 1000000000,
+          "chemicalEnergy": 0,
+          "energy": 1000000000,
+          "blastRadius": 55.08869380063768,
+          "blastDuration": 5.08278537031645,
+          "debrisRange": 117.640691671371
+        },
+        {
+          "speed": 300,
+          "propellant": 0,
+          "kineticEnergy": 9000000000,
+          "chemicalEnergy": 0,
+          "energy": 9000000000,
+          "blastRadius": 101.6280949311433,
+          "blastDuration": 6.918082784642188,
+          "debrisRange": 217.7004041019581
+        },
+        {
+          "speed": 20,
+          "propellant": 10000,
+          "kineticEnergy": 42000000,
+          "chemicalEnergy": 60000000000,
+          "energy": 60042000000,
+          "blastRadius": 180.72588407092258,
+          "blastDuration": 8.558355732614508,
+          "debrisRange": 387.76065075248357
+        },
+        {
+          "speed": 100,
+          "propellant": 10000,
+          "kineticEnergy": 1050000000,
+          "chemicalEnergy": 60000000000,
+          "energy": 61050000000,
+          "blastRadius": 181.66485297167583,
+          "blastDuration": 8.572792922744608,
+          "debrisRange": 389.779433889103
+        },
+        {
+          "speed": 300,
+          "propellant": 10000,
+          "kineticEnergy": 9450000000,
+          "chemicalEnergy": 60000000000,
+          "energy": 69450000000,
+          "blastRadius": 189.11448433147018,
+          "blastDuration": 8.68459426865613,
+          "debrisRange": 405.7961413126609
+        },
+        {
+          "speed": 20,
+          "propellant": 200000,
+          "kineticEnergy": 80000000,
+          "chemicalEnergy": 1200000000000,
+          "energy": 1200080000000,
+          "blastRadius": 469.89587203293627,
+          "blastDuration": 11.158492770669172,
+          "debrisRange": 1009.476124870813
+        },
+        {
+          "speed": 100,
+          "propellant": 200000,
+          "kineticEnergy": 2000000000,
+          "chemicalEnergy": 1200000000000,
+          "energy": 1202000000000,
+          "blastRadius": 470.13993677208555,
+          "blastDuration": 11.159881194304724,
+          "debrisRange": 1010.000864059984
+        },
+        {
+          "speed": 300,
+          "propellant": 200000,
+          "kineticEnergy": 18000000000,
+          "chemicalEnergy": 1200000000000,
+          "energy": 1218000000000,
+          "blastRadius": 472.1637728133112,
+          "blastDuration": 11.17136588638923,
+          "debrisRange": 1014.3521115486191
+        }
+      ]
+    },
+    {
+      "name": "Step-size comparison preserves recovery and bounds impact-speed drift",
+      "passed": true,
+      "hz60": {
+        "t": 611.0833333331062,
+        "success": true,
+        "reasons": [],
+        "mass": 263547.8108766786,
+        "vx": -0.6473622571218299,
+        "vy": -6.760487980012029,
+        "vz": 6.215211839700309e-13,
+        "omega": -0.025040477712844348,
+        "theta": 0.04121021397383521,
+        "x": 1599.6706533984504,
+        "z": -3.5721566632933585e-13,
+        "attitude": [
+          8.312385330656895e-15,
+          2.2576949977745697e-16,
+          0.02060364896466713,
+          0.9997877222937581
+        ],
+        "angularVelocity": [
+          -1.142116650129655e-14,
+          -2.501890439904611e-16,
+          -0.025040477712844348
+        ],
+        "inertiaTensor": [
+          98213557.95518245,
+          2668421.585126371,
+          97048970.3114451
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.32934660154955964,
+        "tilt": 0.04121021397383444,
+        "propellant": 63547.81087667862,
+        "inertia": 97048970.3114451,
+        "stroke": 2.2,
+        "kineticEnergy": 6108270.250770175,
+        "chemicalEnergy": 381286865260.07166,
+        "explosionEnergy": 0,
+        "capacity": 29514053.493025687,
+        "strokeRequired": 0.45531511132043917,
+        "netImpulse": 1781711.8075902693,
+        "stoppingTime": 0.13281015356378792,
+        "groundImpulse": 2124962.457020607,
+        "crushForce": 16000000,
+        "peakLoadG": 6.190701927431798,
+        "blastScale": 0,
+        "blastRadius": 0,
+        "blastDuration": 0,
+        "debrisRange": 0,
+        "attachedAtImpact": false
+      },
+      "hz120": {
+        "t": 610.6166666662757,
+        "success": true,
+        "reasons": [],
+        "mass": 263393.8451595066,
+        "vx": 1.024770277574972,
+        "vy": -6.1880938439527196,
+        "vz": 5.703286637087188e-13,
+        "omega": 0.013726731500365054,
+        "theta": -0.019806998848660353,
+        "x": 1599.0461318464068,
+        "z": -3.764920465698568e-13,
+        "attitude": [
+          7.795770114200706e-15,
+          -1.0774706988162945e-16,
+          -0.009903337537074154,
+          0.9999509607503894
+        ],
+        "angularVelocity": [
+          -1.0214604512950894e-14,
+          1.3342950642482193e-16,
+          0.013726731500365054
+        ],
+        "inertiaTensor": [
+          98184086.51761663,
+          2666862.682240004,
+          97019848.33756584
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.9538681535932483,
+        "tilt": 0.019806998848661564,
+        "propellant": 63393.8451595066,
+        "inertia": 97019848.33756584,
+        "stroke": 2.2,
+        "kineticEnergy": 5190447.581055198,
+        "chemicalEnergy": 380363070957.0396,
+        "explosionEnergy": 0,
+        "capacity": 29517375.246406358,
+        "strokeRequired": 0.3868563713066479,
+        "netImpulse": 1629905.8317665786,
+        "stoppingTime": 0.12148074820179112,
+        "groundImpulse": 1943691.971228658,
+        "crushForce": 16000000,
+        "peakLoadG": 6.194320675096452,
+        "blastScale": 0,
+        "blastRadius": 0,
+        "blastDuration": 0,
+        "debrisRange": 0,
+        "attachedAtImpact": false
+      },
+      "hz240": {
+        "t": 610.6708333342062,
+        "success": true,
+        "reasons": [],
+        "mass": 263406.62792012695,
+        "vx": 1.002464505759429,
+        "vy": -6.11002713607706,
+        "vz": 5.823775930443774e-13,
+        "omega": 0.01226902436542727,
+        "theta": -0.017354107746361126,
+        "x": 1599.005312042513,
+        "z": -3.840303240132059e-13,
+        "attitude": [
+          7.935004851360626e-15,
+          -9.710174231594242e-17,
+          -0.008676944989198264,
+          0.9999623546042394
+        ],
+        "angularVelocity": [
+          -1.0375658236811498e-14,
+          1.2144386276549913e-16,
+          0.01226902436542727
+        ],
+        "inertiaTensor": [
+          98186533.33719738,
+          2666992.107691285,
+          97022266.14347567
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.9946879574870309,
+        "tilt": 0.017354107746362923,
+        "propellant": 63406.62792012693,
+        "inertia": 97022266.14347567,
+        "stroke": 2.2,
+        "kineticEnergy": 5056460.571786356,
+        "chemicalEnergy": 380439767520.76154,
+        "explosionEnergy": 0,
+        "capacity": 29517099.463075597,
+        "strokeRequired": 0.376873522814998,
+        "netImpulse": 1609421.6444145292,
+        "stoppingTime": 0.11995513387557732,
+        "groundImpulse": 1919282.142009237,
+        "crushForce": 16000000,
+        "peakLoadG": 6.194020073251234,
+        "blastScale": 0,
+        "blastRadius": 0,
+        "blastDuration": 0,
+        "debrisRange": 0,
+        "attachedAtImpact": false
+      }
+    },
+    {
+      "name": "Round-tripped 30 Hz CSV supports independent quaternion and fuel-balance verification",
+      "passed": true,
+      "rows": 5442,
+      "maxQuaternionIntegralResidualRad": 1.3879372400224373e-7,
+      "maxFuelLedgerResidualKg": 0.00008631497621536255
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "successful-landing",
+      "result": "LANDED",
+      "upperResult": "COAST",
+      "config": {
+        "landingIgnition": 12000,
+        "finDeployAltitude": 45000,
+        "stroke": 2.2,
+        "initialFuel": 4600000,
+        "pitchKick": 2
+      },
+      "touchdown": {
+        "t": 610.6166666662757,
+        "success": true,
+        "reasons": [],
+        "mass": 263393.8451595066,
+        "vx": 1.024770277574972,
+        "vy": -6.1880938439527196,
+        "vz": 5.703286637087188e-13,
+        "omega": 0.013726731500365054,
+        "theta": -0.019806998848660353,
+        "x": 1599.0461318464068,
+        "z": -3.764920465698568e-13,
+        "attitude": [
+          7.795770114200706e-15,
+          -1.0774706988162945e-16,
+          -0.009903337537074154,
+          0.9999509607503894
+        ],
+        "angularVelocity": [
+          -1.0214604512950894e-14,
+          1.3342950642482193e-16,
+          0.013726731500365054
+        ],
+        "inertiaTensor": [
+          98184086.51761663,
+          2666862.682240004,
+          97019848.33756584
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.9538681535932483,
+        "tilt": 0.019806998848661564,
+        "propellant": 63393.8451595066,
+        "inertia": 97019848.33756584,
+        "stroke": 2.2,
+        "kineticEnergy": 5190447.581055198,
+        "chemicalEnergy": 380363070957.0396,
+        "explosionEnergy": 0,
+        "capacity": 29517375.246406358,
+        "strokeRequired": 0.3868563713066479,
+        "netImpulse": 1629905.8317665786,
+        "stoppingTime": 0.12148074820179112,
+        "groundImpulse": 1943691.971228658,
+        "crushForce": 16000000,
+        "peakLoadG": 6.194320675096452,
+        "blastScale": 0,
+        "blastRadius": 0,
+        "blastDuration": 0,
+        "debrisRange": 0,
+        "attachedAtImpact": false
+      },
+      "engineCommands": [],
+      "sampleCount": 18592
+    },
+    {
+      "name": "short-stroke-crash",
+      "result": "CRASHED",
+      "upperResult": "COAST",
+      "config": {
+        "landingIgnition": 12000,
+        "finDeployAltitude": 45000,
+        "stroke": 0.08,
+        "initialFuel": 4600000,
+        "pitchKick": 2
+      },
+      "touchdown": {
+        "t": 610.6166666662757,
+        "success": false,
+        "reasons": [
+          "缓冲行程耗尽"
+        ],
+        "mass": 263393.8451595066,
+        "vx": 1.024770277574972,
+        "vy": -6.1880938439527196,
+        "vz": 5.703286637087188e-13,
+        "omega": 0.013726731500365054,
+        "theta": -0.019806998848660353,
+        "x": 1599.0461318464068,
+        "z": -3.764920465698568e-13,
+        "attitude": [
+          7.795770114200706e-15,
+          -1.0774706988162945e-16,
+          -0.009903337537074154,
+          0.9999509607503894
+        ],
+        "angularVelocity": [
+          -1.0214604512950894e-14,
+          1.3342950642482193e-16,
+          0.013726731500365054
+        ],
+        "inertiaTensor": [
+          98184086.51761663,
+          2666862.682240004,
+          97019848.33756584
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.9538681535932483,
+        "tilt": 0.019806998848661564,
+        "propellant": 63393.8451595066,
+        "inertia": 97019848.33756584,
+        "stroke": 0.08,
+        "kineticEnergy": 5190447.581055198,
+        "chemicalEnergy": 380363070957.0396,
+        "explosionEnergy": 380368261404.62067,
+        "capacity": 1073359.099869322,
+        "strokeRequired": 0.3868563713066479,
+        "netImpulse": 1629905.8317665786,
+        "stoppingTime": 0.12148074820179112,
+        "groundImpulse": 1943691.971228658,
+        "crushForce": 16000000,
+        "peakLoadG": 6.194320675096452,
+        "blastScale": 15.609946831437032,
+        "blastRadius": 324.1989366287406,
+        "blastDuration": 10.16063686769678,
+        "debrisRange": 696.2277137517924,
+        "attachedAtImpact": false
+      },
+      "engineCommands": [],
+      "sampleCount": 18853
+    },
+    {
+      "name": "late-ignition-crash",
+      "result": "CRASHED",
+      "upperResult": "COAST",
+      "config": {
+        "landingIgnition": 80,
+        "finDeployAltitude": 45000,
+        "stroke": 2.2,
+        "initialFuel": 4600000,
+        "pitchKick": 2
+      },
+      "touchdown": {
+        "t": 600.9833333329511,
+        "success": false,
+        "reasons": [
+          "缓冲行程耗尽",
+          "未进入塔架捕获窗口",
+          "偏离着陆区",
+          "侧向剪切超限"
+        ],
+        "mass": 345016.54558098316,
+        "vx": 12.778954785739323,
+        "vy": -687.4930614479653,
+        "vz": 8.928976968840555e-14,
+        "omega": 0.034763589942691395,
+        "theta": 0.022158103462341285,
+        "x": 1688.1791924784939,
+        "z": 2.918413041077201e-11,
+        "attitude": [
+          -6.696318950140081e-16,
+          -7.831260306665306e-17,
+          0.01107882508214578,
+          0.9999386279341345
+        ],
+        "angularVelocity": [
+          -1.7718615034919457e-14,
+          -1.9247067421477494e-15,
+          0.034763589942691395
+        ],
+        "inertiaTensor": [
+          113807943.33203548,
+          3493292.5240074545,
+          112458442.02770305
+        ],
+        "legsDeployed": false,
+        "landingX": 1600,
+        "landingError": 88.17919247849386,
+        "tilt": 0.022158103462340033,
+        "propellant": 145016.5455809832,
+        "inertia": 112458442.02770305,
+        "stroke": 2.2,
+        "kineticEnergy": 81563706347.8111,
+        "chemicalEnergy": 870099273485.899,
+        "explosionEnergy": 951662979833.7102,
+        "capacity": 27756395.685212158,
+        "strokeRequired": 6464.821873856814,
+        "netImpulse": 237196481.17167157,
+        "stoppingTime": 18.800433042381485,
+        "groundImpulse": 300806928.67810374,
+        "crushForce": 16000000,
+        "peakLoadG": 4.728891879713417,
+        "blastScale": 21.19146876856277,
+        "blastRadius": 435.8293753712554,
+        "blastDuration": 10.957057616587136,
+        "debrisRange": 936.2331570481991,
+        "attachedAtImpact": false
+      },
+      "engineCommands": [],
+      "sampleCount": 18604
+    },
+    {
+      "name": "engine-out-tumble-crash",
+      "result": "CRASHED",
+      "upperResult": "ATTACHED",
+      "config": {
+        "landingIgnition": 12000,
+        "finDeployAltitude": 45000,
+        "stroke": 2.2,
+        "initialFuel": 4600000,
+        "pitchKick": 2
+      },
+      "touchdown": {
+        "t": 159.03333333335303,
+        "success": false,
+        "reasons": [
+          "缓冲行程耗尽",
+          "支撑载荷超限",
+          "触地倾角超限",
+          "未进入塔架捕获窗口",
+          "偏离着陆区",
+          "侧向剪切超限"
+        ],
+        "mass": 2067365.8979430303,
+        "vx": 656.9421778652643,
+        "vy": -534.8869967635287,
+        "vz": -102.79988184769871,
+        "omega": -0.021014768992522366,
+        "theta": -1.6386994817539817,
+        "x": 51256.40070552712,
+        "z": 1994.8823440386234,
+        "attitude": [
+          -0.02547669897015434,
+          -0.013733864003326506,
+          -0.7302552667357028,
+          0.6825610333104942
+        ],
+        "angularVelocity": [
+          0.12634618623617666,
+          0.2784532698941471,
+          -0.021014768992522366
+        ],
+        "inertiaTensor": [
+          6174677414.318206,
+          20932079.71667318,
+          6101459895.571349
+        ],
+        "legsDeployed": false,
+        "landingX": 1600,
+        "landingError": 49696.45547314649,
+        "tilt": 1.6386921131043075,
+        "propellant": 1647365.8979430303,
+        "inertia": 6101459895.571349,
+        "stroke": 2.2,
+        "kineticEnergy": 752825820285.7919,
+        "chemicalEnergy": 9884195387658.182,
+        "explosionEnergy": 10637021207943.973,
+        "capacity": 0,
+        "strokeRequired": null,
+        "netImpulse": 1105807136.3620832,
+        "stoppingTime": null,
+        "groundImpulse": null,
+        "crushForce": 16000000,
+        "peakLoadG": 0.7891907002954952,
+        "blastScale": 47.38126757159675,
+        "blastRadius": 959.6253514319351,
+        "blastDuration": 13.053648215942511,
+        "debrisRange": 2062.3945055786603,
+        "attachedAtImpact": true
+      },
+      "engineCommands": [
+        {
+          "id": 2,
+          "type": "engine-command",
+          "ids": [
+            "B15",
+            "B16",
+            "B17"
+          ],
+          "enabled": false,
+          "requestedAt": 55.00833333333085,
+          "requestedAltitude": 6202.72980764322,
+          "source": "manual",
+          "appliedAt": 55.016666666664186,
+          "altitude": 6202.72980764322,
+          "upperAltitude": null,
+          "phase": "ASCENT",
+          "attitude": [
+            4.621251184752665e-18,
+            -2.0602104492140198e-19,
+            -0.044240226546042115,
+            0.9990209218805955
+          ],
+          "omega": [
+            3.363202359310946e-19,
+            -2.3794867268321762e-20,
+            -0.002569388850017877
+          ],
+          "fuel": {
+            "booster": 2334612.4477971797,
+            "upper": 1200000
+          }
+        }
+      ],
+      "sampleCount": 5442
+    },
+    {
+      "name": "ship-engine-cut-crash",
+      "result": "LANDED",
+      "upperResult": "CRASHED",
+      "config": {
+        "landingIgnition": 12000,
+        "finDeployAltitude": 45000,
+        "stroke": 2.2,
+        "initialFuel": 4600000,
+        "pitchKick": 2
+      },
+      "touchdown": {
+        "t": 610.6166666662757,
+        "success": true,
+        "reasons": [],
+        "mass": 263393.8451595066,
+        "vx": 1.024770277574972,
+        "vy": -6.1880938439527196,
+        "vz": 5.703286637087188e-13,
+        "omega": 0.013726731500365054,
+        "theta": -0.019806998848660353,
+        "x": 1599.0461318464068,
+        "z": -3.764920465698568e-13,
+        "attitude": [
+          7.795770114200706e-15,
+          -1.0774706988162945e-16,
+          -0.009903337537074154,
+          0.9999509607503894
+        ],
+        "angularVelocity": [
+          -1.0214604512950894e-14,
+          1.3342950642482193e-16,
+          0.013726731500365054
+        ],
+        "inertiaTensor": [
+          98184086.51761663,
+          2666862.682240004,
+          97019848.33756584
+        ],
+        "legsDeployed": true,
+        "landingX": 1600,
+        "landingError": 0.9538681535932483,
+        "tilt": 0.019806998848661564,
+        "propellant": 63393.8451595066,
+        "inertia": 97019848.33756584,
+        "stroke": 2.2,
+        "kineticEnergy": 5190447.581055198,
+        "chemicalEnergy": 380363070957.0396,
+        "explosionEnergy": 0,
+        "capacity": 29517375.246406358,
+        "strokeRequired": 0.3868563713066479,
+        "netImpulse": 1629905.8317665786,
+        "stoppingTime": 0.12148074820179112,
+        "groundImpulse": 1943691.971228658,
+        "crushForce": 16000000,
+        "peakLoadG": 6.194320675096452,
+        "blastScale": 0,
+        "blastRadius": 0,
+        "blastDuration": 0,
+        "debrisRange": 0,
+        "attachedAtImpact": false
+      },
+      "engineCommands": [
+        {
+          "id": 1,
+          "type": "engine-command",
+          "ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "enabled": false,
+          "requestedAt": 175.00000000000517,
+          "requestedAltitude": 137442.41947463434,
+          "source": "manual",
+          "appliedAt": 175.0083333333385,
+          "altitude": 137442.41947463434,
+          "upperAltitude": 139815.88906763867,
+          "phase": "COAST",
+          "attitude": [
+            -3.775128370386072e-23,
+            -8.128509534503266e-24,
+            0.2032832952651665,
+            0.9791199629596644
+          ],
+          "omega": [
+            3.269945656824752e-23,
+            3.946199092173074e-24,
+            -0.1581649431760769
+          ],
+          "fuel": {
+            "booster": 267458.48311221035,
+            "upper": 1104466.0972968405
+          }
+        }
+      ],
+      "sampleCount": 19087
+    }
+  ]
+}

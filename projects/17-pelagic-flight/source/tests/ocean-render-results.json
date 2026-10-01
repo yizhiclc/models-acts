@@ -1,0 +1,47 @@
+{
+  "meshMotionStepMeters": 0.02,
+  "framesPerCase": 121,
+  "worldSamplesPerFrame": 16384,
+  "frozenWaveTime": 4,
+  "renderedActualOceanVertexShader": true,
+  "cases": [
+    {
+      "radius": 90,
+      "continuous": {
+        "maximumHeightStepMeters": 0.005846142768859863,
+        "rmsHeightStepMeters": 0.0006464880363689752
+      },
+      "snappedControl": {
+        "maximumHeightStepMeters": 0.046274811029434204,
+        "rmsHeightStepMeters": 0.0006137417167008371
+      },
+      "maximumJumpReduction": 7.915443200587264
+    },
+    {
+      "radius": 260,
+      "continuous": {
+        "maximumHeightStepMeters": 0.0005322694778442383,
+        "rmsHeightStepMeters": 0.00009333959379524635
+      },
+      "snappedControl": {
+        "maximumHeightStepMeters": 0.035448312759399414,
+        "rmsHeightStepMeters": 0.0006292030804483553
+      },
+      "maximumJumpReduction": 66.59843225083986
+    },
+    {
+      "radius": 520,
+      "continuous": {
+        "maximumHeightStepMeters": 0.0009391903877258301,
+        "rmsHeightStepMeters": 0.0002561742398380575
+      },
+      "snappedControl": {
+        "maximumHeightStepMeters": 0.07451242208480835,
+        "rmsHeightStepMeters": 0.0019871276557975087
+      },
+      "maximumJumpReduction": 79.33686615472489
+    }
+  ],
+  "errors": [],
+  "testedAt": "2026-09-29T13:21:03.141Z"
+}

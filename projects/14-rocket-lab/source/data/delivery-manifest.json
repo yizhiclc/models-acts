@@ -1,0 +1,455 @@
+{
+  "build": "2026-09-30-starship-flight-control",
+  "createdAt": "2026-09-30T02:11:27.155Z",
+  "standalone": {
+    "file": "GPT6Astra max 火箭模拟.html",
+    "bytes": 1037897,
+    "sha256": "155312fefa256b7adca9e223627e36cac4bbd7feaaaebafa7803d851e8571721",
+    "matchesDist": true
+  },
+  "reports": [
+    {
+      "file": "data/validation-report.json",
+      "build": "2026-09-30-starship-flight-control",
+      "status": "PASS",
+      "checks": 20,
+      "sha256": "e313fa64ad8876e295c01ac46e7e98232a87c14c0aeafa11a7baebf66e294099"
+    },
+    {
+      "file": "data/quark-starship-validation.json",
+      "build": "2026-09-30-starship-flight-control",
+      "status": "PASS",
+      "checks": 16,
+      "sha256": "e24b7a5ce61bfc2e8da437bf0481c1b3af568fa7f7a2ab23099d2a7d1a4a3c2c"
+    },
+    {
+      "file": "data/quark-engine-validation.json",
+      "build": "2026-09-30-starship-flight-control",
+      "status": "PASS",
+      "checks": 8,
+      "sha256": "c0a08617ae171d9a8560f0c822696e6c8bcf6815a0c92b15178c2b792980d0d0"
+    },
+    {
+      "file": "data/quark-standalone-validation.json",
+      "build": "2026-09-30-starship-flight-control",
+      "status": "PASS",
+      "checks": 6,
+      "sha256": "b8aa07a8942494e919a8a9068047b3edec5e5c39b7ce8f78521fbcc7038d958e"
+    },
+    {
+      "file": "data/quark-rendering-validation.json",
+      "build": "2026-09-30-starship-flight-control",
+      "status": "PASS",
+      "checks": 5,
+      "sha256": "c52af85de558f6ec1b6d16bd9ddde2885cf7bef9534393a2d8505f85b9ff564b"
+    }
+  ],
+  "totalChecks": 55,
+  "files": [
+    {
+      "file": "src/antialias.js",
+      "bytes": 1921,
+      "sha256": "12d33744c193d73a8fdf2a4d05082fa031ce1e6c40b4ded47cab63641ec86c92"
+    },
+    {
+      "file": "src/cinema-ui.css",
+      "bytes": 4516,
+      "sha256": "3bea0be2791c9a6777def20fa1be51f281e2fb4d39be455b267a10976dd8aee6"
+    },
+    {
+      "file": "src/cinematic.js",
+      "bytes": 7894,
+      "sha256": "f4fe27e65cb5b52361e4eea24245349b1d2d510be9dcf024b63a51282cc9d7cb"
+    },
+    {
+      "file": "src/coastal-world.js",
+      "bytes": 7900,
+      "sha256": "d7057ca8fa99dff505f6ee9a02dea7af6804a2572232b0183272a0c1f1ba6314"
+    },
+    {
+      "file": "src/details.js",
+      "bytes": 13155,
+      "sha256": "65421eee359a8ad89895e64f4184dc7481f7f55c0b9505164e04610252aeef3d"
+    },
+    {
+      "file": "src/effects.js",
+      "bytes": 21337,
+      "sha256": "b9aca821f5e61601d7244ca570493e6cf29add915045f7d3ccdcc2112855189f"
+    },
+    {
+      "file": "src/engine-control.css",
+      "bytes": 4695,
+      "sha256": "b2230cb93a3bb8c8343c4f74d89d89d46f581e41344d293d4579663b8b0df1b1"
+    },
+    {
+      "file": "src/engine-control.js",
+      "bytes": 10644,
+      "sha256": "f547b31b4975317cc236e08084e15dce86abac9ad449de348e1eab8cd541f60c"
+    },
+    {
+      "file": "src/exhaust.js",
+      "bytes": 4213,
+      "sha256": "8838589a23a3f07820db3f0edae864f9c020b14a9decac1ab0234e4cef68a9d0"
+    },
+    {
+      "file": "src/flight-control.css",
+      "bytes": 12237,
+      "sha256": "32af2722e295fc0e5b5fc10b3a4a0352c7ccd745bc5abb30d9020780f429878a"
+    },
+    {
+      "file": "src/landing-gear.js",
+      "bytes": 7855,
+      "sha256": "e4981de3bf6872f082514cdbd65b9c6e78912c4844b9defb16bdf2a77c2e8bc4"
+    },
+    {
+      "file": "src/launch-range.js",
+      "bytes": 17984,
+      "sha256": "7b10c8405203ecb3bd2ce6265506d0ff06164002d5998f963eefce5b2d2ca343"
+    },
+    {
+      "file": "src/main.js",
+      "bytes": 39715,
+      "sha256": "79bbd01947d73222cdfa88b40d557c7938ec925496998c3060312702bf41c51e"
+    },
+    {
+      "file": "src/orbital-world.js",
+      "bytes": 4081,
+      "sha256": "3680d3d6970374e0cfecd64816a584254c3ba4702d45e7c58cf48eb6734cdc66"
+    },
+    {
+      "file": "src/physics.js",
+      "bytes": 42632,
+      "sha256": "f6bdf0a7dbe5ac01d2fa911318d2124102115e425934e24bb245de9e1bd1ec96"
+    },
+    {
+      "file": "src/plume-model.js",
+      "bytes": 864,
+      "sha256": "bc6f539020787984d4e23b06c177cedc3e34b0316d29df16996af08e90311cb5"
+    },
+    {
+      "file": "src/render-health.js",
+      "bytes": 2508,
+      "sha256": "8956617a5dc23f9d2b160c350fab8ae3e9bd4bb882a64ae33f31b632f8b87e92"
+    },
+    {
+      "file": "src/rigid-body.js",
+      "bytes": 8131,
+      "sha256": "d66899daf86fddbcd68904f96fcb9799063f7b0471997d2f15314d825937e7f7"
+    },
+    {
+      "file": "src/scene.js",
+      "bytes": 23770,
+      "sha256": "2c9b0484beac312f11e41fcc70ed245daf43d451ccb0d99d9d641f88a0008197"
+    },
+    {
+      "file": "src/sound.js",
+      "bytes": 2913,
+      "sha256": "10e28779d95161a0dede6251bb1dde44741be603c15b61b52781ba0131203fb4"
+    },
+    {
+      "file": "src/starship-model.js",
+      "bytes": 8373,
+      "sha256": "504a4230d98b0f882543e58010737d8ea35e22fdfd5dbcb1a0d51902650e4788"
+    },
+    {
+      "file": "src/style.css",
+      "bytes": 16432,
+      "sha256": "ec7d60d77844226d79c0790e0c3d041907da8e71ad3ffa5503c75c8355ff860c"
+    },
+    {
+      "file": "src/surfaces.js",
+      "bytes": 9716,
+      "sha256": "f97597509714d45097023c88227c55e7eab9151fadfdd8a94d4bdfb75a583047"
+    },
+    {
+      "file": "src/thermal.js",
+      "bytes": 2946,
+      "sha256": "9cb963e6983ec2db32539706a3578f0608f8f81040a31241c992858b3ae0023a"
+    },
+    {
+      "file": "src/vehicle.js",
+      "bytes": 993,
+      "sha256": "b771bec3f00941948404d6f5928a4377faf29c303f979f85b058646004931a3b"
+    },
+    {
+      "file": "scripts/browser-flight.cjs",
+      "bytes": 703,
+      "sha256": "7e5f74999cfe8c514af13de14a81d2da787852f943a33243367857fec01fc950"
+    },
+    {
+      "file": "scripts/manifest.mjs",
+      "bytes": 1897,
+      "sha256": "7a59db2073e734aeb0812690e99352deb30cad42aa386249aceed82693ba3b6d"
+    },
+    {
+      "file": "scripts/package-html.mjs",
+      "bytes": 578,
+      "sha256": "d70dbb89c713137efe81414f97fa0d85949444a4639adf52ecd17ee9f631be94"
+    },
+    {
+      "file": "scripts/verify-engines-browser.cjs",
+      "bytes": 5733,
+      "sha256": "fa38b769267b76959b355ea8052bb4c2cc7dabb81112c562fe4f386b446909fc"
+    },
+    {
+      "file": "scripts/verify-flight.mjs",
+      "bytes": 17198,
+      "sha256": "30b3cbb5f764ecc8df22436caf2fb5ec9327397b1bc1ad8067d5410877687f24"
+    },
+    {
+      "file": "scripts/verify-rendering.cjs",
+      "bytes": 3951,
+      "sha256": "82968ac7533c0c10ef59472f4512f94ef76fc4f46095b6931db7a4c2df884b65"
+    },
+    {
+      "file": "scripts/verify-standalone.cjs",
+      "bytes": 4464,
+      "sha256": "a0cc76c93633ba51e8a384eeed5d51cf74a99fce6f40c27955a088c79e85a16e"
+    },
+    {
+      "file": "scripts/verify-starship-browser.cjs",
+      "bytes": 12076,
+      "sha256": "83c263fbea634ae6a484c594d9156363c8d2836a98965fa4c380a440acbd46d7"
+    },
+    {
+      "file": "data/cd-mach-curve.csv",
+      "bytes": 1988,
+      "sha256": "14755b330112c678eb2416439841f39c5b403044da35ef15b1ee950e9d589045"
+    },
+    {
+      "file": "data/engine-out-tumble-crash-engines.csv",
+      "bytes": 9291373,
+      "sha256": "23bfff40d25ae3f26c0dc2567e0920baf18efb14869651773dba030d11a20c0f"
+    },
+    {
+      "file": "data/engine-out-tumble-crash.csv",
+      "bytes": 10492414,
+      "sha256": "775bed6d0adacde30952538590673645c2eb4f23155d5e6412231b62b52d2c10"
+    },
+    {
+      "file": "data/engine-out-tumble-crash.json",
+      "bytes": 57292,
+      "sha256": "49567149afdb3981e0885416dcb504d3a0991d3d9a1154a7912fa1513df70ccd"
+    },
+    {
+      "file": "data/environment-probes.csv",
+      "bytes": 1217,
+      "sha256": "81918e81f611c9e5f7442c6f959a55c048ce1df5e27a92028ac9da6388cfbb75"
+    },
+    {
+      "file": "data/exhaust-pressure-probes.csv",
+      "bytes": 485,
+      "sha256": "3246ce21b1f951cf9779a2b184341ea6db51d17d251d1b9d069ac0172503faaa"
+    },
+    {
+      "file": "data/explosion-energy-probes.csv",
+      "bytes": 947,
+      "sha256": "0777be90162b502144fe716cb706c269e7f97064b3009d936f9124f1f1787fcd"
+    },
+    {
+      "file": "data/late-ignition-crash-engines.csv",
+      "bytes": 24739896,
+      "sha256": "dfc0593eb56c84c3635fe30eac236643c1203d465cd5e7c3516a2bf3340f7955"
+    },
+    {
+      "file": "data/late-ignition-crash.csv",
+      "bytes": 53374334,
+      "sha256": "5d88adc28001e374cceecc3c5e065e1e335bdea3d231cde313e8d8da9cc2b699"
+    },
+    {
+      "file": "data/late-ignition-crash.json",
+      "bytes": 79057,
+      "sha256": "11a5a815e146495416650620ae43cdbd62da18dde64aaac667bb4bc2c364d3f4"
+    },
+    {
+      "file": "data/manual-throttle-probes.csv",
+      "bytes": 788,
+      "sha256": "341c49ebefcefdb638cb85e1060ccd396578ef683aea1358e4d4e5caf257bcd8"
+    },
+    {
+      "file": "data/preview-catch-approach.png",
+      "bytes": 947643,
+      "sha256": "decec23b111f9edea96591bf4da6d1de9f2ad73880104578c0fea621311b7611"
+    },
+    {
+      "file": "data/preview-crash.png",
+      "bytes": 576992,
+      "sha256": "7f0a1de1cda8db3fedaf288382a48df1ab631bb73bf9f1452800a18c3860f22a"
+    },
+    {
+      "file": "data/preview-engine-out.png",
+      "bytes": 747905,
+      "sha256": "aa1d7ed28a4d660c3f452e01cb9c67b38fe519f0394139c47efda121b27c8c31"
+    },
+    {
+      "file": "data/preview-ignition.png",
+      "bytes": 1310578,
+      "sha256": "d80c10f2ddd63f9f3c3039c4130af2c4c673a954bba650108558b2fb93b09e03"
+    },
+    {
+      "file": "data/preview-landed.png",
+      "bytes": 1077967,
+      "sha256": "8e0244afc9e816916648dddcc32e7cb6ce6fade226fda8135d2d070c3371ab64"
+    },
+    {
+      "file": "data/preview-long-plume.png",
+      "bytes": 965677,
+      "sha256": "f7bb73a852e71cab124a067e56be0ca8a96c12d6813ee40c25ded86c31d7755c"
+    },
+    {
+      "file": "data/preview-pad.png",
+      "bytes": 800966,
+      "sha256": "1f9947c206dd8167e44bc1c5ff636b9fd9e1ada05bba33589797ae1eaa379bce"
+    },
+    {
+      "file": "data/preview-powered-separation.png",
+      "bytes": 631728,
+      "sha256": "3f7a6f1d0671118d8ffef5098f68cccab9c26f8a2bea9c807cba7c02b72a421f"
+    },
+    {
+      "file": "data/preview-range.png",
+      "bytes": 1114857,
+      "sha256": "e21670b650ff4c391dcdff322b7aed527ed4a4861721c7f587823495a38901b7"
+    },
+    {
+      "file": "data/preview-reentry.png",
+      "bytes": 943818,
+      "sha256": "bb59272aa78623f117a5a0954760f5f8c64ae49628c108350cef88f6239c0d4e"
+    },
+    {
+      "file": "data/preview-standby.png",
+      "bytes": 1308269,
+      "sha256": "877e8b46c19e3f4a827375d2506432530c14239f98b0f44e1f16692fd0c8b42f"
+    },
+    {
+      "file": "data/preview-thermal-ascent-on.png",
+      "bytes": 1009821,
+      "sha256": "88892e7fd5c1cbcd4e35b090ade924c2fd07754ba20ada9913bff97a9efd29da"
+    },
+    {
+      "file": "data/preview-thermal-entry-on.png",
+      "bytes": 1188887,
+      "sha256": "e85aea1f6ac0d677ea301c49caa5e962358797a8e0b90d5a6aa720f6a277ed16"
+    },
+    {
+      "file": "data/preview-thermal-standby-on.png",
+      "bytes": 1407668,
+      "sha256": "eea498d6d759ba677b54f1a0c002245d65fd90f74ffa2980a919e83ac5dfa54a"
+    },
+    {
+      "file": "data/preview-upper-powered.png",
+      "bytes": 657695,
+      "sha256": "6a640cd951edb6d2f90916976d301f4931536b9e0417ff6c137b3deb3885a451"
+    },
+    {
+      "file": "data/preview-vacuum-expansion.png",
+      "bytes": 1180633,
+      "sha256": "7e8ca4b0caa1427f20f56ad30ff84862124c569f115001d1ffb18e6cdc750b5b"
+    },
+    {
+      "file": "data/quark-engine-validation.json",
+      "bytes": 9069,
+      "sha256": "c0a08617ae171d9a8560f0c822696e6c8bcf6815a0c92b15178c2b792980d0d0"
+    },
+    {
+      "file": "data/quark-rendering-validation.json",
+      "bytes": 3107,
+      "sha256": "c52af85de558f6ec1b6d16bd9ddde2885cf7bef9534393a2d8505f85b9ff564b"
+    },
+    {
+      "file": "data/quark-standalone-validation.json",
+      "bytes": 8216,
+      "sha256": "b8aa07a8942494e919a8a9068047b3edec5e5c39b7ce8f78521fbcc7038d958e"
+    },
+    {
+      "file": "data/quark-starship-validation.json",
+      "bytes": 6876,
+      "sha256": "e24b7a5ce61bfc2e8da437bf0481c1b3af568fa7f7a2ab23099d2a7d1a4a3c2c"
+    },
+    {
+      "file": "data/ship-engine-cut-crash-engines.csv",
+      "bytes": 24599327,
+      "sha256": "61423398ebf5c6d41dccb39f108be7b57c81dd343d928a1be962090ca8590aeb"
+    },
+    {
+      "file": "data/ship-engine-cut-crash.csv",
+      "bytes": 53034811,
+      "sha256": "fb103a11603112ffc971b19bfe41c27407544821017796b32ff1842373826783"
+    },
+    {
+      "file": "data/ship-engine-cut-crash.json",
+      "bytes": 83219,
+      "sha256": "7c9975d2a6f764b26f69fffae3a5914693ae51929e395a34e5ed35e1c0395991"
+    },
+    {
+      "file": "data/short-stroke-crash-engines.csv",
+      "bytes": 25328235,
+      "sha256": "30d92557bc48f13b98cffe8a9f5c399b64c3b2d0ea7d99e57543fa35b35b3a02"
+    },
+    {
+      "file": "data/short-stroke-crash.csv",
+      "bytes": 54421132,
+      "sha256": "f06a48e2f5e39974e69af3226f74f4682af83e7fee31f5c670b40843b259f62d"
+    },
+    {
+      "file": "data/short-stroke-crash.json",
+      "bytes": 78912,
+      "sha256": "07ed63d4d984f16d94d7e778c3f972ddfc0aa73b2b498a238e332bc59305c482"
+    },
+    {
+      "file": "data/successful-landing-engines.csv",
+      "bytes": 25046711,
+      "sha256": "175aa8b76f547bf80340d887eb0d6f1496127b28970bf8922ecbb7d5374ec06e"
+    },
+    {
+      "file": "data/successful-landing.csv",
+      "bytes": 53691066,
+      "sha256": "64119d80fa4dda328bd0c0914cb0c4caedd24904ac70a4c40c396a857eabdb60"
+    },
+    {
+      "file": "data/successful-landing.json",
+      "bytes": 78208,
+      "sha256": "fad9a9db0dd848cb1a7ad6c2883fab02f4b851f21210517cf057a04d9775fae9"
+    },
+    {
+      "file": "data/validation-report.json",
+      "bytes": 47686,
+      "sha256": "e313fa64ad8876e295c01ac46e7e98232a87c14c0aeafa11a7baebf66e294099"
+    },
+    {
+      "file": "dist/index.html",
+      "bytes": 1037897,
+      "sha256": "155312fefa256b7adca9e223627e36cac4bbd7feaaaebafa7803d851e8571721"
+    },
+    {
+      "file": "README.md",
+      "bytes": 19964,
+      "sha256": "a421092576e435dbfe0c604770cdf53d1b755dfe57c2f41287a277f44993c9a6"
+    },
+    {
+      "file": "index.html",
+      "bytes": 588,
+      "sha256": "1516ccd73131e73f4f8aa69ebee701707c3968b2c1b3d17973b32d60fdbffe74"
+    },
+    {
+      "file": "package.json",
+      "bytes": 730,
+      "sha256": "23d1f4caaf866a9d26af12066c92a388a247db0c610718e53a9acb2762c0c7a0"
+    },
+    {
+      "file": "package-lock.json",
+      "bytes": 38934,
+      "sha256": "bde2c5a3a22d71cc5c547b6764d5bf3aea0663ac3392b8cb13312047b53e26e3"
+    },
+    {
+      "file": "vite.config.js",
+      "bytes": 319,
+      "sha256": "9a2d7668f77b4c69366bc55006458bde7f6fbab2c90fc80f38a74a30243936fc"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    }
+  ]
+}

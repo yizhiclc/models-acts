@@ -1,0 +1,51 @@
+{
+  "profileName": "Altar V2 Raw 1080p60",
+  "sceneName": "Altar V2 - Minecraft",
+  "inputName": "Altar V2 - Game Window",
+  "window": "[java.exe]: Altar V2 Film | Minecraft 1.21.11",
+  "output": "C:\\Users\\Administrator\\Documents\\Codex\\2026-09-11\\html-blackhole-1-three-js-2\\outputs\\altar-film-v2\\recording",
+  "restore": {
+    "profile": "Altar V2 Raw 1080p60",
+    "scene": "Altar V2 - Minecraft",
+    "mutes": [
+      {
+        "inputName": "桌面音频",
+        "inputMuted": true
+      },
+      {
+        "inputName": "麦克风/Aux",
+        "inputMuted": false
+      },
+      {
+        "inputName": "窗口采集",
+        "inputMuted": false
+      },
+      {
+        "inputName": "Minecraft - Altar Film",
+        "inputMuted": false
+      },
+      {
+        "inputName": "Altar V2 - Game Window",
+        "inputMuted": false
+      }
+    ]
+  },
+  "video": {
+    "baseHeight": 1080,
+    "baseWidth": 1920,
+    "fpsDenominator": 1,
+    "fpsNumerator": 60,
+    "outputHeight": 1080,
+    "outputWidth": 1920
+  },
+  "input": {
+    "inputKind": "window_capture",
+    "inputSettings": {
+      "client_area": true,
+      "cursor": false,
+      "method": 2,
+      "priority": 1,
+      "window": "Altar V2 Film | Minecraft 1.21.11:GLFW30:java.exe"
+    }
+  }
+}

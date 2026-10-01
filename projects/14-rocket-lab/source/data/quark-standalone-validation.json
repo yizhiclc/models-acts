@@ -1,0 +1,312 @@
+{
+  "status": "PASS",
+  "build": "2026-09-30-starship-flight-control",
+  "browser": "144.0.7559.86",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36 QuarkPC/7.3.5.1009",
+  "origin": "file://",
+  "testedFile": "GPT6Astra max 火箭模拟.html",
+  "customBrowserFlags": [],
+  "externalRequests": [],
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    "Single-file WebGPU init without override flags",
+    "Full short-stroke flight crashes at the same nominal touchdown speed",
+    "Explosion field executed on GPU",
+    "Body CSV, individual-engine CSV and metadata JSON downloads",
+    "All critical impact and configuration columns present",
+    "No HTTP or HTTPS requests"
+  ],
+  "result": {
+    "phase": "CRASHED",
+    "td": {
+      "t": 610.6166666662757,
+      "success": false,
+      "reasons": [
+        "缓冲行程耗尽"
+      ],
+      "mass": 263393.8451595066,
+      "vx": 1.024770277574972,
+      "vy": -6.1880938439527196,
+      "vz": 6.011694286997044e-13,
+      "omega": 0.013726731500365054,
+      "theta": -0.019806998848660353,
+      "x": 1599.0461318464068,
+      "z": -3.9686035073750375e-13,
+      "attitude": [
+        8.217168727435758e-15,
+        -1.135714614065763e-16,
+        -0.009903337537074154,
+        0.9999509607503894
+      ],
+      "angularVelocity": [
+        -1.07669110116748e-14,
+        1.4064111419701148e-16,
+        0.013726731500365054
+      ],
+      "inertiaTensor": [
+        98184086.51761663,
+        2666862.682240004,
+        97019848.33756584
+      ],
+      "legsDeployed": true,
+      "landingX": 1600,
+      "landingError": 0.9538681535932483,
+      "tilt": 0.019806998848661564,
+      "propellant": 63393.8451595066,
+      "inertia": 97019848.33756584,
+      "stroke": 0.08,
+      "kineticEnergy": 5190447.581055198,
+      "chemicalEnergy": 380363070957.0396,
+      "explosionEnergy": 380368261404.62067,
+      "capacity": 1073359.099869322,
+      "strokeRequired": 0.3868563713066479,
+      "netImpulse": 1629905.8317665786,
+      "stoppingTime": 0.12148074820179112,
+      "groundImpulse": 1943691.971228658,
+      "crushForce": 16000000,
+      "peakLoadG": 6.194320675096452,
+      "blastScale": 15.609946831437032,
+      "blastRadius": 324.1989366287406,
+      "blastDuration": 10.16063686769678,
+      "debrisRange": 696.2277137517924,
+      "attachedAtImpact": false
+    }
+  },
+  "evidence": {
+    "backend": "WebGPU",
+    "simulatedTime": 610.9666666667683,
+    "fields": {
+      "plume": {
+        "count": 65536,
+        "dispatches": 18329,
+        "active": 0,
+        "generationTotal": 14102173,
+        "positionChecksum": 37909728244.98868,
+        "velocityChecksum": 437765416.2078042,
+        "stateChecksum": 201559803.08276373,
+        "finite": true,
+        "emitters": {
+          "B1": {
+            "active": 0,
+            "generations": 526410
+          },
+          "B2": {
+            "active": 0,
+            "generations": 526498
+          },
+          "B3": {
+            "active": 0,
+            "generations": 526454
+          },
+          "B4": {
+            "active": 0,
+            "generations": 526506
+          },
+          "B5": {
+            "active": 0,
+            "generations": 526387
+          },
+          "B6": {
+            "active": 0,
+            "generations": 526451
+          },
+          "B7": {
+            "active": 0,
+            "generations": 526472
+          },
+          "B8": {
+            "active": 0,
+            "generations": 526294
+          },
+          "B9": {
+            "active": 0,
+            "generations": 526471
+          },
+          "B10": {
+            "active": 0,
+            "generations": 526341
+          },
+          "B11": {
+            "active": 0,
+            "generations": 526331
+          },
+          "B12": {
+            "active": 0,
+            "generations": 526328
+          },
+          "B13": {
+            "active": 0,
+            "generations": 526507
+          },
+          "B14": {
+            "active": 0,
+            "generations": 362973
+          },
+          "B15": {
+            "active": 0,
+            "generations": 362859
+          },
+          "B16": {
+            "active": 0,
+            "generations": 363002
+          },
+          "B17": {
+            "active": 0,
+            "generations": 362930
+          },
+          "B18": {
+            "active": 0,
+            "generations": 362956
+          },
+          "B19": {
+            "active": 0,
+            "generations": 362934
+          },
+          "B20": {
+            "active": 0,
+            "generations": 362945
+          },
+          "B21": {
+            "active": 0,
+            "generations": 363007
+          },
+          "B22": {
+            "active": 0,
+            "generations": 362999
+          },
+          "B23": {
+            "active": 0,
+            "generations": 362899
+          },
+          "B24": {
+            "active": 0,
+            "generations": 362974
+          },
+          "B25": {
+            "active": 0,
+            "generations": 362886
+          },
+          "B26": {
+            "active": 0,
+            "generations": 362919
+          },
+          "B27": {
+            "active": 0,
+            "generations": 363006
+          },
+          "B28": {
+            "active": 0,
+            "generations": 362906
+          },
+          "B29": {
+            "active": 0,
+            "generations": 362922
+          },
+          "B30": {
+            "active": 0,
+            "generations": 362955
+          },
+          "B31": {
+            "active": 0,
+            "generations": 362987
+          },
+          "B32": {
+            "active": 0,
+            "generations": 362833
+          },
+          "B33": {
+            "active": 0,
+            "generations": 362831
+          }
+        }
+      },
+      "upperPlume": {
+        "count": 24576,
+        "dispatches": 18329,
+        "active": 0,
+        "generationTotal": 8902221,
+        "positionChecksum": 295136927404.5362,
+        "velocityChecksum": 1252029873.0820792,
+        "stateChecksum": 77339769.81773064,
+        "finite": true,
+        "emitters": {
+          "S1": {
+            "active": 0,
+            "generations": 1483894
+          },
+          "S2": {
+            "active": 0,
+            "generations": 1483573
+          },
+          "S3": {
+            "active": 0,
+            "generations": 1483836
+          },
+          "S4": {
+            "active": 0,
+            "generations": 1483614
+          },
+          "S5": {
+            "active": 0,
+            "generations": 1483606
+          },
+          "S6": {
+            "active": 0,
+            "generations": 1483698
+          }
+        }
+      },
+      "steam": {
+        "count": 24576,
+        "dispatches": 18329,
+        "active": 0,
+        "generationTotal": 58164,
+        "positionChecksum": 12124626.821886852,
+        "velocityChecksum": 1122663.4442148027,
+        "stateChecksum": 90610978.79434514,
+        "finite": true
+      },
+      "reentry": {
+        "count": 8192,
+        "dispatches": 18329,
+        "active": 0,
+        "generationTotal": 769444,
+        "positionChecksum": 147624479.29277205,
+        "velocityChecksum": -10005465.22418794,
+        "stateChecksum": 4858989.319472209,
+        "finite": true
+      },
+      "explosion": {
+        "count": 24576,
+        "dispatches": 18329,
+        "active": 24574,
+        "generationTotal": 24574,
+        "positionChecksum": 358368795.5509092,
+        "velocityChecksum": 9388764.725689754,
+        "stateChecksum": 1792499.7130841762,
+        "finite": true
+      },
+      "upperExplosion": {
+        "count": 8192,
+        "dispatches": 18329,
+        "active": 0,
+        "generationTotal": 0,
+        "positionChecksum": -147440000,
+        "velocityChecksum": 0,
+        "stateChecksum": 34986897.58746338,
+        "finite": true
+      },
+      "dust": {
+        "count": 8192,
+        "dispatches": 18329,
+        "active": 8192,
+        "generationTotal": 28932,
+        "positionChecksum": 118315516.73342897,
+        "velocityChecksum": 186151.3161916919,
+        "stateChecksum": 606315.3581448793,
+        "finite": true
+      }
+    }
+  }
+}

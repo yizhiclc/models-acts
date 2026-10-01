@@ -1,0 +1,49 @@
+{
+  "testedAt": "2026-09-29T13:56:15.727Z",
+  "routeLengthMeters": 25251.624648859015,
+  "speedLimits": {
+    "min": 80,
+    "max": 360
+  },
+  "cases": [
+    {
+      "commandedSpeed": 80,
+      "samples": 16001,
+      "lapSeconds": 315.6453081107377,
+      "minimumWaveEnvelopeClearance": 8.063606314608803,
+      "minimumTerrainClearance": 29.913606314608803,
+      "maximumSampledPoseStepDegrees": 0.3731947662279486,
+      "measuredSpeedRange": [
+        79.90366905910926,
+        80.09453416524336
+      ],
+      "closedSeam": true
+    },
+    {
+      "commandedSpeed": 106,
+      "samples": 16001,
+      "lapSeconds": 238.22287404583977,
+      "minimumWaveEnvelopeClearance": 7.4579003972317714,
+      "minimumTerrainClearance": 29.30790039723177,
+      "maximumSampledPoseStepDegrees": 0.45148412217479156,
+      "measuredSpeedRange": [
+        105.87207598137444,
+        106.12496769790586
+      ],
+      "closedSeam": true
+    },
+    {
+      "commandedSpeed": 360,
+      "samples": 16001,
+      "lapSeconds": 70.14340180238615,
+      "minimumWaveEnvelopeClearance": 8.140004955532156,
+      "minimumTerrainClearance": 29.990004955532157,
+      "maximumSampledPoseStepDegrees": 0.37319479866308497,
+      "measuredSpeedRange": [
+        359.5664536706307,
+        360.42533518561567
+      ],
+      "closedSeam": true
+    }
+  ]
+}

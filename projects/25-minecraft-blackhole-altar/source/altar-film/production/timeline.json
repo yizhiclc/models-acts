@@ -1,0 +1,2281 @@
+{
+  "format": 1,
+  "duration": 480,
+  "seed": 20260912,
+  "groundY": 63,
+  "bounds": [
+    -64,
+    63,
+    -64,
+    64,
+    170,
+    64
+  ],
+  "blackHoleCommand": "blackhole disk at 0 126 0 1.5 0.94",
+  "palette": [
+    "minecraft:gold_block",
+    "minecraft:chiseled_quartz_block",
+    "minecraft:deepslate_tiles",
+    "minecraft:polished_blackstone",
+    "minecraft:chiseled_polished_blackstone",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:quartz_bricks",
+    "minecraft:obsidian",
+    "minecraft:polished_blackstone_brick_slab[type=bottom]",
+    "minecraft:deepslate_bricks",
+    "minecraft:polished_blackstone_brick_stairs[facing=south,half=bottom,shape=straight]",
+    "minecraft:polished_blackstone_brick_wall",
+    "minecraft:polished_blackstone_brick_stairs[facing=west,half=bottom,shape=straight]",
+    "minecraft:polished_blackstone_brick_stairs[facing=north,half=bottom,shape=straight]",
+    "minecraft:polished_blackstone_brick_stairs[facing=east,half=bottom,shape=straight]",
+    "minecraft:sea_lantern"
+  ],
+  "stages": [
+    {
+      "name": "01 / Site axis",
+      "start": 0,
+      "end": 15,
+      "count": 208
+    },
+    {
+      "name": "02 / Plaza and structural footing",
+      "start": 15,
+      "end": 65,
+      "count": 18623
+    },
+    {
+      "name": "03 / Lower monumental terraces",
+      "start": 65,
+      "end": 140,
+      "count": 7580
+    },
+    {
+      "name": "04 / Upper terraces and sanctuary deck",
+      "start": 140,
+      "end": 200,
+      "count": 7017
+    },
+    {
+      "name": "05 / Processional stairways and balustrades",
+      "start": 200,
+      "end": 245,
+      "count": 4424
+    },
+    {
+      "name": "06 / Obelisks and crown foundations",
+      "start": 245,
+      "end": 315,
+      "count": 10484
+    },
+    {
+      "name": "07 / Crown arch voussoirs and keystone",
+      "start": 315,
+      "end": 380,
+      "count": 3959
+    },
+    {
+      "name": "08 / Gilded relief and sanctuary motifs",
+      "start": 380,
+      "end": 425,
+      "count": 933
+    },
+    {
+      "name": "09 / Central altar and ceremonial core",
+      "start": 425,
+      "end": 455,
+      "count": 1220
+    },
+    {
+      "name": "10 / Accretion disk reveal",
+      "start": 455,
+      "end": 480,
+      "count": 0
+    }
+  ],
+  "segments": [
+    {
+      "stage": "01 / Site axis",
+      "label": "Entrance procession axis",
+      "start": 0,
+      "end": 15,
+      "count": 208,
+      "mode": "front"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / -64",
+      "start": 15,
+      "end": 15.4077,
+      "count": 135,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / -48",
+      "start": 15.4077,
+      "end": 16.0835,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / -32",
+      "start": 16.0835,
+      "end": 16.7593,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / -16",
+      "start": 16.7593,
+      "end": 17.4325,
+      "count": 239,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / 0",
+      "start": 17.4325,
+      "end": 18.1058,
+      "count": 239,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / 16",
+      "start": 18.1058,
+      "end": 18.7815,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / 32",
+      "start": 18.7815,
+      "end": 19.4573,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / 48",
+      "start": 19.4573,
+      "end": 19.9014,
+      "count": 149,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 1 / 64",
+      "start": 19.9014,
+      "end": 19.9131,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / -64",
+      "start": 19.9131,
+      "end": 20.3078,
+      "count": 130,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / -48",
+      "start": 20.3078,
+      "end": 20.9836,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / -32",
+      "start": 20.9836,
+      "end": 21.6593,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / -16",
+      "start": 21.6593,
+      "end": 22.3351,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / 0",
+      "start": 22.3351,
+      "end": 23.0108,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / 16",
+      "start": 23.0108,
+      "end": 23.6866,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / 32",
+      "start": 23.6866,
+      "end": 24.3624,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / 48",
+      "start": 24.3624,
+      "end": 24.8065,
+      "count": 149,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 2 / 64",
+      "start": 24.8065,
+      "end": 24.8182,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / -64",
+      "start": 24.8182,
+      "end": 25.2129,
+      "count": 130,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / -48",
+      "start": 25.2129,
+      "end": 25.8887,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / -32",
+      "start": 25.8887,
+      "end": 26.5644,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / -16",
+      "start": 26.5644,
+      "end": 27.2402,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / 0",
+      "start": 27.2402,
+      "end": 27.9159,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / 16",
+      "start": 27.9159,
+      "end": 28.5917,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / 32",
+      "start": 28.5917,
+      "end": 29.2675,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / 48",
+      "start": 29.2675,
+      "end": 29.7116,
+      "count": 149,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 3 / 64",
+      "start": 29.7116,
+      "end": 29.7233,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / -64",
+      "start": 29.7233,
+      "end": 30.118,
+      "count": 130,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / -48",
+      "start": 30.118,
+      "end": 30.7938,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / -32",
+      "start": 30.7938,
+      "end": 31.4695,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / -16",
+      "start": 31.4695,
+      "end": 32.1453,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / 0",
+      "start": 32.1453,
+      "end": 32.821,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / 16",
+      "start": 32.821,
+      "end": 33.4968,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / 32",
+      "start": 33.4968,
+      "end": 34.1725,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Plaza paved border / side 4 / 48",
+      "start": 34.1725,
+      "end": 34.6063,
+      "count": 145,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 1 / -48",
+      "start": 34.6063,
+      "end": 36.4824,
+      "count": 735,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 1 / -24",
+      "start": 36.4824,
+      "end": 38.3585,
+      "count": 735,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 1 / 0",
+      "start": 38.3585,
+      "end": 40.2108,
+      "count": 725,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 1 / 24",
+      "start": 40.2108,
+      "end": 42.0868,
+      "count": 735,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 1 / 48",
+      "start": 42.0868,
+      "end": 42.7751,
+      "count": 245,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 2 / -48",
+      "start": 42.7751,
+      "end": 44.4129,
+      "count": 635,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 2 / -24",
+      "start": 44.4129,
+      "end": 46.0386,
+      "count": 630,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 2 / 0",
+      "start": 46.0386,
+      "end": 47.8195,
+      "count": 695,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 2 / 24",
+      "start": 47.8195,
+      "end": 49.6956,
+      "count": 735,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 2 / 48",
+      "start": 49.6956,
+      "end": 50.3839,
+      "count": 245,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 3 / -48",
+      "start": 50.3839,
+      "end": 52.0097,
+      "count": 630,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 3 / -24",
+      "start": 52.0097,
+      "end": 53.6354,
+      "count": 630,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 3 / 0",
+      "start": 53.6354,
+      "end": 55.3925,
+      "count": 685,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 3 / 24",
+      "start": 55.3925,
+      "end": 57.2329,
+      "count": 720,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 3 / 48",
+      "start": 57.2329,
+      "end": 57.9087,
+      "count": 240,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 4 / -48",
+      "start": 57.9087,
+      "end": 59.5344,
+      "count": 630,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 4 / -24",
+      "start": 59.5344,
+      "end": 61.1602,
+      "count": 630,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 4 / 0",
+      "start": 61.1602,
+      "end": 62.774,
+      "count": 625,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 4 / 24",
+      "start": 62.774,
+      "end": 64.3998,
+      "count": 630,
+      "mode": "radial"
+    },
+    {
+      "stage": "02 / Plaza and structural footing",
+      "label": "Foundation buttress grid / side 4 / 48",
+      "start": 64.3998,
+      "end": 65,
+      "count": 210,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 1 / -48",
+      "start": 65,
+      "end": 65.2192,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 1 / -32",
+      "start": 65.2192,
+      "end": 65.4384,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 1 / -16",
+      "start": 65.4384,
+      "end": 65.5848,
+      "count": 11,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 1 / 0",
+      "start": 65.5848,
+      "end": 65.7096,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 1 / 16",
+      "start": 65.7096,
+      "end": 65.9288,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 1 / 32",
+      "start": 65.9288,
+      "end": 66.148,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 1 / 48",
+      "start": 66.148,
+      "end": 66.1886,
+      "count": 2,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 2 / -48",
+      "start": 66.1886,
+      "end": 66.3771,
+      "count": 15,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 2 / -32",
+      "start": 66.3771,
+      "end": 66.5963,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 2 / -16",
+      "start": 66.5963,
+      "end": 66.7427,
+      "count": 11,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 2 / 0",
+      "start": 66.7427,
+      "end": 66.8675,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 2 / 16",
+      "start": 66.8675,
+      "end": 67.0867,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 2 / 32",
+      "start": 67.0867,
+      "end": 67.3059,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 2 / 48",
+      "start": 67.3059,
+      "end": 67.3465,
+      "count": 2,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 3 / -48",
+      "start": 67.3465,
+      "end": 67.535,
+      "count": 15,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 3 / -32",
+      "start": 67.535,
+      "end": 67.7542,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 3 / -16",
+      "start": 67.7542,
+      "end": 67.9006,
+      "count": 11,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 3 / 0",
+      "start": 67.9006,
+      "end": 68.0254,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 3 / 16",
+      "start": 68.0254,
+      "end": 68.2446,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 3 / 32",
+      "start": 68.2446,
+      "end": 68.4638,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 3 / 48",
+      "start": 68.4638,
+      "end": 68.5044,
+      "count": 2,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 4 / -48",
+      "start": 68.5044,
+      "end": 68.6929,
+      "count": 15,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 4 / -32",
+      "start": 68.6929,
+      "end": 68.9121,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 4 / -16",
+      "start": 68.9121,
+      "end": 69.0585,
+      "count": 11,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 4 / 0",
+      "start": 69.0585,
+      "end": 69.1833,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 4 / 16",
+      "start": 69.1833,
+      "end": 69.4025,
+      "count": 18,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: load-bearing bays / side 4 / 32",
+      "start": 69.4025,
+      "end": 69.6115,
+      "count": 17,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 1 / -48",
+      "start": 69.6115,
+      "end": 70.5863,
+      "count": 99,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 1 / -32",
+      "start": 70.5863,
+      "end": 71.8022,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 1 / -16",
+      "start": 71.8022,
+      "end": 72.8934,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 1 / 0",
+      "start": 72.8934,
+      "end": 73.9756,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 1 / 16",
+      "start": 73.9756,
+      "end": 75.1915,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 1 / 32",
+      "start": 75.1915,
+      "end": 76.2201,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 1 / 48",
+      "start": 76.2201,
+      "end": 76.2455,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 2 / -48",
+      "start": 76.2455,
+      "end": 77.1573,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 2 / -32",
+      "start": 77.1573,
+      "end": 78.3732,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 2 / -16",
+      "start": 78.3732,
+      "end": 79.4644,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 2 / 0",
+      "start": 79.4644,
+      "end": 80.5466,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 2 / 16",
+      "start": 80.5466,
+      "end": 81.7625,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 2 / 32",
+      "start": 81.7625,
+      "end": 82.7911,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 2 / 48",
+      "start": 82.7911,
+      "end": 82.8165,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 3 / -48",
+      "start": 82.8165,
+      "end": 83.7283,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 3 / -32",
+      "start": 83.7283,
+      "end": 84.9441,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 3 / -16",
+      "start": 84.9441,
+      "end": 86.0353,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 3 / 0",
+      "start": 86.0353,
+      "end": 87.1176,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 3 / 16",
+      "start": 87.1176,
+      "end": 88.3335,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 3 / 32",
+      "start": 88.3335,
+      "end": 89.3621,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 3 / 48",
+      "start": 89.3621,
+      "end": 89.3874,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 4 / -48",
+      "start": 89.3874,
+      "end": 90.2993,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 4 / -32",
+      "start": 90.2993,
+      "end": 91.5151,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 4 / -16",
+      "start": 91.5151,
+      "end": 92.6063,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 4 / 0",
+      "start": 92.6063,
+      "end": 93.6886,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 4 / 16",
+      "start": 93.6886,
+      "end": 94.9045,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 4 / 32",
+      "start": 94.9045,
+      "end": 95.8703,
+      "count": 98,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 1: deck and cornice / side 4 / 48",
+      "start": 95.8703,
+      "end": 95.8956,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 1 / -40",
+      "start": 95.8956,
+      "end": 97.2709,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 1 / -24",
+      "start": 97.2709,
+      "end": 98.6462,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 1 / -8",
+      "start": 98.6462,
+      "end": 98.845,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 1 / 8",
+      "start": 98.845,
+      "end": 100.2202,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 1 / 24",
+      "start": 100.2202,
+      "end": 101.5955,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 1 / 40",
+      "start": 101.5955,
+      "end": 101.7943,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 2 / -40",
+      "start": 101.7943,
+      "end": 102.9568,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 2 / -24",
+      "start": 102.9568,
+      "end": 104.332,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 2 / -8",
+      "start": 104.332,
+      "end": 104.5308,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 2 / 8",
+      "start": 104.5308,
+      "end": 105.9061,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 2 / 24",
+      "start": 105.9061,
+      "end": 107.2814,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 2 / 40",
+      "start": 107.2814,
+      "end": 107.4802,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 3 / -40",
+      "start": 107.4802,
+      "end": 108.6427,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 3 / -24",
+      "start": 108.6427,
+      "end": 110.0179,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 3 / -8",
+      "start": 110.0179,
+      "end": 110.2167,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 3 / 8",
+      "start": 110.2167,
+      "end": 111.592,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 3 / 24",
+      "start": 111.592,
+      "end": 112.9673,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 3 / 40",
+      "start": 112.9673,
+      "end": 113.166,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 4 / -40",
+      "start": 113.166,
+      "end": 114.3286,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 4 / -24",
+      "start": 114.3286,
+      "end": 115.7038,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 4 / -8",
+      "start": 115.7038,
+      "end": 115.9026,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 4 / 8",
+      "start": 115.9026,
+      "end": 117.2779,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: load-bearing bays / side 4 / 24",
+      "start": 117.2779,
+      "end": 118.5824,
+      "count": 136,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 1 / -40",
+      "start": 118.5824,
+      "end": 119.5572,
+      "count": 99,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 1 / -24",
+      "start": 119.5572,
+      "end": 120.7731,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 1 / -8",
+      "start": 120.7731,
+      "end": 121.7299,
+      "count": 97,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 1 / 8",
+      "start": 121.7299,
+      "end": 122.9458,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 1 / 24",
+      "start": 122.9458,
+      "end": 123.9744,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 1 / 40",
+      "start": 123.9744,
+      "end": 123.9997,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 2 / -40",
+      "start": 123.9997,
+      "end": 124.9116,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 2 / -24",
+      "start": 124.9116,
+      "end": 126.1274,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 2 / -8",
+      "start": 126.1274,
+      "end": 127.0843,
+      "count": 97,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 2 / 8",
+      "start": 127.0843,
+      "end": 128.3001,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 2 / 24",
+      "start": 128.3001,
+      "end": 129.3287,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 2 / 40",
+      "start": 129.3287,
+      "end": 129.3541,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 3 / -40",
+      "start": 129.3541,
+      "end": 130.2659,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 3 / -24",
+      "start": 130.2659,
+      "end": 131.4818,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 3 / -8",
+      "start": 131.4818,
+      "end": 132.4386,
+      "count": 97,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 3 / 8",
+      "start": 132.4386,
+      "end": 133.6545,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 3 / 24",
+      "start": 133.6545,
+      "end": 134.6831,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 3 / 40",
+      "start": 134.6831,
+      "end": 134.7084,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 4 / -40",
+      "start": 134.7084,
+      "end": 135.6203,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 4 / -24",
+      "start": 135.6203,
+      "end": 136.8361,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 4 / -8",
+      "start": 136.8361,
+      "end": 137.793,
+      "count": 97,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 4 / 8",
+      "start": 137.793,
+      "end": 139.0088,
+      "count": 126,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 4 / 24",
+      "start": 139.0088,
+      "end": 139.9746,
+      "count": 98,
+      "mode": "radial"
+    },
+    {
+      "stage": "03 / Lower monumental terraces",
+      "label": "Terrace 2: deck and cornice / side 4 / 40",
+      "start": 139.9746,
+      "end": 140,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 1 / -32",
+      "start": 140,
+      "end": 141.2182,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 1 / -16",
+      "start": 141.2182,
+      "end": 141.9981,
+      "count": 88,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 1 / 0",
+      "start": 141.9981,
+      "end": 142.6504,
+      "count": 72,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 1 / 16",
+      "start": 142.6504,
+      "end": 143.8686,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 1 / 32",
+      "start": 143.8686,
+      "end": 144.0502,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 2 / -32",
+      "start": 144.0502,
+      "end": 145.0819,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 2 / -16",
+      "start": 145.0819,
+      "end": 145.8619,
+      "count": 88,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 2 / 0",
+      "start": 145.8619,
+      "end": 146.5142,
+      "count": 72,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 2 / 16",
+      "start": 146.5142,
+      "end": 147.7323,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 2 / 32",
+      "start": 147.7323,
+      "end": 147.914,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 3 / -32",
+      "start": 147.914,
+      "end": 148.9457,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 3 / -16",
+      "start": 148.9457,
+      "end": 149.7257,
+      "count": 88,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 3 / 0",
+      "start": 149.7257,
+      "end": 150.378,
+      "count": 72,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 3 / 16",
+      "start": 150.378,
+      "end": 151.5961,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 3 / 32",
+      "start": 151.5961,
+      "end": 151.7778,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 4 / -32",
+      "start": 151.7778,
+      "end": 152.8095,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 4 / -16",
+      "start": 152.8095,
+      "end": 153.5895,
+      "count": 88,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 4 / 0",
+      "start": 153.5895,
+      "end": 154.2418,
+      "count": 72,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: load-bearing bays / side 4 / 16",
+      "start": 154.2418,
+      "end": 155.398,
+      "count": 136,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 1 / -32",
+      "start": 155.398,
+      "end": 156.265,
+      "count": 99,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 1 / -16",
+      "start": 156.265,
+      "end": 157.2341,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 1 / 0",
+      "start": 157.2341,
+      "end": 158.1955,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 1 / 16",
+      "start": 158.1955,
+      "end": 159.1097,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 1 / 32",
+      "start": 159.1097,
+      "end": 159.1341,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 2 / -32",
+      "start": 159.1341,
+      "end": 159.9458,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 2 / -16",
+      "start": 159.9458,
+      "end": 160.915,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 2 / 0",
+      "start": 160.915,
+      "end": 161.8763,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 2 / 16",
+      "start": 161.8763,
+      "end": 162.7905,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 2 / 32",
+      "start": 162.7905,
+      "end": 162.8149,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 3 / -32",
+      "start": 162.8149,
+      "end": 163.6266,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 3 / -16",
+      "start": 163.6266,
+      "end": 164.5958,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 3 / 0",
+      "start": 164.5958,
+      "end": 165.5571,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 3 / 16",
+      "start": 165.5571,
+      "end": 166.4714,
+      "count": 105,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 3 / 32",
+      "start": 166.4714,
+      "end": 166.4957,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 4 / -32",
+      "start": 166.4957,
+      "end": 167.3075,
+      "count": 92,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 4 / -16",
+      "start": 167.3075,
+      "end": 168.2766,
+      "count": 112,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 4 / 0",
+      "start": 168.2766,
+      "end": 169.2379,
+      "count": 111,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 4 / 16",
+      "start": 169.2379,
+      "end": 170.0971,
+      "count": 98,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 3: deck and cornice / side 4 / 32",
+      "start": 170.0971,
+      "end": 170.1215,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 1 / -24",
+      "start": 170.1215,
+      "end": 171.3396,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 1 / -8",
+      "start": 171.3396,
+      "end": 171.5213,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 1 / 8",
+      "start": 171.5213,
+      "end": 172.7394,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 1 / 24",
+      "start": 172.7394,
+      "end": 172.9211,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 2 / -24",
+      "start": 172.9211,
+      "end": 173.9528,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 2 / -8",
+      "start": 173.9528,
+      "end": 174.1345,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 2 / 8",
+      "start": 174.1345,
+      "end": 175.3527,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 2 / 24",
+      "start": 175.3527,
+      "end": 175.5343,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 3 / -24",
+      "start": 175.5343,
+      "end": 176.566,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 3 / -8",
+      "start": 176.566,
+      "end": 176.7477,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 3 / 8",
+      "start": 176.7477,
+      "end": 177.9659,
+      "count": 144,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 3 / 24",
+      "start": 177.9659,
+      "end": 178.1476,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 4 / -24",
+      "start": 178.1476,
+      "end": 179.1793,
+      "count": 120,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 4 / -8",
+      "start": 179.1793,
+      "end": 179.3609,
+      "count": 16,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: load-bearing bays / side 4 / 8",
+      "start": 179.3609,
+      "end": 180.5171,
+      "count": 136,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 1 / -24",
+      "start": 180.5171,
+      "end": 183.5277,
+      "count": 381,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 1 / -8",
+      "start": 183.5277,
+      "end": 186.4487,
+      "count": 369,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 1 / 8",
+      "start": 186.4487,
+      "end": 189.571,
+      "count": 396,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 1 / 24",
+      "start": 189.571,
+      "end": 189.6862,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 2 / -24",
+      "start": 189.6862,
+      "end": 190.0088,
+      "count": 32,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 2 / -8",
+      "start": 190.0088,
+      "end": 191.3658,
+      "count": 162,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 2 / 8",
+      "start": 191.3658,
+      "end": 194.4882,
+      "count": 396,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 2 / 24",
+      "start": 194.4882,
+      "end": 194.6034,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 3 / -24",
+      "start": 194.6034,
+      "end": 194.9089,
+      "count": 30,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 3 / -8",
+      "start": 194.9089,
+      "end": 196.212,
+      "count": 155,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 3 / 8",
+      "start": 196.212,
+      "end": 199.2151,
+      "count": 380,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 3 / 24",
+      "start": 199.2151,
+      "end": 199.3203,
+      "count": 8,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 4 / -24",
+      "start": 199.3203,
+      "end": 199.6258,
+      "count": 30,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 4 / -8",
+      "start": 199.6258,
+      "end": 199.6502,
+      "count": 1,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 4 / 8",
+      "start": 199.6502,
+      "end": 199.8948,
+      "count": 23,
+      "mode": "radial"
+    },
+    {
+      "stage": "04 / Upper terraces and sanctuary deck",
+      "label": "Terrace 4: deck and cornice / side 4 / 24",
+      "start": 199.8948,
+      "end": 200,
+      "count": 8,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 1: ascending stonework",
+      "start": 200,
+      "end": 208.78,
+      "count": 890,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 1: terrace railing runs",
+      "start": 208.78,
+      "end": 211.25,
+      "count": 216,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 2: ascending stonework",
+      "start": 211.25,
+      "end": 220.03,
+      "count": 890,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 2: terrace railing runs",
+      "start": 220.03,
+      "end": 222.5,
+      "count": 216,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 3: ascending stonework",
+      "start": 222.5,
+      "end": 231.28,
+      "count": 890,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 3: terrace railing runs",
+      "start": 231.28,
+      "end": 233.75,
+      "count": 216,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 4: ascending stonework",
+      "start": 233.75,
+      "end": 242.53,
+      "count": 890,
+      "mode": "radial"
+    },
+    {
+      "stage": "05 / Processional stairways and balustrades",
+      "label": "Stairway 4: terrace railing runs",
+      "start": 242.53,
+      "end": 245,
+      "count": 216,
+      "mode": "radial"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Obelisk 1: stepped base and taper",
+      "start": 245,
+      "end": 253.2023,
+      "count": 1215,
+      "mode": "radial"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Obelisk 2: stepped base and taper",
+      "start": 253.2023,
+      "end": 261.4046,
+      "count": 1215,
+      "mode": "radial"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Obelisk 3: stepped base and taper",
+      "start": 261.4046,
+      "end": 269.6069,
+      "count": 1215,
+      "mode": "radial"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Obelisk 4: stepped base and taper",
+      "start": 269.6069,
+      "end": 277.8092,
+      "count": 1215,
+      "mode": "radial"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Crown west pier",
+      "start": 277.8092,
+      "end": 291.7438,
+      "count": 2167,
+      "mode": "front"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Crown west flying buttress",
+      "start": 291.7438,
+      "end": 296.4046,
+      "count": 645,
+      "mode": "front"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Crown east pier",
+      "start": 296.4046,
+      "end": 310.3392,
+      "count": 2167,
+      "mode": "front"
+    },
+    {
+      "stage": "06 / Obelisks and crown foundations",
+      "label": "Crown east flying buttress",
+      "start": 310.3392,
+      "end": 315,
+      "count": 645,
+      "mode": "front"
+    },
+    {
+      "stage": "07 / Crown arch voussoirs and keystone",
+      "label": "Crown / lower-left",
+      "start": 315,
+      "end": 329.641,
+      "count": 896,
+      "mode": "crown"
+    },
+    {
+      "stage": "07 / Crown arch voussoirs and keystone",
+      "label": "Crown / upper-left",
+      "start": 329.641,
+      "end": 346.2426,
+      "count": 1028,
+      "mode": "crown"
+    },
+    {
+      "stage": "07 / Crown arch voussoirs and keystone",
+      "label": "Crown / lower-right",
+      "start": 346.2426,
+      "end": 360.7942,
+      "count": 890,
+      "mode": "crown"
+    },
+    {
+      "stage": "07 / Crown arch voussoirs and keystone",
+      "label": "Crown / upper-right",
+      "start": 360.7942,
+      "end": 376.7733,
+      "count": 986,
+      "mode": "crown"
+    },
+    {
+      "stage": "07 / Crown arch voussoirs and keystone",
+      "label": "Crown: central keystone and crest",
+      "start": 376.7733,
+      "end": 380,
+      "count": 159,
+      "mode": "crown"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 1 / -46",
+      "start": 380,
+      "end": 381.3019,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 1 / -22",
+      "start": 381.3019,
+      "end": 382.6039,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 1 / 2",
+      "start": 382.6039,
+      "end": 384.4597,
+      "count": 36,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 1 / 26",
+      "start": 384.4597,
+      "end": 385.1837,
+      "count": 12,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 2 / -46",
+      "start": 385.1837,
+      "end": 386.4857,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 2 / -22",
+      "start": 386.4857,
+      "end": 387.7876,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 2 / 2",
+      "start": 387.7876,
+      "end": 389.6434,
+      "count": 36,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 2 / 26",
+      "start": 389.6434,
+      "end": 390.3675,
+      "count": 12,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 3 / -46",
+      "start": 390.3675,
+      "end": 391.6694,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 3 / -22",
+      "start": 391.6694,
+      "end": 392.9714,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 3 / 2",
+      "start": 392.9714,
+      "end": 394.8272,
+      "count": 36,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 3 / 26",
+      "start": 394.8272,
+      "end": 395.5512,
+      "count": 12,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 4 / -46",
+      "start": 395.5512,
+      "end": 396.8532,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 4 / -22",
+      "start": 396.8532,
+      "end": 398.1551,
+      "count": 24,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 4 / 2",
+      "start": 398.1551,
+      "end": 400.0109,
+      "count": 36,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Facade hanging relief / side 4 / 26",
+      "start": 400.0109,
+      "end": 400.735,
+      "count": 12,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Eight-direction sanctuary floor",
+      "start": 400.735,
+      "end": 422.408,
+      "count": 507,
+      "mode": "front"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Ceremonial lights 1",
+      "start": 422.408,
+      "end": 423.132,
+      "count": 12,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Ceremonial lights 2",
+      "start": 423.132,
+      "end": 423.704,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Ceremonial lights 3",
+      "start": 423.704,
+      "end": 424.428,
+      "count": 12,
+      "mode": "radial"
+    },
+    {
+      "stage": "08 / Gilded relief and sanctuary motifs",
+      "label": "Ceremonial lights 4",
+      "start": 424.428,
+      "end": 425,
+      "count": 9,
+      "mode": "radial"
+    },
+    {
+      "stage": "09 / Central altar and ceremonial core",
+      "label": "Central pedestal: stepped obsidian foundation",
+      "start": 425,
+      "end": 449.7732,
+      "count": 1056,
+      "mode": "front"
+    },
+    {
+      "stage": "09 / Central altar and ceremonial core",
+      "label": "Altar core and guardian fins",
+      "start": 449.7732,
+      "end": 452.9877,
+      "count": 105,
+      "mode": "front"
+    },
+    {
+      "stage": "09 / Central altar and ceremonial core",
+      "label": "Processional threshold finishing",
+      "start": 452.9877,
+      "end": 455,
+      "count": 59,
+      "mode": "front"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+[aist#0:0/pcm_s16le @ 0000021cf2e2ef80] Guessed Channel Layout: stereo
+Input #0, wav, from 'C:\Users\Administrator\Documents\Codex\2026-09-11\html-blackhole-1-three-js-2\outputs\altar-film\edit\assets\Eventide_Altar_synth_raw.wav':
+  Duration: 00:08:27.65, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s16le (native) -> pcm_s24le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'C:\Users\Administrator\Documents\Codex\2026-09-11\html-blackhole-1-three-js-2\outputs\altar-film\edit\assets\Eventide_Altar_music.wav':
+  Metadata:
+    ISFT            : Lavf61.7.100
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 pcm_s24le
+size=    6144KiB time=00:00:22.09 bitrate=2277.5kbits/s speed=43.9x    
+size=   12544KiB time=00:00:44.99 bitrate=2283.6kbits/s speed=43.7x    
+size=   18944KiB time=00:01:08.19 bitrate=2275.5kbits/s speed=44.2x    
+size=   24576KiB time=00:01:27.99 bitrate=2287.8kbits/s speed=42.9x    
+size=   31232KiB time=00:01:51.99 bitrate=2284.4kbits/s speed=43.5x    
+size=   37888KiB time=00:02:15.49 bitrate=2290.6kbits/s speed=43.9x    
+size=   44544KiB time=00:02:38.59 bitrate=2300.8kbits/s speed=44.1x    
+size=   51200KiB time=00:03:02.39 bitrate=2299.5kbits/s speed=44.3x    
+size=   57856KiB time=00:03:26.59 bitrate=2294.1kbits/s speed=44.5x    
+size=   64768KiB time=00:03:50.69 bitrate=2299.9kbits/s speed=44.8x    
+size=   71168KiB time=00:04:13.89 bitrate=2296.2kbits/s speed=44.8x    
+size=   77824KiB time=00:04:37.19 bitrate=2299.9kbits/s speed=44.9x    
+size=   84480KiB time=00:05:00.89 bitrate=2300.0kbits/s speed=  45x    
+size=   91392KiB time=00:05:25.19 bitrate=2302.2kbits/s speed=45.1x    
+size=   98048KiB time=00:05:48.89 bitrate=2302.1kbits/s speed=45.2x    
+size=  104704KiB time=00:06:12.99 bitrate=2299.6kbits/s speed=45.3x    
+size=  111360KiB time=00:06:36.69 bitrate=2299.6kbits/s speed=45.3x    
+size=  118272KiB time=00:07:00.99 bitrate=2301.4kbits/s speed=45.4x    
+size=  124928KiB time=00:07:24.39 bitrate=2302.9kbits/s speed=45.4x    
+size=  131328KiB time=00:07:47.29 bitrate=2302.2kbits/s speed=45.3x    
+size=  137728KiB time=00:08:10.69 bitrate=2299.3kbits/s speed=45.4x    
+[Parsed_loudnorm_0 @ 0000021cf2e79340] 
+{
+	"input_i" : "-16.91",
+	"input_tp" : "-6.38",
+	"input_lra" : "3.10",
+	"input_thresh" : "-26.93",
+	"output_i" : "-20.90",
+	"output_tp" : "-10.35",
+	"output_lra" : "3.20",
+	"output_thresh" : "-30.91",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.10"
+}
+[out#0/wav @ 0000021cf2e21d40] video:0KiB audio:142762KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000070%
+size=  142763KiB time=00:08:27.65 bitrate=2303.8kbits/s speed=45.4x    

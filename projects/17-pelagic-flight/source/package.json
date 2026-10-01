@@ -1,0 +1,8 @@
+{
+  "name": "pelagic-flight",
+  "version": "1.2.0",
+  "private": true,
+  "description": "掠海长航 — self-contained procedural 3D flight artwork",
+  "scripts": {"start": "node tools/serve.cjs", "build": "node tools/build.cjs", "test": "node tests/verify.cjs && node tests/ocean.cjs && node tests/speed-range.cjs"},
+  "license": "MIT"
+}

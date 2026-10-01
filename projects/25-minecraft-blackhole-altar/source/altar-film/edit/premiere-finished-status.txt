@@ -1,0 +1,27 @@
+Opening linked baseline.
+Native project path: C:\Users\Administrator\Documents\Codex\2026-09-11\html-blackhole-1-three-js-2\outputs\altar-film\edit\BlackHoleAltar_Finished.prproj
+ONLINE: C:/Users/Administrator/Documents/Codex/2026-09-11/html-blackhole-1-three-js-2/outputs/altar-film/edit/assets/construction_graphics_alpha.mov
+ONLINE: C:/Users/Administrator/Documents/Codex/2026-09-11/html-blackhole-1-three-js-2/outputs/altar-film/edit/assets/Eventide_Altar_music.wav
+ONLINE: C:/Users/Administrator/Documents/Codex/2026-09-11/html-blackhole-1-three-js-2/outputs/altar-film/edit/assets/opening-title.png
+Graphics, score, title, and subtitle source imported.
+Title opacity fade: true
+Source opacity fade: true
+V1 Footage clip 1: source_recording.mp4 | start=0 | end=507.65
+V2 Components and progress clip 1: 01 | 场地轴线与入口边界 | start=0 | end=15.05
+V2 Components and progress clip 2: 02 | 广场与基础承重 | start=15.05 | end=92.6
+V2 Components and progress clip 3: 03 | 下层台地 | start=92.6 | end=167.6
+V2 Components and progress clip 4: 04 | 上层平台与圣坛台面 | start=167.6 | end=227.65
+V2 Components and progress clip 5: 05 | 四向楼梯与栏杆 | start=227.65 | end=272.649999999996
+V2 Components and progress clip 6: 06 | 方尖塔与冠环承重 | start=272.649999999996 | end=342.65
+V2 Components and progress clip 7: 07 | 冠环拱顶与顶部楔石 | start=342.65 | end=407.65
+V2 Components and progress clip 8: 08 | 金色纹样与照明 | start=407.65 | end=452.65
+V2 Components and progress clip 9: 09 | 中央祭坛与核心 | start=452.65 | end=482.65
+V2 Components and progress clip 10: 10 | 黑洞与吸积盘揭示 | start=482.65 | end=507.65
+V3 Opening title clip 1: opening-title.png | start=0 | end=6
+A2 Score clip 1: Eventide_Altar_music.wav | start=0 | end=507.65
+SAVED: C:\Users\Administrator\Documents\Codex\2026-09-11\html-blackhole-1-three-js-2\outputs\altar-film\edit\BlackHoleAltar_Finished.prproj
+Sequence duration ticks: 128951222400000
+EXPORT START: C:\Users\Administrator\Documents\Codex\2026-09-11\html-blackhole-1-three-js-2\outputs\altar-film\edit\BlackHoleAltar_1080p60.mp4
+Export returned: No Error
+Export exists: true
+COMPLETE: Finished project saved and video exported through Premiere Pro.

@@ -1,0 +1,23 @@
+.view-tools{position:absolute;z-index:4;right:24px;top:108px;display:flex;gap:6px}
+.webgpu.error .dot{background:#c05834}.render-error-detail{white-space:pre-wrap;overflow-wrap:anywhere;max-height:180px;overflow:auto}.render-error-actions{display:flex;gap:12px}.render-error-actions button{padding:10px 15px;border:1px solid #9baa96;border-radius:3px;font-size:11px}.render-error-actions button:first-child{background:#47664d;color:#fff}
+.view-tools button{font-size:9px;letter-spacing:.4px;background:#f5f7ecdf;border:1px solid #edf2e6;border-radius:3px;padding:8px 10px;backdrop-filter:blur(12px);color:#526a55}
+.view-tools button[aria-pressed="true"]{color:#fff3df;background:#48624e;border-color:#48624e}
+.heat-note{position:absolute;right:24px;top:145px;z-index:4;width:253px;padding:12px;border:1px solid #c5dbda40;border-radius:4px;background:#203736eb;color:#e6eee9;font-size:10px;line-height:1.6;backdrop-filter:blur(12px);pointer-events:none}.immersive .heat-note{right:36px;top:153px}.heat-caption{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.7px}.heat-caption span{font-size:9px;color:#bad0c5}.heat-ramp{height:8px;border-radius:2px;margin-top:10px;background:linear-gradient(90deg,#2c55cf 0%,#21e7f9 25%,#ffecc5 55%,#f83f24 100%)}.heat-ticks{display:flex;justify-content:space-between;font:8px var(--mono);margin:5px 0 10px;color:#dae6dc}.heat-values{display:flex;justify-content:space-between;gap:8px;font-size:9px}.heat-values b{font-weight:500}.heat-values span{color:#bdd1c4}.heat-note small{display:block;margin-top:6px;font-size:8px;color:#a8c0b4}#heat-status{margin-top:6px;color:#e7dab0;font-size:9px}
+.cameras{max-width:100%;overflow-x:auto;scrollbar-width:thin}.view-bottom>div{min-width:0}.cameras button{padding:8px 7px}.cameras button svg{width:12px}
+.immersive-player{display:none}.immersive{overflow:hidden}
+.immersive .viewport{position:fixed;inset:0;z-index:50;width:100vw;height:100dvh;min-height:0}
+.immersive .view-top{top:30px;left:36px;right:36px}.immersive .view-tools{top:111px;right:36px}
+.immersive .view-bottom{left:36px;bottom:28px;right:36px}.immersive .view-title{font-size:30px}.immersive .clock{font-size:27px}
+.immersive .cameras button{font-size:11px;padding:11px 15px}.immersive .camera-help{font-size:9px}
+.immersive .object-tag{bottom:40px;left:auto;right:145px}.immersive .scale-marker{display:none}
+.immersive .immersive-player{position:absolute;bottom:100px;left:36px;display:flex;align-items:center;gap:8px;z-index:4}
+.immersive-player button{background:#eff3e8dc;border-radius:3px;padding:10px 12px;font-size:11px;backdrop-filter:blur(12px);display:flex;align-items:center;gap:5px}
+.immersive-player button:first-child{background:#d96332;color:white;min-width:98px;justify-content:center}
+.immersive-player span{font:8px var(--mono);color:#dce8d8;text-shadow:0 1px 3px #344935;background:#23382e66;padding:8px;border-radius:3px}
+.immersive .result-card{bottom:156px;left:36px}.immersive .toast{z-index:70}
+@media(max-width:1200px){.cameras button{font-size:8px;padding:7px 6px}.view-bottom{right:15px;left:15px}.view-tools{top:97px;right:18px}.view-tools button{padding:6px 8px;font-size:8px}}
+@media(max-width:620px){.cameras{max-width:calc(100vw - 30px)}.view-tools{top:100px}.view-top{left:18px}.camera-help{font-size:7px}.immersive .view-top{left:20px;right:20px}.immersive .view-title{font-size:23px}.immersive .clock{font-size:20px}.immersive .view-bottom{left:15px;right:15px;bottom:20px}.immersive .view-tools{right:20px}.immersive .cameras button{padding:9px 10px;font-size:9px}.immersive .immersive-player{left:20px;bottom:100px}.immersive-player span{display:none}.immersive .result-card{left:20px}.immersive .object-tag{display:none}}
+.upper-telemetry{border-top:1px solid #d5ddca;margin-top:14px;padding-top:12px}.upper-readings{display:grid;grid-template-columns:1fr 1fr;gap:7px;font-size:9px;color:#75826d}.upper-readings b{color:#314435;font:11px var(--mono)}#track-upper{margin:9px 0 0;padding:6px 10px;border:1px solid #b4c3aa;background:#f3f5eb;color:#45533d;font-size:10px;cursor:pointer}.cameras{flex-wrap:wrap;max-width:750px}.stage-list{gap:4px}
+.space-view .view-title,.space-view .clock{color:#e1ecf4}.space-view .view-sub,.space-view .mission-status,.space-view .clock-label,.space-view .run-chip,.space-view .scale-marker,.space-view .object-tag{color:#b7c9d9}
+
+.immersive .cameras{flex-wrap:nowrap;max-width:calc(100vw - 250px)}@media(max-width:620px){.immersive .cameras{max-width:calc(100vw - 30px)}}

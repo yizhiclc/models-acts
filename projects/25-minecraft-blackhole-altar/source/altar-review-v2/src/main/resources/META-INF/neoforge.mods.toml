@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="altarreview"
+version="2.0.0"
+displayName="Altar V2 Review Builder"
+authors="Codex"
+description='''Creates only an isolated completed review world. Does not record or start a construction film.'''
+[[dependencies.altarreview]]
+modId="neoforge"
+type="required"
+versionRange="[21.11.45,21.12)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.altarreview]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.11]"
+ordering="NONE"
+side="BOTH"

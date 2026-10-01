@@ -1,0 +1,237 @@
+{
+  "status": "PASS",
+  "build": "2026-09-30-starship-flight-control",
+  "browser": "144.0.7559.86",
+  "origin": "file://",
+  "customBrowserFlags": [],
+  "checks": [
+    {
+      "name": "Single-file WebGPU initialization; 33 booster and 6 ship engines with 20 fixed outer nozzles",
+      "passed": true,
+      "booster": 33,
+      "ship": 6,
+      "fixed": 20
+    },
+    {
+      "name": "Visible, reversible heat-flux coloring with frozen CPU and GPU during standby",
+      "passed": true,
+      "changedPixels": 155130,
+      "surface": {
+        "enabled": true,
+        "rangeWm2": [
+          0,
+          40000
+        ],
+        "referenceHeatFluxWm2": 0,
+        "flowDirection": [
+          0,
+          0,
+          0
+        ],
+        "surfaceDistribution": "reference heatFlux × (0.12 + 0.88 × schematic windward weighting)",
+        "surfaces": "booster skin and interstage; attached upper-stage shell and fairing"
+      }
+    },
+    {
+      "name": "Deluge, engine exhaust and ground dust have separately populated GPU state",
+      "passed": true,
+      "active": {
+        "plume": 58985,
+        "upperPlume": 0,
+        "steam": 22926,
+        "reentry": 0,
+        "explosion": 0,
+        "upperExplosion": 0,
+        "dust": 8192
+      }
+    },
+    {
+      "name": "Long persistent exhaust spans over two representative stack lengths",
+      "passed": true,
+      "active": 60934,
+      "ahead": 0,
+      "fractionAhead": 0,
+      "radialMean": 3.057713366797876,
+      "radialSamples": 7881,
+      "downstreamP95": 343.36619509882365,
+      "stride": 4,
+      "altitude": 1184.5751001955941,
+      "pressure": 87997.84515056438,
+      "halfAngle": 0.08238320040170849
+    },
+    {
+      "name": "Mach cells change actual rendered pixels and restore exactly",
+      "passed": true,
+      "cells": 264,
+      "changedPixels": 132,
+      "restoredDifference": 0
+    },
+    {
+      "name": "Visible, reversible heat-flux coloring with frozen CPU and GPU during ascent",
+      "passed": true,
+      "changedPixels": 156270,
+      "surface": {
+        "enabled": true,
+        "rangeWm2": [
+          0,
+          40000
+        ],
+        "referenceHeatFluxWm2": 209.15727157409205,
+        "flowDirection": [
+          0.036665735353624655,
+          0.9993275858550978,
+          3.792046609944824e-18
+        ],
+        "surfaceDistribution": "reference heatFlux × (0.12 + 0.88 × schematic windward weighting)",
+        "surfaces": "booster skin and interstage; attached upper-stage shell and fairing"
+      }
+    },
+    {
+      "name": "GPU plume widens with falling pressure at high altitude",
+      "passed": true,
+      "low": {
+        "active": 60934,
+        "ahead": 0,
+        "fractionAhead": 0,
+        "radialMean": 3.057713366797876,
+        "radialSamples": 7881,
+        "downstreamP95": 343.36619509882365,
+        "stride": 4,
+        "altitude": 1184.5751001955941,
+        "pressure": 87997.84515056438,
+        "halfAngle": 0.08238320040170849
+      },
+      "high": {
+        "active": 60047,
+        "ahead": 0,
+        "fractionAhead": 0,
+        "radialMean": 10.995038189433714,
+        "radialSamples": 6233,
+        "downstreamP95": 446.070930916796,
+        "stride": 4,
+        "altitude": 63960.14650281519,
+        "pressure": 49.9881159610935,
+        "halfAngle": 0.47123889803846897
+      }
+    },
+    {
+      "name": "Attached stage geometry remains connected during gravity-turn ascent",
+      "passed": true,
+      "gap": 0,
+      "tilt": 0.2540328754926482,
+      "altitude": 63960.14650281519
+    },
+    {
+      "name": "Six upper engines ignite after separation; the visible ship uses integrated quaternion",
+      "passed": true,
+      "upper": {
+        "active": 23912,
+        "ahead": 0,
+        "fractionAhead": 0,
+        "radialMean": 16.770684500734678,
+        "radialSamples": 2977,
+        "downstreamP95": 408.1170337702754,
+        "stride": 4,
+        "altitude": 115500.87275385577,
+        "pressure": 0.10835832089872444,
+        "halfAngle": 0.4200754140285888
+      },
+      "thrust": 14639998.431168629,
+      "fuelUsed": 38582.41400163279,
+      "active": 6
+    },
+    {
+      "name": "Pause freezes both rigid bodies and all seven compute storage sets",
+      "passed": true
+    },
+    {
+      "name": "Visible, reversible heat-flux coloring with frozen CPU and GPU during entry",
+      "passed": true,
+      "changedPixels": 256671,
+      "surface": {
+        "enabled": true,
+        "rangeWm2": [
+          0,
+          40000
+        ],
+        "referenceHeatFluxWm2": 104991.97991748054,
+        "flowDirection": [
+          -0.0335233224419756,
+          -0.9994379354679567,
+          2.8093031805176104e-17
+        ],
+        "surfaceDistribution": "reference heatFlux × (0.12 + 0.88 × schematic windward weighting)",
+        "surfaces": "booster skin and interstage; attached upper-stage shell and fairing"
+      }
+    },
+    {
+      "name": "Heat-driven reentry field evolves on the GPU",
+      "passed": true,
+      "active": 4941
+    },
+    {
+      "name": "The full browser-integrated mission reaches a successful tower capture without explosion",
+      "passed": true,
+      "phase": "LANDED",
+      "t": 610.6166666662757,
+      "vy": -6.1880938439527196,
+      "stroke": 0.3868563713066479
+    },
+    {
+      "name": "The six-ship-engine group can be shut down through the UI without inhibiting the booster",
+      "passed": true,
+      "commands": [
+        {
+          "id": 1,
+          "type": "engine-command",
+          "ids": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6"
+          ],
+          "enabled": false,
+          "requestedAt": 175.00000000000517,
+          "requestedAltitude": 137442.41947463434,
+          "source": "manual",
+          "appliedAt": 175.0083333333385,
+          "altitude": 137442.41947463434,
+          "upperAltitude": 139815.88906763867,
+          "phase": "COAST",
+          "attitude": [
+            -3.988030123076633e-23,
+            -8.586774303802502e-24,
+            0.20328329526516653,
+            0.9791199629596644
+          ],
+          "omega": [
+            3.454350341762718e-23,
+            4.1686676117330185e-24,
+            -0.15816494317607693
+          ],
+          "fuel": {
+            "booster": 267458.48311221035,
+            "upper": 1104466.0972968405
+          }
+        }
+      ],
+      "upperPlumeActive": 0
+    },
+    {
+      "name": "Independent ship collision triggers its own energy-scaled GPU explosion and empties its own tank",
+      "passed": true,
+      "time": 627.5916666662603,
+      "energy": 9386337666304.355,
+      "radius": 920.9264049940646,
+      "active": 8192
+    },
+    {
+      "name": "No JavaScript, WGSL, WebGPU errors or external network requests",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "external": []
+}
