@@ -1,7 +1,9 @@
 # Blender 无人夜间酒吧
 
-[原始提示词](PROMPT.md) · [后续请求](REQUEST_HISTORY.md)
+[原始提示词](PROMPT.md) · [原请求](REQUEST_HISTORY.md)
 
-原始提示词已找到；云端 .blend、两张渲染和说明文件尚未取回。
+[下载可编辑 Blender 场景](deliverables/Nightfall_Empty_Bar.blend)。
 
-已找到的源码位于 `source/`（如有），交付文件位于 `deliverables/`。原项目中的使用与测试说明一并保留。本次仅归档，未重新运行作品。
+这是原云端交付的文件，2026-10-01 由用户下载后提供。原记录显示使用 Blender 4.3.2，场景包含 763 个对象、712 个网格、20 个材质、21 盏灯和两台相机，采用程序化材质，无需外部纹理。本次只核对文件存在与文件头，未重新在 Blender 中打开或渲染。
+
+原云端交付的两张预览图未包含在本次归档中，可直接在 Blender 内渲染查看。

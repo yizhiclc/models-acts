@@ -14,7 +14,7 @@
 | 08 | [松溪微缩铁路小镇](projects/08-railway-town/) | [已找到](projects/08-railway-town/PROMPT.md) | 24 个文件已整理 |
 | 09 | [上元灯境](projects/09-lantern-reverie/) | [已找到](projects/09-lantern-reverie/PROMPT.md) | 11 个文件已整理 |
 | 10 | [晓梦迷蝶](projects/10-butterfly-dream/) | [已找到](projects/10-butterfly-dream/PROMPT.md) | 2 个文件已整理 |
-| 11 | [Blender 无人夜间酒吧](projects/11-night-bar/) | [已找到](projects/11-night-bar/PROMPT.md) | 待取回云端文件 |
+| 11 | [Blender 无人夜间酒吧](projects/11-night-bar/) | [已找到](projects/11-night-bar/PROMPT.md) | 可编辑 .blend 已上传 |
 | 13 | [体素云山瀑布](projects/13-cloudfall-voxel/) | [已找到](projects/13-cloudfall-voxel/PROMPT.md) | 8 个文件已整理 |
 | 14 | [星舰发射与一级回收仿真](projects/14-rocket-lab/) | [已找到](projects/14-rocket-lab/PROMPT.md) | 80 个文件已整理 |
 | 16 | [深海启航](projects/16-deep-sea-launch/) | [已找到](projects/16-deep-sea-launch/PROMPT.md) | 5 个文件已整理 |
