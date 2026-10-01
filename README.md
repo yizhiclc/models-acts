@@ -4,7 +4,7 @@
 
 | 编号 | 项目 | 原始提示词 | 本地成果 |
 |---|---|---|---|
-| 01 | [天阙宫城](projects/01-tianque-palace/) | [已找到](projects/01-tianque-palace/PROMPT.md) | 20 个文件已整理 |
+| 01 | [天阙宫城](projects/01-tianque-palace/) | [已找到](projects/01-tianque-palace/PROMPT.md) | 2三版完整视频已上传至 Release |
 | 02 | [中式古典建筑群](projects/02-classical-architecture/) | [已找到](projects/02-classical-architecture/PROMPT.md) | 8 个文件已整理 |
 | 03 | [云山巨城](projects/03-yunshan-city/) | [已找到](projects/03-yunshan-city/PROMPT.md) | 19 个文件已整理 |
 | 04 | [武陵城](projects/04-wuling-city/) | [已找到](projects/04-wuling-city/PROMPT.md) | 25 个文件已整理 |
@@ -16,16 +16,16 @@
 | 10 | [晓梦迷蝶](projects/10-butterfly-dream/) | [已找到](projects/10-butterfly-dream/PROMPT.md) | 2 个文件已整理 |
 | 11 | [Blender 无人夜间酒吧](projects/11-night-bar/) | [已找到](projects/11-night-bar/PROMPT.md) | 可编辑 .blend 已上传 |
 | 13 | [体素云山瀑布](projects/13-cloudfall-voxel/) | [已找到](projects/13-cloudfall-voxel/PROMPT.md) | 8 个文件已整理 |
-| 14 | [星舰发射与一级回收仿真](projects/14-rocket-lab/) | [已找到](projects/14-rocket-lab/PROMPT.md) | 80 个文件已整理 |
+| 14 | [星舰发射与一级回收仿真](projects/14-rocket-lab/) | [已找到](projects/14-rocket-lab/PROMPT.md) | 8三版完整视频已上传至 Release |
 | 16 | [深海启航](projects/16-deep-sea-launch/) | [已找到](projects/16-deep-sea-launch/PROMPT.md) | 5 个文件已整理 |
 | 17 | [掠海长航](projects/17-pelagic-flight/) | [已找到](projects/17-pelagic-flight/PROMPT.md) | 34 个文件已整理 |
 | 18 | [海湾航记](projects/18-tropical-sailing/) | [已找到](projects/18-tropical-sailing/PROMPT.md) | 21 个文件已整理 |
 | 19 | [Schwarzschild 无自旋黑洞](projects/19-schwarzschild-blackhole/) | [已找到](projects/19-schwarzschild-blackhole/PROMPT.md) | 39 个文件已整理 |
 | 20 | [Kerr 自旋黑洞](projects/20-kerr-blackhole/) | [已找到](projects/20-kerr-blackhole/PROMPT.md) | 25 个文件已整理 |
-| 23 | [world.execute(me) 完整 MV](projects/23-world-execute-mv/) | [已找到](projects/23-world-execute-mv/PROMPT.md) | 0 个文件已整理 |
+| 23 | [world.execute(me) 完整 MV](projects/23-world-execute-mv/) | [已找到](projects/23-world-execute-mv/PROMPT.md) | 三版完整视频已上传至 Release |
 | 24 | [我叫Astra，却从未见过群星](projects/24-astra-stars/) | [已找到](projects/24-astra-stars/PROMPT.md) | 5 个文件已整理 |
 | 25 | [Minecraft 黑洞祭坛搭建与剪辑成片](projects/25-minecraft-blackhole-altar/) | [已找到](projects/25-minecraft-blackhole-altar/PROMPT.md) | 108 个文件已整理 |
 | 28 | [EventHorizon 黑洞模组](projects/28-eventhorizon/) | [已找到](projects/28-eventhorizon/PROMPT.md) | 29 个文件已整理 |
 | 31 | [信号流图四题完整解答](projects/31-signal-flow-solutions/) | [已找到](projects/31-signal-flow-solutions/PROMPT.md) | 6 个文件已整理 |
 
-大型视频和数据的校验信息见 [large-assets.json](large-assets.json)。尚未完成大文件上传时，不提供虚构下载链接。
+大型视频和数据的校验信息见 [large-assets.json](large-assets.json)。全部大型成果已上传至 [Release](https://github.com/yizhiclc/models-acts/releases/tag/archive-2026-10-01)，对应下载链接已写入各项目目录。
