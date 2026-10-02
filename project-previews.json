@@ -205,5 +205,41 @@
     "description": "四题信号流图、梅森公式与完整推导。",
     "caption": "原题信号流图，用于展示项目内容",
     "sha256": "e0c62e7d54dc019670541ae8597a87f54ac7ee7f30a5a3584033de4db9a3cff9"
+  },
+  {
+    "id": "36",
+    "name": "6Astra低多边形营地",
+    "directory": "projects/36-6astra-campfire",
+    "preview": "projects/36-6astra-campfire/preview.jpg",
+    "description": "连续松林地形中的帐篷、篝火与水塘，可切换昼夜。",
+    "caption": "原项目测试截图（2026-10-02）",
+    "sha256": "ebae76f388761f735f0f2d8d2d3eec0dcbb23db8ef4ff9d6f9ed62453eca1b0a"
+  },
+  {
+    "id": "37",
+    "name": "6Astra庭园喷泉场景",
+    "directory": "projects/37-6astra-fountain",
+    "preview": "projects/37-6astra-fountain/preview.jpg",
+    "description": "古典多层喷泉与庭园，GPU 水流、涟漪及昼夜灯光。",
+    "caption": "原项目测试截图（2026-10-02）",
+    "sha256": "cce1ce2f98dc0b24e09e559e57651b9a0afdc2d9986eb2c5c6d08cd34b5415f2"
+  },
+  {
+    "id": "38",
+    "name": "6Astra雨中荷塘场景",
+    "directory": "projects/38-6astra-rain-lotus",
+    "preview": "projects/38-6astra-rain-lotus/preview.png",
+    "description": "不规则荷塘、荷叶水珠与 GPU 雨滴涟漪，可调雨量和风。",
+    "caption": "原项目测试截图（2026-10-02）",
+    "sha256": "2b05de805ecc129c6dcf51bee7f4e394ab74eaf9cec761ebcea234473927c135"
+  },
+  {
+    "id": "39",
+    "name": "6Astra《破壁》三维物理模拟",
+    "directory": "projects/39-6astra-breakwall",
+    "preview": "projects/39-6astra-breakwall/preview.jpg",
+    "description": "重物撞墙、断裂与碎块碰撞，可拖动时间轴回放全过程。",
+    "caption": "原项目测试截图（2026-10-02）",
+    "sha256": "b6d7be506bc61de636b30b6a57960a2c6d4ffe8c7a1f5fa00a8c01b9dbd49693"
   }
 ]

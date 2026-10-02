@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-02T05:52:35.420Z",
+  "url": "http://127.0.0.1:5187",
+  "errors": [],
+  "checks": [
+    "GPU propagation",
+    "GPU linear superposition",
+    "drop size response",
+    "unforced decay",
+    "reflecting obstacle",
+    "pause and single-drop controls",
+    "all four camera presets",
+    "high-quality mode",
+    "sustained heavy rain with wind",
+    "mobile viewport",
+    "window enlargement and quality round trip",
+    "WebGPU-unavailable message"
+  ],
+  "adapter": {
+    "vendor": "nvidia",
+    "architecture": "lovelace",
+    "description": ""
+  },
+  "physics": {
+    "early": {
+      "e": 0.000013669825259862804,
+      "max": 0.00045067144674248993,
+      "finite": true
+    },
+    "late": {
+      "e": 0.000006820714236769797,
+      "max": 0.00013447132369037718,
+      "finite": true
+    },
+    "radiusEarly": 0.07190878368609273,
+    "radiusLate": 0.29335754538370334,
+    "largeSmallAmplitude": 7.999861545405132,
+    "superpositionRelativeError": 3.384236959037551e-7,
+    "decayEnergyRatio": 0.013806149265221935,
+    "wallMax": 0,
+    "reflectedDifference": 0.0000011708771821753436
+  },
+  "runtime": {
+    "diagnostics": {
+      "ready": true,
+      "frames": 9828,
+      "errors": [],
+      "fps": 131,
+      "simulationTime": 88.59166666668324,
+      "slowFrames": 3
+    },
+    "impacts": {
+      "waterHits": 155627,
+      "leafHits": 56571,
+      "readbacks": 742
+    },
+    "beads": {
+      "depositedVolume": 0.0005657801204853319,
+      "drippedVolume": 0.0004844939362778807,
+      "merges": 24022,
+      "drops": 12204
+    },
+    "beadCount": 2233,
+    "leaves": 54,
+    "memory": {
+      "geometries": 189,
+      "textures": 29
+    }
+  },
+  "passed": true
+}

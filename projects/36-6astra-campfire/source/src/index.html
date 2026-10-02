@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN" data-time="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#dbe4df">
+  <meta name="description" content="松间营地：一片可以慢慢探索的低多边形山野。旋转视角，点燃篝火，看日光变成星夜。">
+  <title>GPT-6-Astra max 篝火营地</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232c483c'/%3E%3Cpath d='M12 49 32 15 52 49ZM25 49l7-14 7 14' fill='none' stroke='%23efbb70' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>/* INLINE_STYLES */</style>
+</head>
+<body>
+  <main id="app">
+    <div id="scene" tabindex="0" role="img" aria-label="可旋转和缩放的低多边形林间营地。拖动旋转，滚轮缩放；也可使用方向键和加减键。"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="masthead">
+      <a class="brand" href="#" aria-label="松间营地，回到初始视角" id="brand-home">
+        <span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m5 25 11-19 11 19H5Z"/><path d="m12 25 4-8 4 8M12 6l4 7 4-7"/></svg></span>
+        <span class="brand-name">松间<span>CAMP STILL</span></span>
+      </a>
+      <div class="edition"><span class="edition-line"></span>一隅山野 · 一刻闲暇</div>
+    </header>
+    <section class="intro" aria-labelledby="title">
+      <div class="eyebrow"><span>THE GREAT LITTLE OUTDOORS</span></div>
+      <h1 id="title">山野很近，<br>时间很慢。</h1>
+      <p>在松林之间，留一簇温暖。</p>
+      <div class="scene-note"><span class="note-number">01</span><span>松林营地<span class="note-en">PINEWOOD CAMPSITE</span></span></div>
+    </section>
+    <div class="top-tools">
+      <button id="reset-view" class="icon-button" type="button" title="重置视角 · R" aria-label="重置视角"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10a8 8 0 1 1 .8 6M4 5v5h5"/></svg><span>归位</span></button>
+    </div>
+    <div class="scene-caption" aria-hidden="true"><span class="caption-rule"></span><span id="mood-text">日光穿过松梢</span></div>
+    <section class="control-dock" aria-label="营地控制">
+      <div class="time-controls"><span class="control-label">营地时刻</span><div class="segmented" role="group" aria-label="选择白天或夜晚">
+        <button id="day-button" type="button" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>日光</button>
+        <button id="night-button" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14A8.3 8.3 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/><path d="M18 3v4m-2-2h4"/></svg>星夜</button>
+      </div></div>
+      <span class="dock-divider" aria-hidden="true"></span>
+      <div class="fire-control"><div class="fire-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2c1 5-5 6-5 11a5 5 0 0 0 10 0c0-2-1-4-3-5 0 3-2 3-2 3s2-5 0-9Z"/><path d="m8 21 9-3m-10 0 9 3"/></svg></div><div class="fire-copy"><span>营地篝火</span><small id="fire-status">正在燃烧</small></div><button id="fire-toggle" class="switch" type="button" role="switch" aria-checked="true" aria-label="点燃或熄灭篝火"><span></span></button></div>
+    </section>
+    <footer class="footer"><span class="footer-location"><span class="tiny-pine">△</span>走进自然，暂别日常</span><span class="gesture-hint"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="5.5" y="2" width="9" height="15" rx="4.5"/><path d="M10 3v4"/></svg><span>拖动旋转<span class="hint-dot">·</span>滚轮缩放</span></span><span class="footer-tag">A LITTLE ESCAPE</span></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="loading" id="loading"><span class="loading-icon">△</span><span>正在走进松林…</span></div>
+    <div class="error-panel" id="error-panel" role="alert" hidden><h2>暂时无法打开营地</h2><p id="error-message">请使用支持 WebGL 2 的浏览器，并开启硬件加速后重试。</p><button id="retry-button" type="button">重新打开</button></div>
+    <noscript><div class="noscript">请启用 JavaScript 以探索 Three.js 营地。</div></noscript>
+  </main>
+  <script>/* INLINE_SCRIPT */</script>
+</body>
+</html>

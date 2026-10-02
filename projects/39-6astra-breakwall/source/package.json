@@ -1,0 +1,21 @@
+{
+  "name": "breakwall-physics-lab",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Collision-driven brittle wall experiment with an offline single-file build",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node test/all.test.mjs",
+    "test:physics": "node test/physics.test.mjs",
+    "test:replay": "node test/replay.test.mjs"
+  },
+  "dependencies": {
+    "cannon-es": "0.20.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}

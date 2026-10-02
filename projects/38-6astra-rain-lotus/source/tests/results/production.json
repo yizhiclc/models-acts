@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-02T05:59:23.442Z",
+  "browser": "154.0.4258.48",
+  "productionBundle": true,
+  "stillWeight": 0.9921875,
+  "motionWeight": 0,
+  "errors": [],
+  "diagnostics": {
+    "ready": true,
+    "frames": 1237,
+    "errors": [],
+    "fps": 180,
+    "simulationTime": 6.950000000000135,
+    "slowFrames": 2
+  },
+  "checks": [
+    "production initial render",
+    "stationary accumulation",
+    "orbit resets history",
+    "zoom",
+    "pan",
+    "reset",
+    "quality round trip"
+  ]
+}

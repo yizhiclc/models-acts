@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-02T06:05:49.880Z",
+  "browser": "154.0.4258.48",
+  "offline": true,
+  "launchFlags": [],
+  "url": "file:///C:/Users/Administrator/Documents/Codex/2026-10-02/three-js-webgpu-3d-1-6-3/outputs/rain-lotus.html",
+  "requests": [
+    "file:///C:/Users/Administrator/Documents/Codex/2026-10-02/three-js-webgpu-3d-1-6-3/outputs/rain-lotus.html"
+  ],
+  "errors": [],
+  "runtime": {
+    "ready": true,
+    "errors": [],
+    "frames": 1500,
+    "webgpu": true,
+    "hits": {
+      "waterHits": 1001,
+      "leafHits": 368,
+      "readbacks": 89
+    },
+    "secureContext": true
+  },
+  "checks": [
+    "file URL boot",
+    "offline without external resources",
+    "actual WebGPU rendering and rain hits",
+    "pause",
+    "single drop",
+    "leaf preset",
+    "quality round trip",
+    "resize"
+  ],
+  "passed": true
+}

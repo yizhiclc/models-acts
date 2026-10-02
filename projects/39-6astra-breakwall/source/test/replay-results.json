@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-10-02T06:20:01.263Z",
+  "node": "v24.16.0",
+  "platform": "win32",
+  "passed": 8,
+  "total": 8,
+  "elapsedMs": 5320,
+  "results": [
+    {
+      "name": "Recording begins at the intact zero frame and captures the real simulation",
+      "passed": true,
+      "ms": 1844
+    },
+    {
+      "name": "Seeking restores poses, rotations, velocities, stress, bonds and telemetry without touching the world",
+      "passed": true,
+      "ms": 9
+    },
+    {
+      "name": "Rewinding before impact hides future cracks, contact records and future trajectories",
+      "passed": true,
+      "ms": 1
+    },
+    {
+      "name": "Replay single-step reaches the recorded endpoint without advancing physics",
+      "passed": true,
+      "ms": 2
+    },
+    {
+      "name": "Continuing after repeated replay produces the same physical result as uninterrupted simulation",
+      "passed": true,
+      "ms": 3349
+    },
+    {
+      "name": "Bounded pose storage retains the beginning, latest frame and discrete fracture history",
+      "passed": true,
+      "ms": 2
+    },
+    {
+      "name": "Long recordings remain seekable from zero, even beyond the old 60-second telemetry window",
+      "passed": true,
+      "ms": 18
+    },
+    {
+      "name": "A new experiment discards the previous recording and fragment trail identities",
+      "passed": true,
+      "ms": 51
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "rain-lotus-webgpu",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "build:single": "vite build && node scripts/singlefile.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:physics": "node tests/physics.mjs",
+    "test:gpu": "node tests/gpu.mjs"
+  },
+  "dependencies": { "three": "0.180.0" },
+  "devDependencies": { "vite": "7.1.7", "playwright": "1.63.0" },
+  "engines": { "node": "^20.19.0 || >=22.12.0" }
+}

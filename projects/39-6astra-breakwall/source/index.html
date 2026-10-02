@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10171c">
+  <meta name="description" content="破壁 — 可交互的碰撞与断裂实验。调整重物、墙体与撞击位置，观察受力、破裂和坍塌。所有依赖内嵌，可离线运行。">
+  <title>破壁 · 碰撞与断裂实验室</title>
+  <style>/* APP_CSS */</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><svg width="35" height="38" viewBox="0 0 35 38" fill="none" aria-hidden="true"><path d="M3 4h14l-4 12 8 5-6 13H3V4Z" stroke="currentColor" stroke-width="1.5"/><path d="m23 4-5 10 9 6-7 14h12V4h-9Z" fill="currentColor"/></svg><h1>破壁<span>FRACTURE LAB</span></h1><span class="brand-rule"></span><p>碰撞 · 断裂 · 坍塌</p></div>
+    <div class="top-actions"><span class="offline-label">离线物理实验室 <b>01</b></span><button class="text-button" id="help-button">机制与操作 <span>?</span></button><button class="text-button" id="export-button">导出数据 <span>↥</span></button></div>
+  </header>
+  <main class="layout">
+    <aside class="sidebar">
+      <nav class="tabs" aria-label="实验面板"><button id="parameters-tab" class="active" aria-selected="true">实验参数</button><button id="comparison-tab" aria-selected="false">实验对比 <span id="compare-count">0</span></button></nav>
+      <div id="parameters-panel" class="panel-scroll">
+        <div class="preset-field"><label for="preset">实验起点</label><select id="preset"><option value="local">01 · 局部破损</option><option value="gentle">02 · 轻触完整</option><option value="miss">03 · 未命中</option><option value="through">04 · 高能穿透</option><option value="collapse">05 · 低位重击</option></select><p>选择后载入参数，点击应用生效。</p></div>
+        <section class="parameter-section"><div class="section-heading"><span>01</span><h2>撞击体</h2><span class="section-tag">球形刚体</span></div>
+          <div class="control"><label for="radius">半径 <span><output id="radius-value">0.42</output> m</span></label><input id="radius" type="range" min="0.16" max="0.85" step="0.01" value="0.42"><div class="range-labels"><span>0.16</span><span>0.85</span></div></div>
+          <div class="control"><label for="mass">质量 <span><output id="mass-value">250</output> kg</span></label><input id="mass" type="range" min="50" max="2400" step="10" value="250"></div>
+          <p class="field-note">质量独立设置，改变半径不改变质量。<br>模型与碰撞体同步缩放。</p>
+          <div class="control"><label for="speed">入射速度 <span><output id="speed-value">12</output> m/s</span></label><input id="speed" type="range" min="2" max="42" step="1" value="12"></div>
+          <div class="energy-strip"><span>轴向初始动能</span><strong id="energy-preview">18.0 <small>kJ</small></strong></div>
+        </section>
+        <section class="parameter-section"><div class="section-heading"><span>02</span><h2>撞击位置</h2><span class="section-tag">墙面坐标</span></div>
+          <div class="target-preview" id="target-pad" role="slider" tabindex="0" aria-label="撞击位置，左右方向键调水平，上下方向键调高度"><div class="target-wall"></div><span class="target-cross" id="target-dot"></span><span class="target-origin">0</span><span class="target-hint">点击定位 · 可瞄准墙外</span></div>
+          <div class="control compact"><label for="hitX">水平偏移 <span><output id="hitX-value">0.00</output> m</span></label><input id="hitX" type="range" min="-5" max="5" step="0.05" value="0"></div>
+          <div class="control compact"><label for="hitY">中心高度 <span><output id="hitY-value">2.15</output> m</span></label><input id="hitY" type="range" min="0.5" max="5.2" step="0.05" value="2.15"></div>
+          <p class="field-note" id="aim-note">橙色标记为预计首次接触时的球心。</p>
+        </section>
+        <section class="parameter-section"><div class="section-heading"><span>03</span><h2>墙体</h2><span class="section-tag">底边固支</span></div>
+          <div class="control"><label for="thickness">厚度 <span><output id="thickness-value">0.30</output> m</span></label><input id="thickness" type="range" min="0.16" max="0.7" step="0.01" value="0.3"></div>
+          <div class="control"><label for="strength">连接强度 <span><output id="strength-value">1.60</output> MPa</span></label><input id="strength" type="range" min="0.18" max="4" step="0.01" value="1.6"></div>
+          <p class="field-note">简化脆性连接的强度参数。厚度同时影响质量、碰撞与抗弯能力。</p>
+          <div class="seed-field"><label for="seed">碎块分布种子</label><input id="seed" type="number" min="1" max="99999" value="42" step="1"></div>
+          <div class="wall-facts"><span>6.4 × 3.8 m</span><span>136 个不规则单元</span></div>
+        </section>
+      </div>
+      <div id="comparison-panel" class="panel-scroll" hidden><div class="comparison-intro"><h2>保留一个参照</h2><p>在相同模拟时刻记录结果，比较质量、速度、位置与墙体强度的影响。仅保留在本次页面会话中。</p><button class="outline-button" id="record-button">记录当前实验</button></div><div id="comparison-list"><p class="empty-note">还没有记录。开始一次撞击后，即可保存当前结果。</p></div></div>
+      <div class="apply-area"><p id="pending-note"><span class="state-dot"></span>参数已应用 · 等待撞击</p><button class="apply-button" id="apply-button">应用参数并重置 <span>↺</span></button></div>
+    </aside>
+    <section class="experiment" aria-label="三维物理实验">
+      <div class="viewport" id="viewport">
+        <div id="scene"></div>
+        <div class="scene-heading"><div class="eyebrow">EXPERIMENT / <span id="experiment-number">001</span></div><h2>观察力如何留下痕迹。</h2><div class="scene-status"><span class="state-dot" id="running-dot"></span><span id="status-text" role="status">就绪</span><span class="status-divider">/</span><span id="scene-info">136 碎块 · 重力 9.81 m/s²</span></div></div>
+        <div class="view-tools"><div class="segmented" aria-label="观察方向"><button id="view-perspective" class="active" title="透视">透视</button><button id="view-front">正面</button><button id="view-side">侧面</button></div><button id="home-view" class="icon-button" title="恢复观察视角" aria-label="恢复观察视角">⌖</button></div>
+        <div class="scene-options"><label><input type="checkbox" id="stress-view"><span>连接受力</span></label><label><input type="checkbox" id="trajectory-view" checked><span>运动轨迹</span></label><label><input type="checkbox" id="mesh-view"><span>碎块边界</span></label></div>
+        <div class="stress-legend" id="stress-legend" hidden><span>低</span><i></i><span>接近断裂</span></div>
+        <div class="axis-key"><span class="axis-x">X</span><span class="axis-y">Y</span><span class="axis-z">Z</span><span>单位：米</span></div>
+        <div id="selected-piece" class="piece-info" hidden><button id="close-piece" aria-label="关闭碎块信息">×</button><div class="eyebrow">FRAGMENT <span id="piece-id"></span></div><h3 id="piece-support"></h3><dl id="piece-values"></dl></div>
+        <div class="scene-hint" id="scene-hint">拖动旋转 · 滚轮缩放 · 右键平移 · 点击重物或碎块查看状态</div>
+        <div class="transport"><button class="launch-button" id="launch-button"><svg viewBox="0 0 16 16" width="14" aria-hidden="true"><path d="m4 2 10 6-10 6V2Z" fill="currentColor"/></svg><span>开始撞击</span></button><button id="step-button" class="transport-button" title="前进 1/120 秒（N）"><span>⏵│</span>单步</button><button id="reset-button" class="transport-button" title="按当前已应用参数重新开始（R）"><span>↺</span>重置</button><span class="transport-divider"></span><label class="speed-label" for="time-scale">慢放</label><select id="time-scale" aria-label="模拟播放速度"><option value="1">1×</option><option value="0.5">0.5×</option><option value="0.25">0.25×</option><option value="0.1">0.1×</option></select></div>
+        <div class="performance-note" id="performance-note" hidden>计算负载较高，模拟时间正在放慢</div>
+        <div class="loading" id="loading"><div class="spinner"></div><span>正在构建碰撞体与连接…</span></div>
+        <div class="error-panel" id="error-panel" hidden><h2>无法初始化三维场景</h2><p id="error-text"></p></div>
+      </div>
+      <section class="timeline" aria-label="过程回放时间轴">
+        <div class="timeline-heading">
+          <label for="timeline-range">过程回放 <span id="timeline-mode">最新</span></label>
+          <div class="timeline-times"><output id="timeline-current" for="timeline-range">0.000 s</output><span>/</span><span id="timeline-duration">0.000 s</span></div>
+          <div class="timeline-actions"><button id="replay-start" disabled title="从零时刻播放本次已记录的过程">↶ 从头回放</button><button id="replay-latest" disabled title="回到已计算的最新时刻，之后可继续模拟">回到最新 ↦</button></div>
+        </div>
+        <div class="timeline-track"><input id="timeline-range" type="range" min="0" max="1" step="1" value="0" disabled aria-label="回放进度" aria-describedby="timeline-hint"><span id="timeline-contact" class="timeline-contact" hidden></span></div>
+        <p id="timeline-hint">开始撞击后自动记录 · 拖动回看整个过程</p>
+      </section>
+      <footer class="telemetry"><div class="metrics"><div><span>模拟时间</span><strong id="metric-time">0.000 <small>s</small></strong></div><div><span>累计接触冲量</span><strong id="metric-impulse">0 <small>N·s</small></strong></div><div><span>断裂连接 <small id="bond-total">/ —</small></span><strong id="metric-broken">0</strong></div><div><span>脱离支撑的碎块</span><strong id="metric-detached">0 <small>/ 136</small></strong></div></div><div class="graph-area"><div class="graph-caption"><span><i></i>每步接触冲量 <small>N·s</small></span><span id="contact-time">尚未接触墙体</span></div><canvas id="impulse-chart" aria-label="重物与墙体接触冲量随模拟时间变化"></canvas></div></footer>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <dialog id="help-dialog"><form method="dialog"><button class="dialog-close" aria-label="关闭说明">×</button></form><div class="eyebrow">INSIDE THE EXPERIMENT</div><h2>每一道裂口，都从受力开始。</h2><p class="dialog-lead">这是基于刚体与可断裂连接的实时物理近似，用来观察碰撞与破坏的因果关系，不是工程级结构分析。</p><div class="help-grid"><section><h3>怎么操作</h3><p>调整参数后点击「应用参数并重置」。开始撞击后可暂停、继续、慢放或单步前进 1/120 秒。重置复用已应用参数和种子，改变参数不会偷偷影响正在进行的实验。</p><p>拖动旋转，滚轮缩放，右键平移；点击重物查看三轴速度，点击碎块查看质量、速度与支撑状态。「连接受力」显示连接反力与断裂阈值的比值。「实验对比」记录当前时刻的结果。</p><p class="shortcut-row"><kbd>空格</kbd> 开始 / 暂停 <kbd>N</kbd> 单步 <kbd>R</kbd> 重置</p></section><section><h3>拖动时间轴回放</h3><p>每次撞击从零时刻自动记录。拖动场景下方的进度条会暂停，并同时恢复该时刻的重物、碎块姿态、连接状态、读数和轨迹。点击「从头回放」播放已记录的全过程，或用主播放按钮、慢放和单步查看细节。</p><p>回放到已记录的末尾会暂停。「回到最新」返回原来的物理状态，点击「继续模拟」可延长记录。回放不会重算或改变原来的撞击；重置、应用参数或刷新页面会清空本次回放。长记录达到约 64 MiB 姿态数据后会降低采样密度，保留起点、终点与断裂时刻，中间姿态作插值。</p></section><section><h3>如何破坏</h3><p>墙体预先分为 136 个厚度方向错开的三维 Voronoi 多面体。相邻碎块通过接触面上的六自由度连接传递力和弯矩，底边碎块固定在基座上。每次物理解算后，根据实际连接反力、截面与强度判断是否断裂。</p><p>连接失效会移除约束，不会删除碎块或施加爆炸力。剩余连接继续承载，失去支撑的部分受重力下落。碰撞与受力重分配可以继续产生断裂。</p></section><section><h3>质量、尺寸与瞄准</h3><p>球的质量独立设置，半径同时更新显示和球形碰撞体。墙体密度固定为 1750 kg/m³，碎块质量、质心与主转动惯量由实际多面体积分计算。墙厚影响碰撞、重量和弯矩承载能力。</p><p>速度参数是沿墙法线的初速度。重物从计算得到的高度水平发射，初始竖直速度为零，在重力下落后预计到达所选高度。低速实验会缩短发射距离。阻尼和离散步进会产生少量瞄准误差。</p></section><section><h3>数值近似与边界</h3><p>固定 120 Hz 主时钟，每步依据线速度、转动和最小厚度进一步细分。采用小步离散碰撞而非严格的连续碰撞检测；极端情况仍可能有轻微嵌入和抖动。</p><p>球体接触选择最近表面，未断裂接缝的内部特征不作为外露棱边碰撞。碎块形状预先生成，裂纹只能沿已有接缝发展，单个碎块不会继续细化。完整墙面共用连续表面，碰撞体留有 0.05% 的接触裕量。连接强度采用区分受拉、受压的简化剪切／弯曲准则（抗压限值取抗拉的 10 倍），接触摩擦由当步法向冲量限制，没有钢筋、塑性、压碎、真实裂纹尖端或材料标定。相同浏览器与参数应可复现，跨设备不承诺逐位一致。</p></section></div><p class="help-footer">Three.js 0.180.0 · cannon-es 0.20.0 · 全部依赖内嵌 · 不请求外部 CDN</p></dialog>
+  <noscript>请启用 JavaScript 以运行三维物理模拟。</noscript>
+  <script>/* APP_JS */</script>
+</body>
+</html>

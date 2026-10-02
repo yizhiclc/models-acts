@@ -1,0 +1,1548 @@
+{
+  "generatedAt": "2026-10-02T06:19:55.938Z",
+  "node": "v24.16.0",
+  "platform": "win32",
+  "elapsedMs": 70836,
+  "passed": 13,
+  "total": 13,
+  "results": [
+    {
+      "name": "3D cells tile the wall; aggregate centroid and exact inertia match a solid box",
+      "passed": true,
+      "ms": 71
+    },
+    {
+      "name": "Cached SAT agrees with the original SAT on separated, touching and rotated convex pairs",
+      "passed": true,
+      "ms": 74
+    },
+    {
+      "name": "Horizontal miss: no wall contact and no broken bonds, including weakest thin wall",
+      "passed": true,
+      "ms": 10024
+    },
+    {
+      "name": "Vertical miss above the wall does not fracture it",
+      "passed": true,
+      "ms": 2077
+    },
+    {
+      "name": "Low impact hits the wall but leaves it intact",
+      "passed": true,
+      "ms": 2894
+    },
+    {
+      "name": "Default case produces local damage only after actual contact",
+      "passed": true,
+      "ms": 2570
+    },
+    {
+      "name": "Changing impact position moves the physical contact and early fracture region",
+      "passed": true,
+      "ms": 2873
+    },
+    {
+      "name": "Speed, mass, strength, thickness and radius change physical outcomes",
+      "passed": true,
+      "ms": 25519
+    },
+    {
+      "name": "High energy penetrates; low impact and high energy do not share a scripted outcome",
+      "passed": true,
+      "ms": 5675
+    },
+    {
+      "name": "Maximum speed with smallest sphere and thinnest wall registers a contact, without tunneling through intact geometry",
+      "passed": true,
+      "ms": 3500
+    },
+    {
+      "name": "Flat fixed wall control: head-on horizontal collision creates no spurious vertical kick",
+      "passed": true,
+      "ms": 160
+    },
+    {
+      "name": "Same parameters, same fixed steps reproduce bond failures and final poses",
+      "passed": true,
+      "ms": 2587
+    },
+    {
+      "name": "Detached rubble collides with the floor and loses kinetic energy over time",
+      "passed": true,
+      "ms": 12810
+    }
+  ],
+  "experiments": {
+    "miss": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 4.6,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 3,
+      "broken": 0,
+      "detached": 0,
+      "bonds": 436,
+      "firstContact": null,
+      "firstBreak": null,
+      "wallImpulse": 0,
+      "projectilePosition": [
+        4.6,
+        0.41999754144158064,
+        -22.326009032683768
+      ],
+      "projectileVelocity": [
+        0,
+        3.4833247397614286e-15,
+        -6.708974252397923
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.402421348309842,
+      "maxDrift": 0.0007575260660748788,
+      "maxSubsteps": 2,
+      "peakCollisionVy": null
+    },
+    "miss_weak": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 4.8,
+        "hitY": 2.15,
+        "thickness": 0.16,
+        "strength": 0.18,
+        "seed": 42
+      },
+      "duration": 3,
+      "broken": 0,
+      "detached": 0,
+      "bonds": 379,
+      "firstContact": null,
+      "firstBreak": null,
+      "wallImpulse": 0,
+      "projectilePosition": [
+        4.8,
+        0.41999754569734166,
+        -22.398087295013976
+      ],
+      "projectileVelocity": [
+        0,
+        9.80118763926896e-15,
+        -6.708740123572743
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.2849492296574173,
+      "minProjectileY": 0.41199996447444254,
+      "maxDrift": 0.0008664092301289597,
+      "maxSubsteps": 3,
+      "peakCollisionVy": null
+    },
+    "miss_seed7": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 4.8,
+        "hitY": 2.15,
+        "thickness": 0.7,
+        "strength": 0.18,
+        "seed": 7
+      },
+      "duration": 3,
+      "broken": 0,
+      "detached": 0,
+      "bonds": 581,
+      "firstContact": null,
+      "firstBreak": null,
+      "wallImpulse": 0,
+      "projectilePosition": [
+        4.8,
+        0.4199975414415806,
+        -22.12600903268375
+      ],
+      "projectileVelocity": [
+        0,
+        3.4833247397614286e-15,
+        -6.708974252397909
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.3465561798086128,
+      "minProjectileY": 0.40242134830984194,
+      "maxDrift": 0.0004188152480445854,
+      "maxSubsteps": 2,
+      "peakCollisionVy": null
+    },
+    "high_miss": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 5.2,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 2,
+      "broken": 0,
+      "detached": 0,
+      "bonds": 436,
+      "firstContact": null,
+      "firstBreak": null,
+      "wallImpulse": 0,
+      "projectilePosition": [
+        0,
+        0.4199975414415793,
+        -16.361890948008377
+      ],
+      "projectileVelocity": [
+        0,
+        3.490263633665336e-15,
+        -6.98305624963473
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.4183427332511827,
+      "maxDrift": 0.0007575260660748788,
+      "maxSubsteps": 2,
+      "peakCollisionVy": null
+    },
+    "gentle": {
+      "params": {
+        "radius": 0.42,
+        "mass": 80,
+        "speed": 3,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 3.8,
+        "seed": 42
+      },
+      "duration": 3,
+      "broken": 0,
+      "detached": 0,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.3749999999999999,
+        "point": [
+          -0.000014980503452222127,
+          2.127495176573118,
+          0.1494965944313698
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -3.636540105341732,
+          -2.9977735985817207
+        ],
+        "normal": [
+          -0.0000018390889353347983,
+          0.00015161175813909388,
+          -0.9999999885052464
+        ]
+      },
+      "firstBreak": null,
+      "wallImpulse": 278.9215243152506,
+      "projectilePosition": [
+        -0.0002763825866805608,
+        0.4199992091554868,
+        2.6023373069451403
+      ],
+      "projectileVelocity": [
+        -0.00008978429224315518,
+        -5.9674487573602164e-15,
+        0.7949122212897695
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.40508340363687,
+      "maxDrift": 0.002518752880923724,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -2.7335430539716583
+    },
+    "local": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 2,
+      "broken": 73,
+      "detached": 1,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00012621904084569868,
+          2.1336176121539996,
+          0.14184229504417512
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000005747431873794062,
+          0.0001629138372650613,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 47,
+        "point": [
+          -1.0943509263383502,
+          1.2090248469628238,
+          -0.019626177764294143
+        ],
+        "stressRatio": 1.2270706161921092,
+        "contactImpulse": 2529.502586463017
+      },
+      "wallImpulse": 3225.497722817041,
+      "projectilePosition": [
+        -0.014081488788252543,
+        0.4199975414415753,
+        2.4287361619452192
+      ],
+      "projectileVelocity": [
+        -0.005885900597792412,
+        -6.3074545586516706e-15,
+        1.146501674834096
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.13459751559233307,
+      "minProjectileY": 0.4064821053298669,
+      "maxDrift": 2.4269359266068493,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5448210456199598
+    },
+    "left": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": -1.6,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1,
+      "broken": 87,
+      "detached": 2,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -1.600019995627666,
+          2.1345741077163556,
+          0.13939513453183489
+        ],
+        "pieceId": 32,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.00005414979392885655,
+          0.00006404596947747095,
+          -0.999999996482957
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 9,
+        "point": [
+          -1.4187052811422518,
+          0.7539730258764592,
+          0.0840153030266297
+        ],
+        "stressRatio": 1.4823884438138988,
+        "contactImpulse": 2764.6215416803275
+      },
+      "wallImpulse": 3187.4169129713773,
+      "projectilePosition": [
+        -1.607598646958795,
+        0.4199858066489128,
+        1.1613797774248684
+      ],
+      "projectileVelocity": [
+        -0.007681637933743715,
+        0.0009245866049288759,
+        1.0837296484402916
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.3995360193211457,
+      "maxDrift": 1.4854611369645039,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5270978005635147,
+      "earlyBreakCentroidX": -1.6153920578642034
+    },
+    "right": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 1.6,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1,
+      "broken": 79,
+      "detached": 1,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          1.5998737162996615,
+          2.134512028645314,
+          0.14149735672686553
+        ],
+        "pieceId": 37,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.00003266147911009688,
+          0.00004811218717650162,
+          -0.9999999983092226
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 22,
+        "point": [
+          1.1601428293670963,
+          0.7709135166783767,
+          -0.07309172945284455
+        ],
+        "stressRatio": 1.137876034138114,
+        "contactImpulse": 2957.676368545189
+      },
+      "wallImpulse": 3175.127234010629,
+      "projectilePosition": [
+        1.5194195257340533,
+        0.4199964501219378,
+        1.108707813418624
+      ],
+      "projectileVelocity": [
+        -0.08844733176949796,
+        0.00008598528731838806,
+        1.0428150645650545
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.40606023788175055,
+      "maxDrift": 2.023085546397753,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.4603291077823017,
+      "earlyBreakCentroidX": 1.6528450133144064
+    },
+    "slow": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 5,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 12,
+      "detached": 0,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00006561898685107648,
+          2.134172109198417,
+          0.14702483050996107
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -4.997456435464238
+        ],
+        "normal": [
+          0.00000574743187368304,
+          0.00016291383726504917,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 115,
+        "point": [
+          0.17726617638175718,
+          1.6023751813222167,
+          -0.10858976435635709
+        ],
+        "stressRatio": 1.635066852698139,
+        "contactImpulse": 1089.6012976585212
+      },
+      "wallImpulse": 1404.0920908692408,
+      "projectilePosition": [
+        -0.005002807890713271,
+        0.4199975414415754,
+        1.5874779169062776
+      ],
+      "projectileVelocity": [
+        -0.003197802288678995,
+        1.942890293094024e-16,
+        0.9556412996399593
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.4091173726245861,
+      "maxDrift": 0.012375457306300007,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5702467330845133
+    },
+    "fast": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 24,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 177,
+      "detached": 9,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.18888888888888897,
+        "point": [
+          -0.00012153451885166255,
+          2.1390963626634028,
+          0.13474635628074663
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -1.8254173715948454,
+          -23.991059387121314
+        ],
+        "normal": [
+          0.000027532850837605483,
+          0.00010234334988927767,
+          -0.9999999943838904
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.18888888888888897,
+        "bond": 19,
+        "point": [
+          0.2180132552243082,
+          0.8073481004580838,
+          -0.032598128372584974
+        ],
+        "stressRatio": 1.092280412528384,
+        "contactImpulse": 4230.1309967561265
+      },
+      "wallImpulse": 6256.897082468783,
+      "projectilePosition": [
+        -0.023800147830975046,
+        0.4199975414415753,
+        2.00963212613963
+      ],
+      "projectileVelocity": [
+        -0.005874463032568734,
+        1.942890293094024e-16,
+        1.249311154598497
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.09484477606101463,
+      "minProjectileY": 0.40662662807215616,
+      "maxDrift": 5.025297190547674,
+      "maxSubsteps": 3,
+      "peakCollisionVy": -1.2897370781140045
+    },
+    "light": {
+      "params": {
+        "radius": 0.42,
+        "mass": 70,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 10,
+      "detached": 0,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00004422313246404963,
+          2.1343727311774034,
+          0.14783286487467118
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000005747431873794062,
+          0.0001629138372650613,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 115,
+        "point": [
+          0.17726617638175718,
+          1.6023751813222167,
+          -0.10858976435635709
+        ],
+        "stressRatio": 1.2472138587848152,
+        "contactImpulse": 950.9402702655559
+      },
+      "wallImpulse": 978.2443145150515,
+      "projectilePosition": [
+        -0.0019358810660803187,
+        0.41999930725630497,
+        2.798868199887451
+      ],
+      "projectileVelocity": [
+        -0.001224678598613083,
+        -1.5612511283791264e-15,
+        1.7181898916856508
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.4110160552164545,
+      "maxDrift": 0.008775876381132577,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.6183319610209423
+    },
+    "heavy": {
+      "params": {
+        "radius": 0.42,
+        "mass": 700,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 224,
+      "detached": 3,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00016510509666056716,
+          2.1322929409317672,
+          0.13409581079804742
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000005747431873794062,
+          0.0001629138372650613,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 19,
+        "point": [
+          0.2180132552243082,
+          0.8073481004580838,
+          -0.032598128372584974
+        ],
+        "stressRatio": 1.1137908904402871,
+        "contactImpulse": 3679.0577130043002
+      },
+      "wallImpulse": 9099.804146304072,
+      "projectilePosition": [
+        -0.04020663109539525,
+        0.4199931269047508,
+        1.6241069372244064
+      ],
+      "projectileVelocity": [
+        -0.012824918849094686,
+        6.2103100439969694e-15,
+        1.1950246615350675
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.18242708715527853,
+      "minProjectileY": 0.4086310997777033,
+      "maxDrift": 4.721869775085684,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.4927179326757882
+    },
+    "weak": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 0.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 207,
+      "detached": 10,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          0.00008036813347846172,
+          2.1328928321465463,
+          0.13886008877401979
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000005747431873794062,
+          0.0001629138372650613,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 18,
+        "point": [
+          0.41063455101787066,
+          0.7648630626331818,
+          -0.003880016202748157
+        ],
+        "stressRatio": 1.033409615347285,
+        "contactImpulse": 2154.5076150068408
+      },
+      "wallImpulse": 3352.1647483164593,
+      "projectilePosition": [
+        0.03016835546555992,
+        0.4199975414415707,
+        1.7914828201359818
+      ],
+      "projectileVelocity": [
+        -0.050465250531471766,
+        3.690173167036903e-13,
+        1.30693416493035
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.10137453870575436,
+      "minProjectileY": 0.4090373354010168,
+      "maxDrift": 3.755287246868353,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.6947594697718877
+    },
+    "strong": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 4,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 11,
+      "detached": 0,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00015108544285304115,
+          2.133727902294612,
+          0.14281210561381588
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000005747431873794062,
+          0.0001629138372650613,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 115,
+        "point": [
+          0.17726617638175718,
+          1.6023751813222167,
+          -0.10858976435635709
+        ],
+        "stressRatio": 1.5703954715994506,
+        "contactImpulse": 2631.4756915358385
+      },
+      "wallImpulse": 3364.067560228641,
+      "projectilePosition": [
+        -0.019341772759118258,
+        0.41999754144157525,
+        2.3323509488407868
+      ],
+      "projectileVelocity": [
+        -0.012340162406213452,
+        1.942890293094024e-16,
+        1.4481677039020289
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.40020449161982086,
+      "maxDrift": 0.030127297493812984,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5777030503245113
+    },
+    "thin": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.16,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 103,
+      "detached": 7,
+      "bonds": 379,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          0.0000015596258112482442,
+          2.134144814840777,
+          0.06087453206513531
+        ],
+        "pieceId": 34,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          -0.000014446069766806688,
+          -0.00011208790611953723,
+          -0.9999999936138063
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 45,
+        "point": [
+          -1.1732875295305685,
+          1.214567575836165,
+          -0.06456293182744478
+        ],
+        "stressRatio": 1.259843880320805,
+        "contactImpulse": 1714.4026087568636
+      },
+      "wallImpulse": 3553.92579062305,
+      "projectilePosition": [
+        1.0195618670429614,
+        0.41999754144157536,
+        1.5719011483252923
+      ],
+      "projectileVelocity": [
+        0.7020163744820939,
+        3.4416913763379853e-15,
+        1.1648633824758303
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.07646009097782538,
+      "minProjectileY": 0.4091387123420354,
+      "maxDrift": 3.6011234123145095,
+      "maxSubsteps": 3,
+      "peakCollisionVy": -0.518977710010798
+    },
+    "thick": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.7,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 9,
+      "detached": 0,
+      "bonds": 577,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00003062794610771136,
+          2.1344390673449296,
+          0.34840963419400617
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000017319052189232985,
+          -0.000052652509735826285,
+          -0.9999999984638817
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 132,
+        "point": [
+          -0.5049955161945967,
+          2.0807120958583014,
+          -0.1695447110864721
+        ],
+        "stressRatio": 1.5540772953432829,
+        "contactImpulse": 3461.8821278307055
+      },
+      "wallImpulse": 3545.6593942597574,
+      "projectilePosition": [
+        -0.0002631697105924216,
+        0.4199975414415751,
+        3.1884390711359973
+      ],
+      "projectileVelocity": [
+        -0.00016251746452988308,
+        -3.0600522116230877e-15,
+        1.8360949166098037
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.3022766545234188,
+      "minProjectileY": 0.4103443769887776,
+      "maxDrift": 0.004670480939453829,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.6201875011727036
+    },
+    "small": {
+      "params": {
+        "radius": 0.2,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 73,
+      "detached": 1,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00012751416610778943,
+          2.1335817031314335,
+          0.14184248050410295
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.0000057474318738356955,
+          0.00016291383726519228,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 47,
+        "point": [
+          -1.0943509263383502,
+          1.2090248469628238,
+          -0.019626177764294143
+        ],
+        "stressRatio": 1.227069422767253,
+        "contactImpulse": 2529.3629503139723
+      },
+      "wallImpulse": 3224.9904414617067,
+      "projectilePosition": [
+        -0.009866076874884989,
+        0.19999754144157542,
+        1.6092880680882389
+      ],
+      "projectileVelocity": [
+        -0.004444447260580468,
+        1.942890293094024e-16,
+        1.1584953320208795
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.13417877176826426,
+      "minProjectileY": 0.1753031361511768,
+      "maxDrift": 2.455934843787368,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5368597908888495
+    },
+    "large": {
+      "params": {
+        "radius": 0.75,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 73,
+      "detached": 1,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00012427634289212397,
+          2.133671475727882,
+          0.1418420170513226
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.00000574743187374549,
+          0.00016291383726497804,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 47,
+        "point": [
+          -1.0943509263383502,
+          1.2090248469628238,
+          -0.019626177764294143
+        ],
+        "stressRatio": 1.2270723971560276,
+        "contactImpulse": 2529.71201920819
+      },
+      "wallImpulse": 3226.2533077745693,
+      "projectilePosition": [
+        -0.01178379887075733,
+        0.7499975414415752,
+        2.2060201425615493
+      ],
+      "projectileVelocity": [
+        -0.007156320854829318,
+        9.943434964299058e-15,
+        1.1732716804317385
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.13430038334409397,
+      "minProjectileY": 0.7384895105256184,
+      "maxDrift": 2.338387163182751,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5463808771915182
+    },
+    "size_graze_small": {
+      "params": {
+        "radius": 0.2,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 3.55,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 0,
+      "detached": 0,
+      "bonds": 436,
+      "firstContact": null,
+      "firstBreak": null,
+      "wallImpulse": 0,
+      "projectilePosition": [
+        3.55,
+        0.19999754144157844,
+        -12.159120373323939
+      ],
+      "projectileVelocity": [
+        0,
+        2.3522850334245504e-15,
+        -7.849981147583066
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.18453134449305658,
+      "maxDrift": 0.0007575260660748788,
+      "maxSubsteps": 2,
+      "peakCollisionVy": null
+    },
+    "size_graze_large": {
+      "params": {
+        "radius": 0.75,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 3.55,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 1.5,
+      "broken": 45,
+      "detached": 5,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.2625000000000003,
+        "point": [
+          3.1996605608101016,
+          2.1238363846298327,
+          0.13593683863483155
+        ],
+        "pieceId": 105,
+        "incomingVelocity": [
+          0,
+          -2.533605343386835,
+          -11.993795396320156
+        ],
+        "normal": [
+          -0.47384216486368325,
+          0.00002727769426749682,
+          -0.8806097898917691
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.2625000000000003,
+        "bond": 77,
+        "point": [
+          2.3331746590769527,
+          1.1755046543428758,
+          -0.04418446320630724
+        ],
+        "stressRatio": 1.5042934915146442,
+        "contactImpulse": 1609.7628545353969
+      },
+      "wallImpulse": 2268.90055328185,
+      "projectilePosition": [
+        6.688498105118952,
+        0.749997541441576,
+        -1.8366298523171638
+      ],
+      "projectileVelocity": [
+        2.1736940369237985,
+        1.0359768598533492e-14,
+        -1.3990216310491999
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.29799759942404824,
+      "minProjectileY": 0.7312812007961713,
+      "maxDrift": 0.1535508475605897,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5619253507343447
+    },
+    "through": {
+      "params": {
+        "radius": 0.42,
+        "mass": 1600,
+        "speed": 32,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.22,
+        "strength": 0.45,
+        "seed": 42
+      },
+      "duration": 2,
+      "broken": 408,
+      "detached": 120,
+      "bonds": 408,
+      "firstContact": {
+        "time": 0.14166666666666664,
+        "point": [
+          -0.000009832804854822963,
+          2.1399903982485524,
+          0.08482162743589877
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -1.3691267757589636,
+          -31.991058970730855
+        ],
+        "normal": [
+          0.000012992734666907035,
+          -0.000016766396417424584,
+          -0.9999999997750381
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.14166666666666664,
+        "bond": 47,
+        "point": [
+          -1.1065223915992852,
+          1.2083525795883159,
+          -0.007877524812233996
+        ],
+        "stressRatio": 1.106615349283162,
+        "contactImpulse": 1400.4280218390213
+      },
+      "wallImpulse": 23970.9550344246,
+      "projectilePosition": [
+        3.3172921270016467,
+        0.41998430369368306,
+        -35.11667088673646
+      ],
+      "projectileVelocity": [
+        1.513482989120762,
+        4.1059013890232254e-8,
+        -16.266562356843007
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.05031289906341905,
+      "minProjectileY": 0.40880291396318313,
+      "maxDrift": 60.15022928742935,
+      "maxSubsteps": 10,
+      "peakCollisionVy": 1.828981370615959
+    },
+    "collapse": {
+      "params": {
+        "radius": 0.75,
+        "mass": 2100,
+        "speed": 30,
+        "hitX": 0,
+        "hitY": 1.05,
+        "thickness": 0.24,
+        "strength": 0.25,
+        "seed": 42
+      },
+      "duration": 2,
+      "broken": 394,
+      "detached": 120,
+      "bonds": 413,
+      "firstContact": {
+        "time": 0.15,
+        "point": [
+          -0.0002995309146709771,
+          1.04506803926768,
+          0.05586778667819932
+        ],
+        "pieceId": 83,
+        "incomingVelocity": [
+          0,
+          -1.4508535933538627,
+          -29.991117428409815
+        ],
+        "normal": [
+          0.000021841264606725294,
+          0.00001910379615003969,
+          -0.9999999995790021
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.15,
+        "bond": 12,
+        "point": [
+          -1.0615974767114393,
+          0.6204532898182044,
+          -0.004805828679512827
+        ],
+        "stressRatio": 1.320854540861152,
+        "contactImpulse": 3931.0623456913886
+      },
+      "wallImpulse": 69646.15386298788,
+      "projectilePosition": [
+        -7.302416968013969,
+        0.7499793927901862,
+        0.6895046389875868
+      ],
+      "projectileVelocity": [
+        -2.701581318521301,
+        -7.369105325949477e-15,
+        -0.7230512925710373
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.09219832027892058,
+      "minProjectileY": 0.7349301987092048,
+      "maxDrift": 5.007357779861343,
+      "maxSubsteps": 5,
+      "peakCollisionVy": 6.034328519939426
+    },
+    "fast_small": {
+      "params": {
+        "radius": 0.16,
+        "mass": 2400,
+        "speed": 42,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.16,
+        "strength": 4,
+        "seed": 42
+      },
+      "duration": 1,
+      "broken": 135,
+      "detached": 57,
+      "bonds": 379,
+      "firstContact": {
+        "time": 0.10714285714285711,
+        "point": [
+          -0.0007817543693658391,
+          2.145863712403899,
+          0.05205291193673333
+        ],
+        "pieceId": 34,
+        "incomingVelocity": [
+          0,
+          -1.0392867892404978,
+          -41.9910920329143
+        ],
+        "normal": [
+          0.000002783012642245449,
+          -0.00003963145826538884,
+          -0.9999999992108011
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.10714285714285711,
+        "bond": 94,
+        "point": [
+          -0.3289709213466484,
+          1.5998473073762327,
+          0.000486220671163703
+        ],
+        "stressRatio": 1.553806240870172,
+        "contactImpulse": 2704.587492234603
+      },
+      "wallImpulse": 10430.477189518275,
+      "projectilePosition": [
+        -0.15201614665991334,
+        0.1599764558030646,
+        -33.06193790940736
+      ],
+      "projectileVelocity": [
+        -0.10751766007583242,
+        9.694085811862152e-13,
+        -35.3084151661164
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.07744406721728114,
+      "minProjectileY": 0.1535472143886559,
+      "maxDrift": 35.16371288073828,
+      "maxSubsteps": 21,
+      "peakCollisionVy": -0.8479061883302594
+    },
+    "flatControl": {
+      "maxVerticalSpeed": 8.717384431216784e-17,
+      "maxNormalY": 5.724587470723463e-17,
+      "firstContact": {
+        "time": 0.10666666666666665,
+        "point": [
+          1.1102230246251565e-16,
+          2.2038326530612244,
+          0.14996278375440697
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          0,
+          -41.991172096112905
+        ],
+        "normal": [
+          1.3183898417423734e-16,
+          -2.168404344971009e-18,
+          -0.9999999999999999
+        ]
+      }
+    },
+    "repeat": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 2,
+      "broken": 73,
+      "detached": 1,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00012621904084569868,
+          2.1336176121539996,
+          0.14184229504417512
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000005747431873794062,
+          0.0001629138372650613,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 47,
+        "point": [
+          -1.0943509263383502,
+          1.2090248469628238,
+          -0.019626177764294143
+        ],
+        "stressRatio": 1.2270706161921092,
+        "contactImpulse": 2529.502586463017
+      },
+      "wallImpulse": 3225.497722817041,
+      "projectilePosition": [
+        -0.014081488788252543,
+        0.4199975414415753,
+        2.4287361619452192
+      ],
+      "projectileVelocity": [
+        -0.005885900597792412,
+        -6.3074545586516706e-15,
+        1.146501674834096
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.13459751559233307,
+      "minProjectileY": 0.4064821053298669,
+      "maxDrift": 2.4269359266068493,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5448210456199598,
+      "maxPoseDifference": 0
+    },
+    "settling": {
+      "params": {
+        "radius": 0.42,
+        "mass": 250,
+        "speed": 12,
+        "hitX": 0,
+        "hitY": 2.15,
+        "thickness": 0.3,
+        "strength": 1.6,
+        "seed": 42
+      },
+      "duration": 10,
+      "broken": 73,
+      "detached": 1,
+      "bonds": 436,
+      "firstContact": {
+        "time": 0.25833333333333364,
+        "point": [
+          -0.00012621904084569868,
+          2.1336176121539996,
+          0.14184229504417512
+        ],
+        "pieceId": 101,
+        "incomingVelocity": [
+          0,
+          -2.492751137026915,
+          -11.993895445114171
+        ],
+        "normal": [
+          0.000005747431873794062,
+          0.0001629138372650613,
+          -0.999999986713024
+        ]
+      },
+      "firstBreak": {
+        "type": "break",
+        "time": 0.25833333333333364,
+        "bond": 47,
+        "point": [
+          -1.0943509263383502,
+          1.2090248469628238,
+          -0.019626177764294143
+        ],
+        "stressRatio": 1.2270706161921092,
+        "contactImpulse": 2529.502586463017
+      },
+      "wallImpulse": 3225.497722817041,
+      "projectilePosition": [
+        -0.055218616312181036,
+        0.41999754144157353,
+        10.441747054745042
+      ],
+      "projectileVelocity": [
+        -0.0044645165019461,
+        -6.3074545586516706e-15,
+        0.8696333826509841
+      ],
+      "maxEnergyRatio": 1,
+      "minCentreY": 0.13459751559233307,
+      "minProjectileY": 0.4064821053298669,
+      "maxDrift": 2.4269359266068493,
+      "maxSubsteps": 2,
+      "peakCollisionVy": -1.5448210456199598,
+      "maxDetachedLinearSpeed": 0
+    }
+  }
+}

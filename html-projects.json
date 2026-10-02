@@ -228,5 +228,61 @@
         "bytes": 639230
       }
     ]
+  },
+  {
+    "id": "36",
+    "name": "6Astra低多边形营地",
+    "directory": "projects/36-6astra-campfire",
+    "status": "found",
+    "files": [
+      {
+        "path": "projects/36-6astra-campfire/standalone.html",
+        "original": "deliverables/GPT-6-Astra max 篝火营地.html",
+        "sha256": "0a149c5ef94bf1e2710e92f3ad373654f54a50a34334620f2a35b90229606804",
+        "bytes": 579477
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "name": "6Astra庭园喷泉场景",
+    "directory": "projects/37-6astra-fountain",
+    "status": "found",
+    "files": [
+      {
+        "path": "projects/37-6astra-fountain/standalone.html",
+        "original": "deliverables/fountain-single.html",
+        "sha256": "cd235c05cb75f82c63e63db391177a8e11d2ff0a012f908056ba238a9d788387",
+        "bytes": 1000838
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "6Astra雨中荷塘场景",
+    "directory": "projects/38-6astra-rain-lotus",
+    "status": "found",
+    "files": [
+      {
+        "path": "projects/38-6astra-rain-lotus/standalone.html",
+        "original": "deliverables/rain-lotus.html",
+        "sha256": "a384b5b059ae00bd6b191fe070f9d782cb96a50e270cd16363b91a6ed12f5834",
+        "bytes": 855060
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "6Astra《破壁》三维物理模拟",
+    "directory": "projects/39-6astra-breakwall",
+    "status": "found",
+    "files": [
+      {
+        "path": "projects/39-6astra-breakwall/standalone.html",
+        "original": "deliverables/breakwall.html",
+        "sha256": "5f42f5a4bc126690e2b39a5c89352d4c5772216824092801cf93c5d8aa190366",
+        "bytes": 699330
+      }
+    ]
   }
 ]

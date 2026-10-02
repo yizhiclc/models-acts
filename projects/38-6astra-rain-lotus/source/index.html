@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#152521" />
+    <meta name="description" content="一个可交互的 WebGPU 雨中荷塘。观察雨滴、涟漪与荷叶上的水珠。" />
+    <title>听雨 · 雨中荷塘</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%231b342d'/%3E%3Cpath d='M24 9C18 19 13 24 13 30a11 11 0 0022 0c0-6-5-11-11-21z' fill='%23c9d8b1'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <main id="app" aria-label="雨中荷塘三维场景">
+      <canvas id="scene" aria-label="拖动旋转，滚轮缩放，右键拖动平移。可用下方按钮切换机位。"></canvas>
+      <header class="masthead">
+        <span class="eyebrow">A POND IN THE RAIN</span>
+        <h1>听雨<span class="seal">荷塘</span></h1>
+        <p>一池荷色，万点涟漪。</p>
+      </header>
+      <div class="topbar">
+        <span class="weather"><span class="rain-icon">☂</span> 阴天 <span class="sep">/</span> <span id="weather-label">细雨</span></span>
+        <button id="quality" class="quiet" aria-pressed="false" title="提高反射分辨率；视角静止后，多帧累积抗锯齿">精细画质 <span>↗</span></button>
+      </div>
+      <aside class="controls" aria-label="天气控制">
+        <div class="panel-heading"><span>雨与风</span><button id="collapse" class="icon-button" aria-label="收起天气控制" aria-expanded="true">−</button></div>
+        <div id="controls-body">
+          <div class="control-label"><label for="rain">雨量</label><output id="rain-value" for="rain">35%</output></div>
+          <input id="rain" type="range" min="0" max="100" value="35" aria-label="雨量" />
+          <div class="range-ends"><span>零星</span><span>骤雨</span></div>
+          <div class="control-label wind-label"><label for="wind">风</label><output id="wind-value" for="wind">0.5 m/s</output></div>
+          <input id="wind" type="range" min="0" max="30" value="5" aria-label="风速" />
+          <div class="range-ends"><span>无风</span><span>微风</span></div>
+          <div class="actions"><button id="pause" aria-pressed="false"><span id="pause-symbol">Ⅱ</span><span id="pause-label">暂停降雨</span></button><button id="drop" title="停止连续降雨，点击水面落下一滴">单滴观察</button></div>
+          <p id="mode-hint" class="mode-hint">停雨后，涟漪仍会继续传播。</p>
+        </div>
+      </aside>
+      <nav class="viewbar" aria-label="机位">
+        <span class="view-label">观景</span>
+        <button data-view="overview" class="selected" aria-pressed="true">全景</button>
+        <button data-view="water" aria-pressed="false">临水</button>
+        <button data-view="leaf" aria-pressed="false">荷叶特写</button>
+        <button data-view="top" aria-pressed="false">俯视</button>
+        <span class="view-divider"></span><button id="reset" class="reset" aria-label="复位相机" title="复位相机">↺</button>
+      </nav>
+      <footer><span class="interaction-hint">拖动旋转 <i>·</i> 滚轮缩放 <i>·</i> 右键平移</span><button id="info-toggle" class="info-toggle" aria-expanded="false">场景信息 <span>＋</span></button></footer>
+      <div id="info" class="info" hidden><strong>一方真实尺度的荷塘</strong><p>约 7 米宽的不规则池岸。雨滴直径 1–4 毫米。水面采用 GPU 持续波动模拟，贴水叶缘与茎秆会反射涟漪。</p><p id="runtime-stats">正在初始化 WebGPU…</p><p id="quality-state">实时平面反射 · 屏幕空间折射</p><p>单滴模式下，点击开阔水面。按空格暂停降雨，按 R 复位。</p></div>
+      <div id="loading" class="loading"><div class="loading-mark"></div><h2>雨将至</h2><p id="loading-status">正在构建荷塘与 GPU 波场…</p></div>
+      <div id="error" class="error" hidden><span class="eyebrow">WEBGPU REQUIRED</span><h2>这片荷塘需要 WebGPU</h2><p id="error-detail"></p><p>请使用支持 WebGPU 的新版 Chrome 或 Edge，开启硬件加速，并通过 localhost 或 HTTPS 打开。</p><button id="retry">重新尝试</button></div>
+      <div id="toast" class="toast" role="status"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

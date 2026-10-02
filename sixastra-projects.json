@@ -1,0 +1,46 @@
+[
+  {
+    "id": "36",
+    "name": "6Astra低多边形营地",
+    "directory": "projects/36-6astra-campfire",
+    "original_thread": "01a0fabd-6a3f-7d40-b99e-f1f9a945fcb6",
+    "archived": "2026-10-02",
+    "prompt_characters": 763,
+    "requests": 2,
+    "project_archive": "projects/36-6astra-campfire/deliverables/GPT-6-Astra max 篝火营地-完整项目.zip",
+    "archive_sha256": "280e7c0e35e6e2b7ae3942bc3ec3d30f5d290625fc247ae33f85eaed38006c93"
+  },
+  {
+    "id": "37",
+    "name": "6Astra庭园喷泉场景",
+    "directory": "projects/37-6astra-fountain",
+    "original_thread": "01a0faf3-5cc3-7d42-b69e-ee6d0186fd5b",
+    "archived": "2026-10-02",
+    "prompt_characters": 1735,
+    "requests": 1,
+    "project_archive": "projects/37-6astra-fountain/deliverables/giardino-fountain.zip",
+    "archive_sha256": "98d049b5a8bdd3c32a959c0c41c33f0083bba1d6085d33cb280440492886f5e4"
+  },
+  {
+    "id": "38",
+    "name": "6Astra雨中荷塘场景",
+    "directory": "projects/38-6astra-rain-lotus",
+    "original_thread": "01a0faf6-fa03-74c2-9095-d1677da1929c",
+    "archived": "2026-10-02",
+    "prompt_characters": 2026,
+    "requests": 4,
+    "project_archive": "projects/38-6astra-rain-lotus/deliverables/rain-lotus-complete.zip",
+    "archive_sha256": "07d8f498744b06c0887ee5ed311920d60c1713e470fb5f7c0f1f1f4982d8e4c5"
+  },
+  {
+    "id": "39",
+    "name": "6Astra《破壁》三维物理模拟",
+    "directory": "projects/39-6astra-breakwall",
+    "original_thread": "01a0faeb-ec29-7100-a3b3-b4d9be3a6aa4",
+    "archived": "2026-10-02",
+    "prompt_characters": 1054,
+    "requests": 6,
+    "project_archive": "projects/39-6astra-breakwall/deliverables/breakwall-project.zip",
+    "archive_sha256": "5fb575c8f6a41d8d67629ccd250268f81f813b260d7c548562b88b976bc3b363"
+  }
+]

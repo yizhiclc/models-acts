@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#163b35" />
+  <meta name="description" content="一座可以驻足的古典庭园。以 WebGPU 模拟持续流动的喷泉、涟漪与飞溅。" />
+  <title>涌泉庭园 · Giardino</title>
+</head>
+<body>
+  <main id="app">
+    <div id="scene" aria-label="可旋转观察的古典庭园喷泉"></div>
+    <header class="identity">
+      <div class="wordmark"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M6 25h24M10 29h16M18 6v17M18 8C10 8 8 14 8 19m10-11c8 0 10 6 10 11M8 20c0 6 20 6 20 0M12 15c0 4 12 4 12 0"/></svg><span>GIARDINO</span><span class="edition">01 / 水庭</span></div>
+      <h1>涌泉庭园</h1>
+      <p>光穿过水，让时间慢下来。</p>
+    </header>
+    <button id="panel-toggle" class="round-button" aria-label="收起环境控制" aria-expanded="true">☷</button>
+    <aside id="controls" class="panel" aria-label="环境控制">
+      <div class="panel-heading"><span>环境</span><span class="small-caps">ATMOSPHERE</span></div>
+      <div class="control">
+        <label for="power">水势 <output id="power-value">68%</output></label>
+        <input id="power" type="range" min="0" max="100" value="68" />
+        <div class="range-ends"><span>柔和</span><span>强劲</span></div>
+      </div>
+      <div class="control">
+        <label for="wind">风力 <output id="wind-value">0.6 m/s</output></label>
+        <input id="wind" type="range" min="0" max="100" value="20" />
+        <div class="range-ends"><span>静风</span><span>微风</span></div>
+      </div>
+      <div class="control time-control">
+        <label for="daytime">时光 <output id="time-value">16:30</output></label>
+        <input id="daytime" type="range" min="0" max="100" value="37.5" step="0.5" />
+        <div class="time-presets"><button data-time="0">白天</button><button data-time="63">黄昏</button><button data-time="100">夜晚</button></div>
+      </div>
+      <div class="panel-bottom"><span id="scene-state">午后 · 轻风</span><button id="pause" aria-label="暂停水流" title="空格键暂停">Ⅱ</button></div>
+    </aside>
+    <nav class="camera-bar" aria-label="预设机位">
+      <span class="camera-caption">驻足此处</span>
+      <div class="camera-options"><button class="active" data-camera="wide"><span>01</span> 庭园全景</button><button data-camera="bowl"><span>02</span> 水盘近景</button><button data-camera="water"><span>03</span> 贴近水面</button></div>
+      <button id="reset" title="复位视角（R）" aria-label="复位视角">↺</button>
+    </nav>
+    <footer><span class="gesture-hint">拖动旋转 <i>·</i> 滚轮缩放 <i>·</i> 右键平移</span><span class="telemetry"><span class="live-dot"></span><span id="gpu-status">正在准备水庭</span><span id="fps"></span></span></footer>
+    <div id="loading"><div class="loading-mark">G</div><p id="loading-text">正在唤醒庭园…</p><span>GIARDINO / 水与光的习作</span></div>
+    <section id="error" class="hidden" role="alert"><span class="small-caps">WEBGPU REQUIRED</span><h2>庭园需要 WebGPU</h2><p id="error-message"></p><button id="retry">重新尝试</button><small>建议在支持 WebGPU 的 Chrome 或 Edge 中，通过 localhost 或 HTTPS 打开。</small></section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

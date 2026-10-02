@@ -1,10 +1,10 @@
 # models-acts
 
-23 个已选项目的成果与原始提示词归档。点击项目图片或标题可查看源码、成果及使用说明。
+27 个已选项目的成果与原始提示词归档。点击项目图片或标题可查看源码、成果及使用说明。
 
 [HTML 单文件下载索引](HTML-PROJECTS.md) · [大型视频与数据下载](https://github.com/yizhiclc/models-acts/releases/tag/archive-2026-10-01)
 
-HTML 项目中，15 个项目已提供单文件版本（共 16 个 HTML 文件）；云山巨城、武陵城仍使用本地服务启动。
+HTML 项目中，19 个项目已提供单文件版本（共 20 个 HTML 文件）；云山巨城、武陵城仍使用本地服务启动。庭园喷泉与雨中荷塘需要浏览器支持 WebGPU。
 
 <table>
 <tr>
@@ -53,6 +53,14 @@ HTML 项目中，15 个项目已提供单文件版本（共 16 个 HTML 文件�
 </tr>
 <tr>
 <td width="50%" valign="top"><a href="projects/31-signal-flow-solutions/"><img src="projects/31-signal-flow-solutions/preview.jpg" width="420" alt="31 · 信号流图四题完整解答"></a><br><strong><a href="projects/31-signal-flow-solutions/">31 · 信号流图四题完整解答</a></strong><br>四题信号流图、梅森公式与完整推导。<br><a href="projects/31-signal-flow-solutions/">项目</a> · <a href="projects/31-signal-flow-solutions/PROMPT.md">原始提示词</a></td>
+<td width="50%" valign="top"><a href="projects/36-6astra-campfire/"><img src="projects/36-6astra-campfire/preview.jpg" width="420" alt="36 · 6Astra低多边形营地"></a><br><strong><a href="projects/36-6astra-campfire/">36 · 6Astra低多边形营地</a></strong><br>连续松林地形中的帐篷、篝火与水塘，可切换昼夜。<br><a href="projects/36-6astra-campfire/">项目</a> · <a href="projects/36-6astra-campfire/PROMPT.md">原始提示词</a> · <a href="projects/36-6astra-campfire/standalone.html">单文件 HTML</a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="projects/37-6astra-fountain/"><img src="projects/37-6astra-fountain/preview.jpg" width="420" alt="37 · 6Astra庭园喷泉场景"></a><br><strong><a href="projects/37-6astra-fountain/">37 · 6Astra庭园喷泉场景</a></strong><br>古典多层喷泉与庭园，GPU 水流、涟漪及昼夜灯光。<br><a href="projects/37-6astra-fountain/">项目</a> · <a href="projects/37-6astra-fountain/PROMPT.md">原始提示词</a> · <a href="projects/37-6astra-fountain/standalone.html">单文件 HTML</a></td>
+<td width="50%" valign="top"><a href="projects/38-6astra-rain-lotus/"><img src="projects/38-6astra-rain-lotus/preview.png" width="420" alt="38 · 6Astra雨中荷塘场景"></a><br><strong><a href="projects/38-6astra-rain-lotus/">38 · 6Astra雨中荷塘场景</a></strong><br>不规则荷塘、荷叶水珠与 GPU 雨滴涟漪，可调雨量和风。<br><a href="projects/38-6astra-rain-lotus/">项目</a> · <a href="projects/38-6astra-rain-lotus/PROMPT.md">原始提示词</a> · <a href="projects/38-6astra-rain-lotus/standalone.html">单文件 HTML</a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="projects/39-6astra-breakwall/"><img src="projects/39-6astra-breakwall/preview.jpg" width="420" alt="39 · 6Astra《破壁》三维物理模拟"></a><br><strong><a href="projects/39-6astra-breakwall/">39 · 6Astra《破壁》三维物理模拟</a></strong><br>重物撞墙、断裂与碎块碰撞，可拖动时间轴回放全过程。<br><a href="projects/39-6astra-breakwall/">项目</a> · <a href="projects/39-6astra-breakwall/PROMPT.md">原始提示词</a> · <a href="projects/39-6astra-breakwall/standalone.html">单文件 HTML</a></td>
 <td></td>
 </tr>
 </table>
