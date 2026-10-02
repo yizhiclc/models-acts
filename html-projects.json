@@ -1,6 +1,6 @@
 [
   {
-    "id": "01",
+    "id": "1",
     "name": "天阙宫城",
     "directory": "projects/01-tianque-palace",
     "status": "found",
@@ -14,7 +14,7 @@
     ]
   },
   {
-    "id": "02",
+    "id": "2",
     "name": "中式古典建筑群",
     "directory": "projects/02-classical-architecture",
     "status": "found",
@@ -28,21 +28,21 @@
     ]
   },
   {
-    "id": "03",
+    "id": "3",
     "name": "云山巨城",
     "directory": "projects/03-yunshan-city",
     "status": "not_found",
     "files": []
   },
   {
-    "id": "04",
+    "id": "4",
     "name": "武陵城",
     "directory": "projects/04-wuling-city",
     "status": "not_found",
     "files": []
   },
   {
-    "id": "05",
+    "id": "5",
     "name": "滕王阁",
     "directory": "projects/05-tengwang-pavilion",
     "status": "found",
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "id": "06",
+    "id": "6",
     "name": "悉尼歌剧院与海港大桥",
     "directory": "projects/06-sydney-opera-house",
     "status": "found",
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "id": "07",
+    "id": "7",
     "name": "腾势 Z Racing 展厅",
     "directory": "projects/07-denza-z-racing",
     "status": "found",
@@ -84,7 +84,7 @@
     ]
   },
   {
-    "id": "08",
+    "id": "8",
     "name": "松溪微缩铁路小镇",
     "directory": "projects/08-railway-town",
     "status": "found",
@@ -98,7 +98,7 @@
     ]
   },
   {
-    "id": "09",
+    "id": "9",
     "name": "上元灯境",
     "directory": "projects/09-lantern-reverie",
     "status": "found",
@@ -126,13 +126,13 @@
     ]
   },
   {
-    "id": "13",
+    "id": "12",
     "name": "体素云山瀑布",
-    "directory": "projects/13-cloudfall-voxel",
+    "directory": "projects/12-cloudfall-voxel",
     "status": "found",
     "files": [
       {
-        "path": "projects/13-cloudfall-voxel/standalone.html",
+        "path": "projects/12-cloudfall-voxel/standalone.html",
         "original": "source/dist/index.html",
         "sha256": "8cc30159fb8ced9890e6f142d641495a0abbeb96b3a2c6e534f68c616b5b7954",
         "bytes": 521690
@@ -140,13 +140,13 @@
     ]
   },
   {
-    "id": "14",
+    "id": "13",
     "name": "星舰发射与一级回收仿真",
-    "directory": "projects/14-rocket-lab",
+    "directory": "projects/13-rocket-lab",
     "status": "found",
     "files": [
       {
-        "path": "projects/14-rocket-lab/standalone.html",
+        "path": "projects/13-rocket-lab/standalone.html",
         "original": "deliverables/GPT6Astra max 火箭模拟.html",
         "sha256": "155312fefa256b7adca9e223627e36cac4bbd7feaaaebafa7803d851e8571721",
         "bytes": 1037897
@@ -154,13 +154,13 @@
     ]
   },
   {
-    "id": "16",
+    "id": "14",
     "name": "深海启航",
-    "directory": "projects/16-deep-sea-launch",
+    "directory": "projects/14-deep-sea-launch",
     "status": "found",
     "files": [
       {
-        "path": "projects/16-deep-sea-launch/standalone.html",
+        "path": "projects/14-deep-sea-launch/standalone.html",
         "original": "deliverables/gpt6astra max潜射导弹.html",
         "sha256": "bffdffacd1af1ec5a3e5a8676a35bd2d5271bfc88c4ffd75360af9bf671b9f8f",
         "bytes": 759503
@@ -168,13 +168,13 @@
     ]
   },
   {
-    "id": "17",
+    "id": "15",
     "name": "掠海长航",
-    "directory": "projects/17-pelagic-flight",
+    "directory": "projects/15-pelagic-flight",
     "status": "found",
     "files": [
       {
-        "path": "projects/17-pelagic-flight/standalone.html",
+        "path": "projects/15-pelagic-flight/standalone.html",
         "original": "deliverables/gpt6astra max掠海长航.html",
         "sha256": "240c75c3824411cdddba6efda9e479937635388be76b43ecef50a99ab3efae48",
         "bytes": 806785
@@ -182,13 +182,13 @@
     ]
   },
   {
-    "id": "18",
+    "id": "16",
     "name": "海湾航记",
-    "directory": "projects/18-tropical-sailing",
+    "directory": "projects/16-tropical-sailing",
     "status": "found",
     "files": [
       {
-        "path": "projects/18-tropical-sailing/standalone.html",
+        "path": "projects/16-tropical-sailing/standalone.html",
         "original": "deliverables/gpt6Astra max海湾航记.html",
         "sha256": "751fe26a1c63d75a06e59dc3f50f8c15516e30dc1b4ebbad128567ff1373a68b",
         "bytes": 864485
@@ -196,19 +196,19 @@
     ]
   },
   {
-    "id": "19",
+    "id": "17",
     "name": "Schwarzschild 无自旋黑洞",
-    "directory": "projects/19-schwarzschild-blackhole",
+    "directory": "projects/17-schwarzschild-blackhole",
     "status": "found",
     "files": [
       {
-        "path": "projects/19-schwarzschild-blackhole/standalone.html",
+        "path": "projects/17-schwarzschild-blackhole/standalone.html",
         "original": "deliverables/BlackHole.html",
         "sha256": "151b7719d26d1e8fd2996f4f677471eb62a3095789f83a28ae719958585add89",
         "bytes": 24108023
       },
       {
-        "path": "projects/19-schwarzschild-blackhole/standalone-version-b.html",
+        "path": "projects/17-schwarzschild-blackhole/standalone-version-b.html",
         "original": "version-b/dist/index.html",
         "sha256": "8f754a64e71d6799339742b55533afd1425b1d5982ceb2ebf4ada0ef42ae9076",
         "bytes": 520374
@@ -216,13 +216,13 @@
     ]
   },
   {
-    "id": "20",
+    "id": "18",
     "name": "Kerr 自旋黑洞",
-    "directory": "projects/20-kerr-blackhole",
+    "directory": "projects/18-kerr-blackhole",
     "status": "found",
     "files": [
       {
-        "path": "projects/20-kerr-blackhole/standalone.html",
+        "path": "projects/18-kerr-blackhole/standalone.html",
         "original": "deliverables/Kerr-BlackHole.html",
         "sha256": "c83e652044e5e0d15e12376b1fd1acbd5365b64bc56b1a20dbccd8357e385a44",
         "bytes": 639230
@@ -230,13 +230,13 @@
     ]
   },
   {
-    "id": "36",
+    "id": "24",
     "name": "6Astra低多边形营地",
-    "directory": "projects/36-6astra-campfire",
+    "directory": "projects/24-6astra-campfire",
     "status": "found",
     "files": [
       {
-        "path": "projects/36-6astra-campfire/standalone.html",
+        "path": "projects/24-6astra-campfire/standalone.html",
         "original": "deliverables/GPT-6-Astra max 篝火营地.html",
         "sha256": "0a149c5ef94bf1e2710e92f3ad373654f54a50a34334620f2a35b90229606804",
         "bytes": 579477
@@ -244,13 +244,13 @@
     ]
   },
   {
-    "id": "37",
+    "id": "25",
     "name": "6Astra庭园喷泉场景",
-    "directory": "projects/37-6astra-fountain",
+    "directory": "projects/25-6astra-fountain",
     "status": "found",
     "files": [
       {
-        "path": "projects/37-6astra-fountain/standalone.html",
+        "path": "projects/25-6astra-fountain/standalone.html",
         "original": "deliverables/fountain-single.html",
         "sha256": "cd235c05cb75f82c63e63db391177a8e11d2ff0a012f908056ba238a9d788387",
         "bytes": 1000838
@@ -258,13 +258,13 @@
     ]
   },
   {
-    "id": "38",
+    "id": "26",
     "name": "6Astra雨中荷塘场景",
-    "directory": "projects/38-6astra-rain-lotus",
+    "directory": "projects/26-6astra-rain-lotus",
     "status": "found",
     "files": [
       {
-        "path": "projects/38-6astra-rain-lotus/standalone.html",
+        "path": "projects/26-6astra-rain-lotus/standalone.html",
         "original": "deliverables/rain-lotus.html",
         "sha256": "a384b5b059ae00bd6b191fe070f9d782cb96a50e270cd16363b91a6ed12f5834",
         "bytes": 855060
@@ -272,13 +272,13 @@
     ]
   },
   {
-    "id": "39",
+    "id": "27",
     "name": "6Astra《破壁》三维物理模拟",
-    "directory": "projects/39-6astra-breakwall",
+    "directory": "projects/27-6astra-breakwall",
     "status": "found",
     "files": [
       {
-        "path": "projects/39-6astra-breakwall/standalone.html",
+        "path": "projects/27-6astra-breakwall/standalone.html",
         "original": "deliverables/breakwall.html",
         "sha256": "5f42f5a4bc126690e2b39a5c89352d4c5772216824092801cf93c5d8aa190366",
         "bytes": 699330
